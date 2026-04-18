@@ -24,11 +24,19 @@
                 <form id="filters-form">
                     <!-- Район (из таблицы districts_spb) -->
                     <div class="form-group">
-
+                        <label for="district">Район:</label>
+                        <select id="district" name="district">
+                            <option value="">Все районы</option>
+                            <!-- Список районов подставляется из БД -->
+                        </select>
                     </div>
                     <!-- Станция метро (из таблицы metro_stations) -->
                     <div class="form-group">
-
+                        <label for="metro">Станция метро:</label>
+                        <select id="metro" name="metro">
+                            <option value="">Все станции</option>
+                            <!-- Список станций подставляется из БД -->
+                        </select>
                     </div>
                     <!-- Звёздность (category) -->
                     <div class="form-group">
