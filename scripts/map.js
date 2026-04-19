@@ -14,6 +14,9 @@ function init() {
         controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
     });
 
+    // Отключаем scrollZoom (часто он связан с ошибкой Continuous: ticking while inactive)
+    map.behaviors.disable('scrollZoom');
+
     // Делаем карту и коллекцию районов глобально доступными
     window.map = map;
     window.districtPolygons = districtPolygons;
@@ -103,13 +106,17 @@ function loadDistrictsLayer() {
                 // Сохраняем по id, чтобы потом использовать в фильтрах
                 districtPolygons[id] = polygon;
 
-                // Клик по району — приблизить к его границам
+                // Клик по району — приблизить к его центру
                 polygon.events.add('click', () => {
                     const bounds = polygon.geometry.getBounds();
+                    console.log('Клик по району', id, name, 'bounds=', bounds);
+
                     if (bounds && map) {
-                        map.setBounds(bounds, {
-                            checkZoomRange: true,
-                            zoomMargin: 20
+                        // Вычисляем центр из bounds
+                        const centerLat = (bounds[0][0] + bounds[1][0]) / 2;
+                        const centerLon = (bounds[0][1] + bounds[1][1]) / 2;
+                        map.setCenter([centerLat, centerLon], 12, {
+                            checkZoomRange: true
                         });
                     }
                 });

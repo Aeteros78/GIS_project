@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFiltersForm();
 });
 
+// Обработка выбора района в селекте
 function initDistrictFilter() {
     const districtSelect = document.getElementById('district');
     if (!districtSelect) {
@@ -14,7 +15,10 @@ function initDistrictFilter() {
         const value = districtSelect.value;
         console.log('Селект district changed, value =', value);
 
-        if (!value) return;
+        if (!value) {
+            // Выбран пункт "Все районы" — сейчас ничего не делаем
+            return;
+        }
 
         const id = Number(value);
         const polygons = window.districtPolygons;
@@ -33,15 +37,19 @@ function initDistrictFilter() {
 
         const bounds = poly.geometry.getBounds();
         console.log('Выбор района из селекта id=', id, 'bounds=', bounds);
-        if (bounds) {
-            map.setBounds(bounds, {
-                checkZoomRange: true,
-                zoomMargin: 20
+
+        if (bounds && map) {
+            // Тоже используем центр вместо setBounds
+            const centerLat = (bounds[0][0] + bounds[1][0]) / 2;
+            const centerLon = (bounds[0][1] + bounds[1][1]) / 2;
+            map.setCenter([centerLat, centerLon], 12, {
+                checkZoomRange: true
             });
         }
     });
 }
 
+// ОТКЛЮЧАЕМ перезагрузку страницы при отправке формы фильтров
 function initFiltersForm() {
     const filtersForm = document.querySelector('#filters-form');
     if (!filtersForm) return;
@@ -49,5 +57,6 @@ function initFiltersForm() {
     filtersForm.addEventListener('submit', (e) => {
         e.preventDefault();
         console.log('Форма фильтров отправлена без перезагрузки');
+        // Здесь позже можно добавить логику фильтрации отелей/объектов
     });
 }
