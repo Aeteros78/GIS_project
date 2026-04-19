@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFiltersForm();
 });
 
-// Обработка выбора района в селекте
+// При смене селекта — только логируем (зум по кнопке "Применить")
 function initDistrictFilter() {
     const districtSelect = document.getElementById('district');
     if (!districtSelect) {
@@ -14,42 +14,10 @@ function initDistrictFilter() {
     districtSelect.addEventListener('change', () => {
         const value = districtSelect.value;
         console.log('Селект district changed, value =', value);
-
-        if (!value) {
-            // Выбран пункт "Все районы" — сейчас ничего не делаем
-            return;
-        }
-
-        const id = Number(value);
-        const polygons = window.districtPolygons;
-        const map = window.map;
-
-        if (!polygons || !map) {
-            console.warn('Нет карты или полигонов районов');
-            return;
-        }
-
-        const poly = polygons[id];
-        if (!poly) {
-            console.warn('Район с id', id, 'не найден в districtPolygons');
-            return;
-        }
-
-        const bounds = poly.geometry.getBounds();
-        console.log('Выбор района из селекта id=', id, 'bounds=', bounds);
-
-        if (bounds && map) {
-            // Тоже используем центр вместо setBounds
-            const centerLat = (bounds[0][0] + bounds[1][0]) / 2;
-            const centerLon = (bounds[0][1] + bounds[1][1]) / 2;
-            map.setCenter([centerLat, centerLon], 12, {
-                checkZoomRange: true
-            });
-        }
     });
 }
 
-// ОТКЛЮЧАЕМ перезагрузку страницы при отправке формы фильтров
+// При "Применить" — зум к району и метки отелей
 function initFiltersForm() {
     const filtersForm = document.querySelector('#filters-form');
     if (!filtersForm) return;
@@ -57,6 +25,45 @@ function initFiltersForm() {
     filtersForm.addEventListener('submit', (e) => {
         e.preventDefault();
         console.log('Форма фильтров отправлена без перезагрузки');
-        // Здесь позже можно добавить логику фильтрации отелей/объектов
+
+        const map = window.map;
+        const polygons = window.districtPolygons;
+        if (!map || !polygons) {
+            console.warn('Карта или районы ещё не инициализированы');
+            return;
+        }
+
+        const districtSelect = document.getElementById('district');
+        const selectedValue = districtSelect ? districtSelect.value : '';
+
+        // Выбран пункт "Все районы"
+        if (!selectedValue) {
+            // Показать все отели (если хотите)
+            if (typeof showHotelsForDistrict === 'function') {
+                showHotelsForDistrict(null);
+            }
+
+            // Вернуть карту на весь Петербург (все районы)
+            if (window.allDistrictsBounds && window.map) {
+                window.map.setBounds(window.allDistrictsBounds, {
+                    checkZoomRange: true,
+                    zoomMargin: 40
+                });
+            }
+
+            return;
+        }
+
+        const districtId = Number(selectedValue);
+
+        // Приблизить к району
+        if (typeof focusOnDistrict === 'function') {
+            focusOnDistrict(districtId);
+        }
+
+        // Показать отели этого района
+        if (typeof showHotelsForDistrict === 'function') {
+            showHotelsForDistrict(districtId);
+        }
     });
 }

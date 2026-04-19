@@ -1,11 +1,15 @@
-// Ждём, пока загрузится API Яндекс.Карт
 ymaps.ready(init);
 
 let map;
-const districtPolygons = {}; // id района -> геообъект (полигон/мультиполигон)
+const districtPolygons = {}; // id района -> полигон района
+
+let hotels = [];          // все гостиницы
+let hotelPlacemarks = []; // текущие метки на карте
+
+// границы всех районов (для "Все районы")
+let allDistrictsBounds = null;
 
 function init() {
-    // Центр карты — Санкт-Петербург
     const centerSpb = [59.939095, 30.315868];
 
     map = new ymaps.Map('map', {
@@ -14,48 +18,62 @@ function init() {
         controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
     });
 
-    // Отключаем scrollZoom (часто он связан с ошибкой Continuous: ticking while inactive)
     map.behaviors.disable('scrollZoom');
 
-    // Делаем карту и коллекцию районов глобально доступными
+    // Делаем объекты видимыми из других файлов
     window.map = map;
     window.districtPolygons = districtPolygons;
 
-    loadDistrictsLayer();
+    // Сначала загружаем районы, потом отели
+    loadDistrictsLayer().then(() => {
+        loadHotels();
+    });
 }
 
-// Переводим координаты из GeoJSON ([lon, lat]) в формат Яндекс.Карт ([lat, lon])
+/**
+ * Конвертация координат из GeoJSON ([lon, lat]) в формат Яндекс.Карт ([lat, lon])
+ * с учётом того, что у вас один MultiPolygon (Красносельский) со стандартной структурой.
+ */
 function convertCoords(geometryType, coords) {
     if (geometryType === 'Polygon') {
         // Polygon: [ [ [lon, lat], ... ] ]
         return coords.map(ring =>
-            ring.map(point => [point[1], point[0]]) // [lat, lon]
+            ring.map(point => [point[1], point[0]])
         );
     } else if (geometryType === 'MultiPolygon') {
-        // MultiPolygon: [ [ [ [lon, lat], ... ] ] ]
-        return coords.map(polygon =>
-            polygon.map(ring =>
-                ring.map(point => [point[1], point[0]]) // [lat, lon]
-            )
-        );
+        // Ваш Красносельский MultiPolygon:
+        // [
+        //   [ [ [lon, lat], ... ] ],   // маленький полигон
+        //   [ [ [lon, lat], ... ] ]    // основной полигон
+        // ]
+        //
+        // Чтобы не ломать API Яндекс.Карт, берём основной контур (coords[1][0])
+        // и используем его как обычный Polygon.
+        const mainPolygon = coords[1] && coords[1][0] ? coords[1][0] : coords[0][0];
+
+        return [
+            mainPolygon.map(point => [point[1], point[0]])
+        ];
     }
+
     return coords;
 }
 
-// Загрузка и отображение районов из GeoJSON
+/**
+ * Загружаем районы, рисуем их и заполняем селект.
+ * Возвращает Promise, чтобы потом вызвать loadHotels().
+ */
 function loadDistrictsLayer() {
-    fetch('data/districts_spb.geojson')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('HTTP ' + response.status);
-            }
-            return response.json();
+    return fetch('data/districts_spb.geojson')
+        .then(r => {
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
         })
         .then(geojson => {
             const collection = new ymaps.GeoObjectCollection();
             const districtSelect = document.getElementById('district');
 
-            // Заполняем селект, если он есть
+            // Заполняем селект
             if (districtSelect) {
                 districtSelect.innerHTML = '';
                 const allOpt = document.createElement('option');
@@ -65,60 +83,31 @@ function loadDistrictsLayer() {
             }
 
             geojson.features.forEach(feature => {
-                const id = feature.properties.id;       // 1..18
-                const name = feature.properties.name;   // "Адмиралтейский", ...
-                const type = feature.geometry.type;     // 'Polygon' или 'MultiPolygon'
+                const id = feature.properties.id;
+                const name = feature.properties.name;
+                const type = feature.geometry.type;
                 const rawCoords = feature.geometry.coordinates;
 
                 const coords = convertCoords(type, rawCoords);
 
-                let polygon;
+                // ВАЖНО: всегда создаём ymaps.Polygon,
+                // даже если в GeoJSON был MultiPolygon
+                const polygon = new ymaps.Polygon(
+                    coords,
+                    { id, name },
+                    {
+                        fillColor: '#3366ff33',
+                        strokeColor: '#0000ff',
+                        strokeWidth: 2
+                    }
+                );
 
-                if (type === 'Polygon') {
-                    polygon = new ymaps.Polygon(
-                        coords,
-                        { id, name },
-                        {
-                            fillColor: '#3366ff33',
-                            strokeColor: '#0000ff',
-                            strokeWidth: 2
-                        }
-                    );
-                } else if (type === 'MultiPolygon') {
-                    polygon = new ymaps.GeoObject(
-                        {
-                            geometry: {
-                                type: 'MultiPolygon',
-                                coordinates: coords
-                            },
-                            properties: { id, name }
-                        },
-                        {
-                            fillColor: '#3366ff33',
-                            strokeColor: '#0000ff',
-                            strokeWidth: 2
-                        }
-                    );
-                } else {
-                    return;
-                }
-
-                // Сохраняем по id, чтобы потом использовать в фильтрах
                 districtPolygons[id] = polygon;
 
-                // Клик по району — приблизить к его центру
+                // Клик по району — приблизить и показать отели района
                 polygon.events.add('click', () => {
-                    const bounds = polygon.geometry.getBounds();
-                    console.log('Клик по району', id, name, 'bounds=', bounds);
-
-                    if (bounds && map) {
-                        // Вычисляем центр из bounds
-                        const centerLat = (bounds[0][0] + bounds[1][0]) / 2;
-                        const centerLon = (bounds[0][1] + bounds[1][1]) / 2;
-                        map.setCenter([centerLat, centerLon], 12, {
-                            checkZoomRange: true
-                        });
-                    }
+                    focusOnDistrict(id);
+                    showHotelsForDistrict(id);
                 });
 
                 collection.add(polygon);
@@ -135,11 +124,105 @@ function loadDistrictsLayer() {
             map.geoObjects.add(collection);
 
             const bounds = collection.getBounds();
+            console.log('Общие bounds коллекции:', bounds);
             if (bounds) {
+                allDistrictsBounds = bounds; // запоминаем "весь Петербург"
                 map.setBounds(bounds, { checkZoomRange: true, zoomMargin: 40 });
             }
+
+            // Экспортируем bounds наружу (на всякий случай)
+            window.allDistrictsBounds = allDistrictsBounds;
         })
         .catch(err => {
             console.error('Ошибка загрузки districts_spb.geojson:', err);
         });
 }
+
+/**
+ * Приближаем карту к району по его id
+ */
+function focusOnDistrict(id) {
+    const poly = districtPolygons[id];
+    if (!poly || !map) return;
+
+    const bounds = poly.geometry.getBounds();
+    console.log('Фокус на район', id, 'bounds=', bounds);
+
+    if (bounds) {
+        const centerLat = (bounds[0][0] + bounds[1][0]) / 2;
+        const centerLon = (bounds[0][1] + bounds[1][1]) / 2;
+        map.setCenter([centerLat, centerLon], 12, {
+            checkZoomRange: true
+        });
+    }
+}
+
+// --- ГОСТИНИЦЫ ---
+
+function loadHotels() {
+    fetch('data/hotels.json')
+        .then(r => {
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
+        })
+        .then(data => {
+            hotels = data;
+            console.log('Загружено гостиниц:', hotels.length);
+        })
+        .catch(err => {
+            console.error('Ошибка загрузки hotels.json:', err);
+        });
+}
+
+function clearHotelPlacemarks() {
+    if (!map) return;
+    hotelPlacemarks.forEach(pm => map.geoObjects.remove(pm));
+    hotelPlacemarks = [];
+}
+
+/**
+ * Показать метки гостиниц по району.
+ * districtId = null или '' -> показать все гостиницы.
+ */
+function showHotelsForDistrict(districtId) {
+    if (!map || !hotels) {
+        console.log('Нет карты или списка гостиниц', map, hotels);
+        return;
+    }
+
+    clearHotelPlacemarks();
+
+    let filtered;
+    if (!districtId) {
+        filtered = hotels;
+    } else {
+        filtered = hotels.filter(h => h.districtId === Number(districtId));
+    }
+
+    console.log('Фильтруем гостиницы по districtId =', districtId, 'результат:', filtered);
+
+    filtered.forEach(hotel => {
+        const placemark = new ymaps.Placemark(
+            hotel.coords, // [lat, lon]
+            {
+                balloonContentHeader: hotel.name,
+                balloonContentBody: hotel.address || '',
+                hintContent: hotel.name
+            },
+            {
+                preset: 'islands#blueDotIcon'
+            }
+        );
+
+        console.log('Добавляем метку на карту:', hotel.name, hotel.coords);
+        map.geoObjects.add(placemark);
+        hotelPlacemarks.push(placemark);
+    });
+
+    console.log('Показано гостиниц:', filtered.length);
+}
+
+// Делаем функции доступными из filters.js
+window.focusOnDistrict = focusOnDistrict;
+window.showHotelsForDistrict = showHotelsForDistrict;
+window.allDistrictsBounds = allDistrictsBounds;
