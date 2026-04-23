@@ -39,11 +39,9 @@ function initFiltersForm() {
 
         // Выбран пункт "Все районы"
         if (!selectedValue) {
-            // Показать все отели
             if (typeof showHotelsForDistrict === 'function') {
                 showHotelsForDistrict(null);
             }
-            // Вернуть карту на весь Петербург (все районы)
             if (window.allDistrictsBounds && window.map) {
                 window.map.setBounds(window.allDistrictsBounds, {
                     checkZoomRange: true,
@@ -55,12 +53,10 @@ function initFiltersForm() {
 
         const districtId = Number(selectedValue);
 
-        // Приблизить к району
         if (typeof focusOnDistrict === 'function') {
             focusOnDistrict(districtId);
         }
 
-        // Показать отели этого района
         if (typeof showHotelsForDistrict === 'function') {
             showHotelsForDistrict(districtId);
         }
@@ -80,7 +76,7 @@ function initSubwayStationFilter() {
         console.log('Селект subwayStation changed, value =', stationId);
 
         if (typeof showSubwayStations === 'function') {
-            showSubwayStations(stationId);
+            showSubwayStations(stationId); // покажет только выбранную станцию
         }
     });
 }

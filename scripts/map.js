@@ -9,12 +9,12 @@ let hotelPlacemarks = [];    // текущие метки на карте
 let allDistrictsBounds = null;
 
 // --- МЕТРО ---
-// все станции метро из GeoJSON
-let subwayFeatures = [];
-// текущие метки станций метро на карте
-let subwayPlacemarks = [];
-// базовый пресет для всех станций метро
-const subwayStationPreset = 'islands#metroCircleIcon'; // можно сменить, если нужно
+let subwayFeatures = [];     // все станции метро из GeoJSON
+let subwayPlacemarks = [];   // текущие метки станций метро на карте
+
+// Размер иконки метро (SVG) и смещение, чтобы центр совпадал с точкой
+const subwayIconSize = [24, 24];     // можно поменять, если иконка слишком большая/маленькая
+const subwayIconOffset = [-12, -12]; // половина размера со знаком "-"
 
 function init() {
     const centerSpb = [59.939095, 30.315868];
@@ -32,13 +32,12 @@ function init() {
     // Сначала загружаем районы, потом отели и станции метро
     loadDistrictsLayer().then(() => {
         loadHotels();
-        loadSubwayLayer(); // загружаем станции метро
+        loadSubwayLayer(); // загружаем станции метро (но НЕ показываем их сразу)
     });
 }
 
 /**
  * Конвертация координат из GeoJSON ([lon, lat]) в формат Яндекс.Карт ([lat, lon])
- * с учётом того, что у вас один MultiPolygon (Красносельский) со стандартной структурой.
  */
 function convertCoords(geometryType, coords) {
     if (geometryType === 'Polygon') {
@@ -86,12 +85,10 @@ function loadDistrictsLayer() {
                 const rawCoords = feature.geometry.coordinates;
                 const coords = convertCoords(type, rawCoords);
 
-                // Всегда создаём ymaps.Polygon
                 const polygon = new ymaps.Polygon(
                     coords,
                     { id, name },
                     {
-                        // Полностью прозрачный полигон
                         strokeColor: '#000000',
                         strokeOpacity: 0,
                         strokeWidth: 0,
@@ -102,7 +99,6 @@ function loadDistrictsLayer() {
 
                 districtPolygons[id] = polygon;
 
-                // Клик по району — приблизить и показать отели района
                 polygon.events.add('click', () => {
                     focusOnDistrict(id);
                     showHotelsForDistrict(id);
@@ -110,7 +106,6 @@ function loadDistrictsLayer() {
 
                 collection.add(polygon);
 
-                // Добавляем в селект
                 if (districtSelect) {
                     const opt = document.createElement('option');
                     opt.value = String(id);
@@ -122,13 +117,11 @@ function loadDistrictsLayer() {
             map.geoObjects.add(collection);
 
             const bounds = collection.getBounds();
-            console.log('Общие bounds коллекции:', bounds);
             if (bounds) {
-                allDistrictsBounds = bounds; // запоминаем "весь Петербург"
+                allDistrictsBounds = bounds;
                 map.setBounds(bounds, { checkZoomRange: true, zoomMargin: 40 });
             }
 
-            // Экспортируем bounds наружу (на всякий случай)
             window.allDistrictsBounds = allDistrictsBounds;
         })
         .catch(err => {
@@ -143,7 +136,6 @@ function focusOnDistrict(id) {
     const poly = districtPolygons[id];
     if (!poly || !map) return;
     const bounds = poly.geometry.getBounds();
-    console.log('Фокус на район', id, 'bounds=', bounds);
     if (bounds) {
         const centerLat = (bounds[0][0] + bounds[1][0]) / 2;
         const centerLon = (bounds[0][1] + bounds[1][1]) / 2;
@@ -155,7 +147,10 @@ function focusOnDistrict(id) {
 
 // --- МЕТРО ---
 
-// Загрузка GeoJSON со станциями метро
+/**
+ * Загрузка GeoJSON со станциями метро.
+ * Станции только загружаем и заполняем селект, но не рисуем на карте.
+ */
 function loadSubwayLayer() {
     return fetch('data/subway_spb.geojson')
         .then(r => {
@@ -166,23 +161,25 @@ function loadSubwayLayer() {
             subwayFeatures = geojson.features || [];
             console.log('Загружено станций метро:', subwayFeatures.length);
 
-            // заполняем селект станций метро
             fillSubwaySelectFromData();
 
-            // При первом запуске показываем все станции
-            showSubwayStations();
+            // НЕ вызываем showSubwayStations() здесь, чтобы не показывать все станции сразу
         })
         .catch(err => {
             console.error('Ошибка загрузки subway_spb.geojson:', err);
         });
 }
 
-// Заполнить селект #subwayStation на основе subwayFeatures
+/**
+ * Заполнить селект #subwayStation на основе subwayFeatures
+ */
 function fillSubwaySelectFromData() {
     const select = document.getElementById('subwayStation');
-    if (!select) return;
+    if (!select) {
+        console.warn('Селект #subwayStation не найден в DOM');
+        return;
+    }
 
-    // Сохраняем или создаём первую опцию "Все станции"
     let firstOption = select.querySelector('option[value=""]');
     select.innerHTML = '';
     if (firstOption) {
@@ -201,9 +198,13 @@ function fillSubwaySelectFromData() {
         opt.textContent = props.name;   // имя станции
         select.appendChild(opt);
     });
+
+    console.log('Селект станций метро заполнен');
 }
 
-// Удаляем уже нарисованные метки станций метро
+/**
+ * Удаляем уже нарисованные метки станций метро
+ */
 function clearSubwayPlacemarks() {
     if (!map) return;
     subwayPlacemarks.forEach(pm => map.geoObjects.remove(pm));
@@ -212,32 +213,41 @@ function clearSubwayPlacemarks() {
 
 /**
  * Показать станции метро.
- * stationId = null или '' -> показывать все станции.
- * stationId = число/строка -> только конкретную станцию.
+ * stationId = null или '' -> ничего не показываем (все метки метро убираем).
+ * stationId = число/строка -> показываем только одну станцию с таким id.
  */
 function showSubwayStations(stationId) {
+    console.log('showSubwayStations вызван с stationId =', stationId);
+
     if (!map || !subwayFeatures) {
-        console.log('Нет карты или данных метро', map, subwayFeatures);
+        console.warn('Нет карты или данных метро', map, subwayFeatures);
         return;
     }
 
     clearSubwayPlacemarks();
 
-    let filtered;
     if (!stationId) {
-        filtered = subwayFeatures;
-    } else {
-        const idNum = Number(stationId);
-        filtered = subwayFeatures.filter(f => Number(f.properties.id) === idNum);
+        console.log('stationId пустой — метки метро не отображаем');
+        return;
     }
+
+    const idNum = Number(stationId);
+    const filtered = subwayFeatures.filter(f => Number(f.properties.id) === idNum);
+
+    console.log('Найдено станций с id', idNum, ':', filtered.length);
 
     filtered.forEach(f => {
         const props = f.properties || {};
         const geom = f.geometry || {};
-        if (geom.type !== 'Point' || !Array.isArray(geom.coordinates)) return;
+        if (geom.type !== 'Point' || !Array.isArray(geom.coordinates)) {
+            console.warn('Неверная геометрия у станции', props);
+            return;
+        }
 
         const lon = geom.coordinates[0]; // GeoJSON: [lon, lat]
         const lat = geom.coordinates[1];
+
+        console.log('Рисуем станцию', props.name, 'coords=', [lat, lon]);
 
         const placemark = new ymaps.Placemark(
             [lat, lon], // Яндекс: [lat, lon]
@@ -247,7 +257,10 @@ function showSubwayStations(stationId) {
                 hintContent: props.name
             },
             {
-                preset: subwayStationPreset
+                iconLayout: 'default#image',
+                iconImageHref: 'images/Spb_metro_logo.svg', // путь к SVG
+                iconImageSize: subwayIconSize,
+                iconImageOffset: subwayIconOffset
             }
         );
 
@@ -255,7 +268,7 @@ function showSubwayStations(stationId) {
         subwayPlacemarks.push(placemark);
     });
 
-    console.log('Показано станций метро:', filtered.length);
+    console.log('Показано меток метро:', subwayPlacemarks.length);
 }
 
 // --- ГОСТИНИЦЫ ---
@@ -300,8 +313,6 @@ function showHotelsForDistrict(districtId) {
         filtered = hotels.filter(h => h.districtId === Number(districtId));
     }
 
-    console.log('Фильтруем гостиницы по districtId =', districtId, 'результат:', filtered);
-
     filtered.forEach(hotel => {
         const placemark = new ymaps.Placemark(
             hotel.coords, // [lat, lon]
@@ -314,7 +325,6 @@ function showHotelsForDistrict(districtId) {
                 preset: 'islands#blueDotIcon'
             }
         );
-        console.log('Добавляем метку на карту:', hotel.name, hotel.coords);
         map.geoObjects.add(placemark);
         hotelPlacemarks.push(placemark);
     });
@@ -322,7 +332,7 @@ function showHotelsForDistrict(districtId) {
     console.log('Показано гостиниц:', filtered.length);
 }
 
-// Делаем функции доступными из filters.js
+// Экспортируем функции в глобальную область
 window.focusOnDistrict = focusOnDistrict;
 window.showHotelsForDistrict = showHotelsForDistrict;
 window.allDistrictsBounds = allDistrictsBounds;
