@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     initDistrictFilter();
     initFiltersForm();
+    initSubwayStationFilter();
 });
 
-// При смене селекта — только логируем (зум по кнопке "Применить")
+// При смене селекта района — только логируем (зум по кнопке "Применить")
 function initDistrictFilter() {
     const districtSelect = document.getElementById('district');
     if (!districtSelect) {
@@ -38,11 +39,10 @@ function initFiltersForm() {
 
         // Выбран пункт "Все районы"
         if (!selectedValue) {
-            // Показать все отели (если хотите)
+            // Показать все отели
             if (typeof showHotelsForDistrict === 'function') {
                 showHotelsForDistrict(null);
             }
-
             // Вернуть карту на весь Петербург (все районы)
             if (window.allDistrictsBounds && window.map) {
                 window.map.setBounds(window.allDistrictsBounds, {
@@ -50,7 +50,6 @@ function initFiltersForm() {
                     zoomMargin: 40
                 });
             }
-
             return;
         }
 
@@ -64,6 +63,24 @@ function initFiltersForm() {
         // Показать отели этого района
         if (typeof showHotelsForDistrict === 'function') {
             showHotelsForDistrict(districtId);
+        }
+    });
+}
+
+// Фильтр по станции метро
+function initSubwayStationFilter() {
+    const subwayStationSelect = document.getElementById('subwayStation');
+    if (!subwayStationSelect) {
+        console.warn('Селект #subwayStation не найден');
+        return;
+    }
+
+    subwayStationSelect.addEventListener('change', () => {
+        const stationId = subwayStationSelect.value || null;
+        console.log('Селект subwayStation changed, value =', stationId);
+
+        if (typeof showSubwayStations === 'function') {
+            showSubwayStations(stationId);
         }
     });
 }
