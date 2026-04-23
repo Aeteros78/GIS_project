@@ -96,9 +96,12 @@ function loadDistrictsLayer() {
                     coords,
                     { id, name },
                     {
-                        fillColor: '#3366ff33',
-                        strokeColor: '#0000ff',
-                        strokeWidth: 2
+                        // Полностью прозрачный полигон
+                        strokeColor: '#000000', // любой цвет
+                        strokeOpacity: 0,       // граница невидима
+                        strokeWidth: 0,         // на всякий случай
+                        fillColor: '#000000',   // любой цвет
+                        fillOpacity: 0          // заливка невидима
                     }
                 );
 
