@@ -18,7 +18,7 @@ function initDistrictFilter() {
     });
 }
 
-// При "Применить" — зум к району и метки отелей
+// При "Применить" — фокус на район (setBounds) и метки отелей
 function initFiltersForm() {
     const filtersForm = document.querySelector('#filters-form');
     if (!filtersForm) return;
@@ -54,7 +54,7 @@ function initFiltersForm() {
         const districtId = Number(selectedValue);
 
         if (typeof focusOnDistrict === 'function') {
-            focusOnDistrict(districtId);
+            focusOnDistrict(districtId); // внутри setBounds по району
         }
 
         if (typeof showHotelsForDistrict === 'function') {
@@ -76,7 +76,8 @@ function initSubwayStationFilter() {
         console.log('Селект subwayStation changed, value =', stationId);
 
         if (typeof showSubwayStations === 'function') {
-            showSubwayStations(stationId); // покажет только выбранную станцию
+            // покажет только выбранную станцию и приблизит к ней (setCenter(coords, 14, ...))
+            showSubwayStations(stationId);
         }
     });
 }

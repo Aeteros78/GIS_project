@@ -23,7 +23,8 @@ function init() {
         zoom: 10,
         controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
     });
-    map.behaviors.disable('scrollZoom');
+
+    // scrollZoom НЕ отключаем — колесо зумит карту
 
     // Делаем объекты видимыми из других файлов
     window.map = map;
@@ -99,6 +100,7 @@ function loadDistrictsLayer() {
 
                 districtPolygons[id] = polygon;
 
+                // Клик по району — фокус и отели
                 polygon.events.add('click', () => {
                     focusOnDistrict(id);
                     showHotelsForDistrict(id);
@@ -130,17 +132,18 @@ function loadDistrictsLayer() {
 }
 
 /**
- * Приближаем карту к району по его id
+ * Приближаем карту к району по его id.
+ * Используем setBounds, чтобы Яндекс сам подобрал зум под размер района.
  */
 function focusOnDistrict(id) {
     const poly = districtPolygons[id];
     if (!poly || !map) return;
+
     const bounds = poly.geometry.getBounds();
     if (bounds) {
-        const centerLat = (bounds[0][0] + bounds[1][0]) / 2;
-        const centerLon = (bounds[0][1] + bounds[1][1]) / 2;
-        map.setCenter([centerLat, centerLon], 12, {
-            checkZoomRange: true
+        map.setBounds(bounds, {
+            checkZoomRange: true,
+            zoomMargin: 40 // отступы в пикселях от краёв карты
         });
     }
 }
@@ -188,6 +191,7 @@ function fillSubwaySelectFromData() {
         firstOption = document.createElement('option');
         firstOption.value = '';
         firstOption.textContent = 'Все станции';
+        firstOption.selected = true;
         select.appendChild(firstOption);
     }
 
@@ -214,7 +218,8 @@ function clearSubwayPlacemarks() {
 /**
  * Показать станции метро.
  * stationId = null или '' -> ничего не показываем (все метки метро убираем).
- * stationId = число/строка -> показываем только одну станцию с таким id.
+ * stationId = число/строка -> показываем только одну станцию с таким id
+ * и приближаем к ней через setCenter(coords, 14, ...).
  */
 function showSubwayStations(stationId) {
     console.log('showSubwayStations вызван с stationId =', stationId);
@@ -249,8 +254,10 @@ function showSubwayStations(stationId) {
 
         console.log('Рисуем станцию', props.name, 'coords=', [lat, lon]);
 
+        const coords = [lat, lon]; // формат для Яндекс.Карт
+
         const placemark = new ymaps.Placemark(
-            [lat, lon], // Яндекс: [lat, lon]
+            coords,
             {
                 balloonContentHeader: props.name,
                 balloonContentBody: props.line || '',
@@ -266,6 +273,11 @@ function showSubwayStations(stationId) {
 
         map.geoObjects.add(placemark);
         subwayPlacemarks.push(placemark);
+
+        // ПРИБЛИЖЕНИЕ К СТАНЦИИ МЕТРО
+        map.setCenter(coords, 14, {  // можно изменить 14 на 13/15 по вкусу
+            checkZoomRange: true
+        });
     });
 
     console.log('Показано меток метро:', subwayPlacemarks.length);
