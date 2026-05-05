@@ -1,0 +1,2685 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.273732,
+                    59.909979
+                ]
+            },
+            "properties": {
+                "id": 1,
+                "lat": 59.909979,
+                "lon": 30.273732,
+                "name": "Хостел Арк ",
+                "stars": 1,
+                "address": "набережная Обводного канала 223к1В",
+                "website": "https://ark-hostel.ru/",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.327907,
+                    59.923164
+                ]
+            },
+            "properties": {
+                "id": 2,
+                "lat": 59.923164,
+                "lon": 30.327907,
+                "name": "Хостел Большой Казачий",
+                "stars": 1,
+                "address": "переулок Большой Казачий 6",
+                "website": "https://bolshoj-kazachij.clients.site/",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.308463,
+                    59.928038
+                ]
+            },
+            "properties": {
+                "id": 3,
+                "lat": 59.928038,
+                "lon": 30.308463,
+                "name": "Мини-отель Simple Республика",
+                "stars": 2,
+                "address": "улица Казанская 52",
+                "website": "https://accent-hotel.ru/hotelrespublica",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.314033,
+                    59.931114
+                ]
+            },
+            "properties": {
+                "id": 4,
+                "lat": 59.931114,
+                "lon": 30.314033,
+                "name": "Отель Арт Авеню",
+                "stars": 2,
+                "address": "переулок Гривцова 6 корпус 2",
+                "website": "https://artavenuehotel.ru/",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.289242,
+                    59.911872
+                ]
+            },
+            "properties": {
+                "id": 5,
+                "lat": 59.911872,
+                "lon": 30.289242,
+                "name": "Апарт-отель АпартПейдж на Курляндской",
+                "stars": 3,
+                "address": "улица Курляндская 6-8",
+                "website": "https://apartpage.ru/booking?uid=824aaa28-b917-424e-923c-2ba48b1cf08e",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.321639,
+                    59.929028
+                ]
+            },
+            "properties": {
+                "id": 6,
+                "lat": 59.929028,
+                "lon": 30.321639,
+                "name": "Капитал отель",
+                "stars": 3,
+                "address": "улица Гороховая 34",
+                "website": "https://capitalhotel.ru/booking/",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.28694,
+                    59.931238
+                ]
+            },
+            "properties": {
+                "id": 7,
+                "lat": 59.931238,
+                "lon": 30.28694,
+                "name": "Бутик-отель Academia",
+                "stars": 4,
+                "address": "улица Галерная 61",
+                "website": "https://academia.spb.ru/?ysclid=mnnmkuzv16849037630",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.308069,
+                    59.928902
+                ]
+            },
+            "properties": {
+                "id": 8,
+                "lat": 59.928902,
+                "lon": 30.308069,
+                "name": "Гостиница 1913 Год",
+                "stars": 4,
+                "address": "проспект Вознесенский 13 парадная 7",
+                "website": "http://hotel-1913.ru/booking",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.310344,
+                    59.931386
+                ]
+            },
+            "properties": {
+                "id": 9,
+                "lat": 59.931386,
+                "lon": 30.310344,
+                "name": "Отель Лотте",
+                "stars": 5,
+                "address": "переулок Антоненко 2",
+                "website": "https://lottehotelstpetersburg.ru/booking/?room-type=175313",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.308647,
+                    59.93301
+                ]
+            },
+            "properties": {
+                "id": 10,
+                "lat": 59.93301,
+                "lon": 30.308647,
+                "name": "Отель Астория",
+                "stars": 5,
+                "address": "улица Большая Морская 39",
+                "website": "https://www.roccofortehotels.ru/booking/?date=2026-04-28&nights=1&adults=2&children-age=",
+                "district_id": "Адмиралтейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.280125,
+                    59.945097
+                ]
+            },
+            "properties": {
+                "id": 11,
+                "lat": 59.945097,
+                "lon": 30.280125,
+                "name": "MAYAK студенческий",
+                "stars": 1,
+                "address": "4-я линия Васильевского острова 35-37 этаж 2",
+                "website": "https://mayak-4-line.clients.site/",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.242517,
+                    59.957515
+                ]
+            },
+            "properties": {
+                "id": 12,
+                "lat": 59.957515,
+                "lon": 30.242517,
+                "name": "Апарт-отель SV Loft Apartments",
+                "stars": 1,
+                "address": "набережная Макарова 60",
+                "website": "https://sv-loft.ru/",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.286774,
+                    59.944581
+                ]
+            },
+            "properties": {
+                "id": 13,
+                "lat": 59.944581,
+                "lon": 30.286774,
+                "name": "Апартаменты Антресоль",
+                "stars": 2,
+                "address": "1-я линия Васильевского острова 40",
+                "website": "https://antresol-apartments.ru/booking_com_hotel_ru_apartments-antresol_ru_html",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.245019,
+                    59.931566
+                ]
+            },
+            "properties": {
+                "id": 14,
+                "lat": 59.931566,
+                "lon": 30.245019,
+                "name": "Мини-отель Шевченко",
+                "stars": 2,
+                "address": "улица Шевченко 16",
+                "website": "https://miniotelspb.com/?ysclid=mn9dts3sj8418301819",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.279549,
+                    59.947853
+                ]
+            },
+            "properties": {
+                "id": 15,
+                "lat": 59.947853,
+                "lon": 30.279549,
+                "name": "Апарт-отель АпартПейдж 3 Линия ВО",
+                "stars": 3,
+                "address": "3-я линия Васильевского острова 58",
+                "website": "https://apartpage.ru/booking?uid=2c5c046d-a129-45ae-be82-08a4dd357ae4",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.267491,
+                    59.938943
+                ]
+            },
+            "properties": {
+                "id": 16,
+                "lat": 59.938943,
+                "lon": 30.267491,
+                "name": "Апарт-отель АпартПейдж 16 Линия ВО",
+                "stars": 3,
+                "address": "16-я линия Васильевского острова 35",
+                "website": "https://apartpage.ru/booking?uid=b9f833f5-30f4-4bd1-8544-041de913b327",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.284851,
+                    59.943328
+                ]
+            },
+            "properties": {
+                "id": 17,
+                "lat": 59.943328,
+                "lon": 30.284851,
+                "name": "Отель Шелфод",
+                "stars": 4,
+                "address": "3-я линия Васильевского острова 24 этаж 1 и 2",
+                "website": "https://shelfort.ru/",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.264602,
+                    59.939595
+                ]
+            },
+            "properties": {
+                "id": 18,
+                "lat": 59.939595,
+                "lon": 30.264602,
+                "name": "Гостиница Oversize Piter",
+                "stars": 4,
+                "address": "Средний проспект Васильевского острова 69Б",
+                "website": "https://www.oversizepiter.ru/booking",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.293545,
+                    59.944603
+                ]
+            },
+            "properties": {
+                "id": 19,
+                "lat": 59.944603,
+                "lon": 30.293545,
+                "name": "Отель Palace Bridge",
+                "stars": 5,
+                "address": "переулок Биржевой 4",
+                "website": "https://palacebridge.ru/?tl-booking-open=true",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.282131,
+                    59.93744
+                ]
+            },
+            "properties": {
+                "id": 20,
+                "lat": 59.93744,
+                "lon": 30.282131,
+                "name": "Отель Васильевский",
+                "stars": 5,
+                "address": "8-я линия Васильевского острова 11-13",
+                "website": "https://vasilievsky.ru/?tl-booking-open=true",
+                "district_id": "Василеостровский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.310558,
+                    60.058745
+                ]
+            },
+            "properties": {
+                "id": 21,
+                "lat": 60.058745,
+                "lon": 30.310558,
+                "name": "Алекс Отель на Просвещения",
+                "stars": 1,
+                "address": "проспект Просвещения 14 корпус 1",
+                "website": "https://motelspb.com/hotels/prosveshcheniya/?utm_campaign=btn_website&utm_content=prosveshcheniya_14k1&utm_medium=geo&utm_source=yandex_maps&yclid=14908537790612897791",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.338252,
+                    59.967399
+                ]
+            },
+            "properties": {
+                "id": 22,
+                "lat": 59.967399,
+                "lon": 30.338252,
+                "name": "Кино Хостел на Выборгской",
+                "stars": 1,
+                "address": "набережная Выборгская 27",
+                "website": "https://kinohostel.ru/vyborgskaya",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.356795,
+                    59.993311
+                ]
+            },
+            "properties": {
+                "id": 23,
+                "lat": 59.993311,
+                "lon": 30.356795,
+                "name": "Гостиница Тропики",
+                "stars": 2,
+                "address": "улица Хошимина 16А",
+                "website": "https://kvartira24spb.ru/",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.357647,
+                    60.036931
+                ]
+            },
+            "properties": {
+                "id": 24,
+                "lat": 60.036931,
+                "lon": 30.357647,
+                "name": "Гостиница Лель",
+                "stars": 2,
+                "address": "проспект Луначарского 41",
+                "website": "https://www.hotel-lel.ru/rooms/",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.275467,
+                    60.020399
+                ]
+            },
+            "properties": {
+                "id": 25,
+                "lat": 60.020399,
+                "lon": 30.275467,
+                "name": "Гостиница Валерия",
+                "stars": 3,
+                "address": "улица 2-я Никитинская 63",
+                "website": "https://k-vizit.com/oteli/mini-otel-valeriya",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.354671,
+                    60.005363
+                ]
+            },
+            "properties": {
+                "id": 26,
+                "lat": 60.005363,
+                "lon": 30.354671,
+                "name": "Гостиница Спутник",
+                "stars": 3,
+                "address": "проспект Тореза 36",
+                "website": "https://sputnik-hotel.ru/",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.34161,
+                    59.956705
+                ]
+            },
+            "properties": {
+                "id": 27,
+                "lat": 59.956705,
+                "lon": 30.34161,
+                "name": "Отель Санкт Петербург",
+                "stars": 4,
+                "address": "набережная Пироговская 5/2",
+                "website": "https://hotel-spb.ru/?yclid=4367354984798093311&utm_content=17657963697&utm_source=geoadv_maps",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.305992,
+                    59.961878
+                ]
+            },
+            "properties": {
+                "id": 28,
+                "lat": 59.961878,
+                "lon": 30.305992,
+                "name": "Апартаменты Solo",
+                "stars": 4,
+                "address": "проспект Большой Петроградской стороны 51/9 этаж 2",
+                "website": "https://solo-central.ru/solo-na-bolshom-prospekte?utm_medium=maps&utm_source=ya.business",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.356261,
+                    59.993131
+                ]
+            },
+            "properties": {
+                "id": 29,
+                "lat": 59.993131,
+                "lon": 30.356261,
+                "name": "Апарт-отель СалютАпарт 6",
+                "stars": 5,
+                "address": "улица Политехническая 6",
+                "website": "https://hsalutapart.ru/",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.343811,
+                    59.957643
+                ]
+            },
+            "properties": {
+                "id": 30,
+                "lat": 59.957643,
+                "lon": 30.343811,
+                "name": "Апартаменты Sutki Rent у Невы",
+                "stars": 5,
+                "address": "проспект Большой Сампсониевский 4-6",
+                "website": "https://sutki.rent/",
+                "district_id": "Выборгский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.374041,
+                    59.997836
+                ]
+            },
+            "properties": {
+                "id": 31,
+                "lat": 59.997836,
+                "lon": 30.374041,
+                "name": "Алекс Отель на Мужества",
+                "stars": 1,
+                "address": "проспект Непокорённых 8",
+                "website": "https://motelspb.com/hotels/muzhestva/?utm_campaign=btn_website&utm_content=nepokorennykh_8&utm_medium=geo&utm_source=yandex_maps&yclid=6507605508716494847",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.4274,
+                    60.025322
+                ]
+            },
+            "properties": {
+                "id": 32,
+                "lat": 60.025322,
+                "lon": 30.4274,
+                "name": "Отель Лимон",
+                "stars": 1,
+                "address": "улица Лужская 10 корпус 1В",
+                "website": "https://lemonhotel.ru/",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.366201,
+                    59.981708
+                ]
+            },
+            "properties": {
+                "id": 33,
+                "lat": 59.981708,
+                "lon": 30.366201,
+                "name": "Апарт I Rent",
+                "stars": 2,
+                "address": "проспект Полюстровский 75",
+                "website": "https://irentapart.ru/polyustrovsky75#/",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.397948,
+                    59.972592
+                ]
+            },
+            "properties": {
+                "id": 34,
+                "lat": 59.972592,
+                "lon": 30.397948,
+                "name": "Гостиница Ирис",
+                "stars": 2,
+                "address": "улица Замшина 20",
+                "website": "https://www.irismotel.ru/",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.381212,
+                    60.035069
+                ]
+            },
+            "properties": {
+                "id": 35,
+                "lat": 60.035069,
+                "lon": 30.381212,
+                "name": "Отель Белое Дерево",
+                "stars": 3,
+                "address": "улица Демьяна Бедного 3",
+                "website": "https://beloe-derevo.com/",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.338997,
+                    59.970178
+                ]
+            },
+            "properties": {
+                "id": 36,
+                "lat": 59.970178,
+                "lon": 30.338997,
+                "name": "Отель Балтия",
+                "stars": 3,
+                "address": "улица Смолячкова 5к1",
+                "website": "https://baltiahotel.ru/?etext&yclid=18431906128912449535",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.380404,
+                    60.015867
+                ]
+            },
+            "properties": {
+                "id": 37,
+                "lat": 60.015867,
+                "lon": 30.380404,
+                "name": "Гостиница Академия",
+                "stars": 4,
+                "address": "просп. Науки, 15, корп. 1",
+                "website": "https://academia-hotel.ru/booking.html?date=2026-04-28&nights=1&adults=1&children-age=",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.354798,
+                    59.961492
+                ]
+            },
+            "properties": {
+                "id": 38,
+                "lat": 59.961492,
+                "lon": 30.354798,
+                "name": "Гостиница Империя парк",
+                "stars": 4,
+                "address": "улица Академика Лебедева 10Г",
+                "website": "https://empirepark.ru/ru-ru/booking/?date=2026-04-28&nights=1&adults=2&children=&children-age=&access-code=",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.357328,
+                    59.993569
+                ]
+            },
+            "properties": {
+                "id": 39,
+                "lat": 59.993569,
+                "lon": 30.357328,
+                "name": "Апарт-отель Лайк Апарт",
+                "stars": 5,
+                "address": "улица Политехническая 6",
+                "website": "https://like-apart.ru/booking",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.412303,
+                    60.032763
+                ]
+            },
+            "properties": {
+                "id": 40,
+                "lat": 60.032763,
+                "lon": 30.412303,
+                "name": "Гостиница Вернисаж",
+                "stars": 5,
+                "address": "улица Ушинского 15 корпус 3этаж 1",
+                "website": "http://vernisage-hotel.ru/",
+                "district_id": "Калининский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.280126,
+                    59.895103
+                ]
+            },
+            "properties": {
+                "id": 41,
+                "lat": 59.895103,
+                "lon": 30.280126,
+                "name": "Алекс Отель на Швецова",
+                "stars": 1,
+                "address": "улица Швецова 11",
+                "website": "https://motelspb.com/hotels/narvskoj/?utm_campaign=btn_website&utm_content=shvetsova_11&utm_medium=geo&utm_source=yandex_maps&yclid=5608826569414410239",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.211724,
+                    59.843788
+                ]
+            },
+            "properties": {
+                "id": 42,
+                "lat": 59.843788,
+                "lon": 30.211724,
+                "name": "Алекс Отель на Жукова",
+                "stars": 1,
+                "address": "проспект Маршала Жукова 48 корпус 1",
+                "website": "https://bron.motelspb.com/?hotelid=14",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.280655,
+                    59.90132
+                ]
+            },
+            "properties": {
+                "id": 43,
+                "lat": 59.90132,
+                "lon": 30.280655,
+                "name": "Гостиница Екатерингоф",
+                "stars": 2,
+                "address": "улица Ивана Черных 10",
+                "website": "http://ekaterinhof.ru/",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.20482,
+                    59.854159
+                ]
+            },
+            "properties": {
+                "id": 44,
+                "lat": 59.854159,
+                "lon": 30.20482,
+                "name": "Гостиница Энергетик",
+                "stars": 2,
+                "address": "проспект Ленинский 89",
+                "website": "https://otelenergetik.ru/",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.143606,
+                    59.844
+                ]
+            },
+            "properties": {
+                "id": 45,
+                "lat": 59.844,
+                "lon": 30.143606,
+                "name": "Гостиница Комсомольская",
+                "stars": 3,
+                "address": "улица 2-я Комсомольская  3",
+                "website": "https://живи-здесь.рф/",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.259408,
+                    59.911046
+                ]
+            },
+            "properties": {
+                "id": 46,
+                "lat": 59.911046,
+                "lon": 30.259408,
+                "name": "Гостиница Балтийская",
+                "stars": 3,
+                "address": "улица Гапсальская 12",
+                "website": "https://baltichotelspb.ru/?ysclid=mnnn4f4918622148347",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.270348,
+                    59.887869
+                ]
+            },
+            "properties": {
+                "id": 47,
+                "lat": 59.887869,
+                "lon": 30.270348,
+                "name": "Апарт-отель Веда",
+                "stars": 4,
+                "address": "проспект Стачек 38",
+                "website": "https://veda-aparts.ru/",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.24946,
+                    59.851238
+                ]
+            },
+            "properties": {
+                "id": 48,
+                "lat": 59.851238,
+                "lon": 30.24946,
+                "name": "Гостиница Инпредсервис",
+                "stars": 4,
+                "address": "проспект Ленинский 115Б",
+                "website": "https://direct-hotels.ru/",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.253923,
+                    59.870065
+                ]
+            },
+            "properties": {
+                "id": 49,
+                "lat": 59.870065,
+                "lon": 30.253923,
+                "name": "Гостиница Салют Апарт 5",
+                "stars": 5,
+                "address": "дорога на Турухтанные Острова 5 корпус 1",
+                "website": "https://hsalutapart.ru/salut5-avtovo",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.258466,
+                    59.85515
+                ]
+            },
+            "properties": {
+                "id": 50,
+                "lat": 59.85515,
+                "lon": 30.258466,
+                "name": "Апартаменты Rental SPb",
+                "stars": 5,
+                "address": "улица Зины Портновой дом 12",
+                "website": "https://101hotels.com/main/cities/sankt-peterburg/apartamenti_rentalspb_3kkv_na_zini_portnovoy_12.html",
+                "district_id": "Кировский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.513671,
+                    59.814882
+                ]
+            },
+            "properties": {
+                "id": 51,
+                "lat": 59.814882,
+                "lon": 30.513671,
+                "name": "Хостел Сова",
+                "stars": 1,
+                "address": "дорога на Петро-Славянку 2И",
+                "website": "https://sova-hostels.ru/p/price/",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.444704,
+                    59.79159
+                ]
+            },
+            "properties": {
+                "id": 52,
+                "lat": 59.79159,
+                "lon": 30.444704,
+                "name": "Альфа Хостел",
+                "stars": 1,
+                "address": "шоссе Московское 117 строение 1",
+                "website": "https://alfahostel.su/",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.617387,
+                    59.742743
+                ]
+            },
+            "properties": {
+                "id": 53,
+                "lat": 59.742743,
+                "lon": 30.617387,
+                "name": "Отель Пирамида",
+                "stars": 2,
+                "address": "улица Октябрьская 4А",
+                "website": "https://reservationsteps.ru/rooms/index/920ad02e-2bc4-426b-b8e0-960d0c2a56c7?lang=ru&scroll_to_rooms=1&is_auto_search=1&colorSchemePreview=0&onlyrooms=&name=&surname=&email=&phone=&orderid=&servicemode=0&firstroom=0&vkapp=&insidePopup=0&exval=dev5765_A%7Cdev4129_A%7Cdev2954_A%7Cdev10318_A%7Cdev9904_B%7Cproject12_B%7Cdev768_B%7Cdev13185_B&dfrom=03-05-2026&dto=04-05-2026&adults=1",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.593974,
+                    59.752022
+                ]
+            },
+            "properties": {
+                "id": 54,
+                "lat": 59.752022,
+                "lon": 30.593974,
+                "name": "Отель Русь",
+                "stars": 2,
+                "address": "улица Финляндская 3",
+                "website": "https://russ-hotel.com/rooms/",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.57512,
+                    59.752741
+                ]
+            },
+            "properties": {
+                "id": 55,
+                "lat": 59.752741,
+                "lon": 30.57512,
+                "name": "Отель День и Ночь",
+                "stars": 3,
+                "address": "улица Финляндская 16к1",
+                "website": "https://www.hotelkolpino.ru/",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.611996,
+                    59.748458
+                ]
+            },
+            "properties": {
+                "id": 56,
+                "lat": 59.748458,
+                "lon": 30.611996,
+                "name": "Гостиница Уютная",
+                "stars": 3,
+                "address": "улица Труда 17А",
+                "website": "https://uyutnaya.com/",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.569058,
+                    59.748763
+                ]
+            },
+            "properties": {
+                "id": 57,
+                "lat": 59.748763,
+                "lon": 30.569058,
+                "name": "Апарт-отель Sweet Home Studio",
+                "stars": 4,
+                "address": "проспект Ленина 60",
+                "website": "https://shome.spb.ru/",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.59021,
+                    59.742912
+                ]
+            },
+            "properties": {
+                "id": 58,
+                "lat": 59.742912,
+                "lon": 30.59021,
+                "name": "Гостиница Ингрия",
+                "stars": 4,
+                "address": "улица Вавилова 20",
+                "website": "https://ingriahotel.ru/booking.html?date=2026-05-03&nights=1&adults=2&children=&children-age=",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.618129,
+                    59.732076
+                ]
+            },
+            "properties": {
+                "id": 59,
+                "lat": 59.732076,
+                "lon": 30.618129,
+                "name": "Отель Онегин",
+                "stars": 5,
+                "address": "улица Онежская 1",
+                "website": "https://onegin.org/booking-online/",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.56153,
+                    59.744714
+                ]
+            },
+            "properties": {
+                "id": 60,
+                "lat": 59.744714,
+                "lon": 30.56153,
+                "name": "Апарт-отель Май рум",
+                "stars": 5,
+                "address": "улица Танкистов 28А",
+                "website": "https://sutki-kolpino.ru/services/index.html",
+                "district_id": "Колпинский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.389623,
+                    59.84405
+                ]
+            },
+            "properties": {
+                "id": 61,
+                "lat": 59.84405,
+                "lon": 30.389623,
+                "name": "Алекс Отель на Каштановой",
+                "stars": 1,
+                "address": "аллея Малая Каштановая 4",
+                "website": "https://motelspb.com/hotels/budapeshtskoj/?utm_campaign=btn_website&utm_content=malaya_kashtanovaya_4&utm_medium=geo&utm_source=yandex_maps&yclid=15574112894759731199",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.412815,
+                    59.957138
+                ]
+            },
+            "properties": {
+                "id": 62,
+                "lat": 59.957138,
+                "lon": 30.412815,
+                "name": "Гостевой дом PRIORITY",
+                "stars": 1,
+                "address": "улица Синявинская 3 корпус 2",
+                "website": "https://myhostels.ru/",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.486957,
+                    59.963256
+                ]
+            },
+            "properties": {
+                "id": 63,
+                "lat": 59.963256,
+                "lon": 30.486957,
+                "name": "Отель Солнечная Долина",
+                "stars": 2,
+                "address": "улица Коммуны 64",
+                "website": "https://www.dolina-hotel.ru/",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.41336,
+                    59.955526
+                ]
+            },
+            "properties": {
+                "id": 64,
+                "lat": 59.955526,
+                "lon": 30.41336,
+                "name": "Хотсел Пятый угол",
+                "stars": 2,
+                "address": "улица Краснодонская 7",
+                "website": "https://pjatyj-ugol-krasnodonskaja-ulitsa.clients.site/",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.433853,
+                    59.939041
+                ]
+            },
+            "properties": {
+                "id": 65,
+                "lat": 59.939041,
+                "lon": 30.433853,
+                "name": "Апарт-отель АпартПейдж на Ладожской",
+                "stars": 3,
+                "address": "проспект Энергетиков 8к2",
+                "website": "https://apartpage.ru/booking?uid=d24abbb8-ef6e-4493-868b-4e52b277603f",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.420042,
+                    59.928824
+                ]
+            },
+            "properties": {
+                "id": 66,
+                "lat": 59.928824,
+                "lon": 30.420042,
+                "name": "Отель Ладога",
+                "stars": 3,
+                "address": "проспект Шаумяна 26 1 5 этаж",
+                "website": "https://www.ladogahotel.ru/?utm_campaign=geo&utm_medium=cpc&utm_source=pinbox#отель_центр",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.41198,
+                    59.957935
+                ]
+            },
+            "properties": {
+                "id": 67,
+                "lat": 59.957935,
+                "lon": 30.41198,
+                "name": "Гостиница Лайт",
+                "stars": 4,
+                "address": "проспект Большеохтинский 39",
+                "website": "https://lite-hotel.ru/#hotelsList",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.415726,
+                    59.955265
+                ]
+            },
+            "properties": {
+                "id": 68,
+                "lat": 59.955265,
+                "lon": 30.415726,
+                "name": "Гостиница Мой Питер Среднеохтинская ",
+                "stars": 4,
+                "address": "проспект Среднеохтинский 33/15",
+                "website": "https://reservationsteps.ru/rooms/index/f508b02c-89dc-41e7-9539-27366c9f3a50?lang=ru&scroll_to_rooms=1&is_auto_search=1&colorSchemePreview=0&onlyrooms=&name=&surname=&email=&phone=&orderid=&servicemode=0&firstroom=0&vkapp=&insidePopup=0&exval=dev5765_B%7Cdev4129_A%7Cdev10318_A%7Cdev1185_B%7Cproject12_A%7Cdev9904_B%7Cdev13185_B%7Cdev13555_A%7Cdev768_B&dfrom=04-05-2026&dto=05-05-2026&adults=1&promoCode=",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.456194,
+                    59.961729
+                ]
+            },
+            "properties": {
+                "id": 69,
+                "lat": 59.961729,
+                "lon": 30.456194,
+                "name": "Отель Менк кингс",
+                "stars": 5,
+                "address": "шоссе Революции 86 корпус 2",
+                "website": "https://menkgroup.ru/booking/?date=2026-05-03&nights=1&adults=2&children-age=",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.408473,
+                    59.948905
+                ]
+            },
+            "properties": {
+                "id": 70,
+                "lat": 59.948905,
+                "lon": 30.408473,
+                "name": "Гостиница «Охтинская»",
+                "stars": 5,
+                "address": "проспект Большеохтинский 4",
+                "website": "https://okhtinskaya.ru/rooms/",
+                "district_id": "Красногвардейский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.178236,
+                    59.826855
+                ]
+            },
+            "properties": {
+                "id": 71,
+                "lat": 59.826855,
+                "lon": 30.178236,
+                "name": "Хостел Дача",
+                "stars": 1,
+                "address": "улица Партизана Германа 30 корпус 2",
+                "website": "https://хостел-дача.рф/",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.242889,
+                    59.877962
+                ]
+            },
+            "properties": {
+                "id": 72,
+                "lat": 59.877962,
+                "lon": 30.242889,
+                "name": "Хотсел Нива СВ",
+                "stars": 1,
+                "address": "улица Корабельная 6 корпус 4",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/niva/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=a8e7be4a2e58d6545bd5818b763e12f-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.087322,
+                    59.724905
+                ]
+            },
+            "properties": {
+                "id": 73,
+                "lat": 59.724905,
+                "lon": 30.087322,
+                "name": "Хотсел Стафф",
+                "stars": 2,
+                "address": "улица Восстановления 15 корпус 3",
+                "website": "https://staffhostel.online/",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.211724,
+                    59.843788
+                ]
+            },
+            "properties": {
+                "id": 74,
+                "lat": 59.843788,
+                "lon": 30.211724,
+                "name": "Отель Алекс на Жукова",
+                "stars": 2,
+                "address": "проспект Маршала Жукова 48 корпус 1",
+                "website": "https://motelspb.com/hotels/zhukova/?utm_campaign=btn_website&utm_content=marshala_zhukova_48k1&utm_medium=geo&utm_source=yandex_maps&yclid=9343730887566032895",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.2616,
+                    59.834543
+                ]
+            },
+            "properties": {
+                "id": 75,
+                "lat": 59.834543,
+                "lon": 30.2616,
+                "name": "Отель Ринго",
+                "stars": 3,
+                "address": "проспект Народного Ополчения 137к1",
+                "website": "https://www.motelspb.ru/",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.187201,
+                    59.850028
+                ]
+            },
+            "properties": {
+                "id": 76,
+                "lat": 59.850028,
+                "lon": 30.187201,
+                "name": "Гостиница Юго-западная",
+                "stars": 3,
+                "address": "улица Рихарда Зорге 11",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/iugo-zapadnaia/?adults=2&checkinDate=2026-04-28&checkoutDate=2026-04-29&childrenAges=&roomCount=1&seed=portal-hotels-search",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.139079,
+                    59.832428
+                ]
+            },
+            "properties": {
+                "id": 77,
+                "lat": 59.832428,
+                "lon": 30.139079,
+                "name": "Гостиница Сосновая поляна",
+                "stars": 4,
+                "address": "улица Лётчика Пилютова 31",
+                "website": "http://mtcgostinica.com/index.php?id=2",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.143606,
+                    59.844
+                ]
+            },
+            "properties": {
+                "id": 78,
+                "lat": 59.844,
+                "lon": 30.143606,
+                "name": "Гостиница Комсомольская ",
+                "stars": 4,
+                "address": "улица 2-я Комсомольская 3",
+                "website": "https://живи-здесь.рф/",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.164824,
+                    59.868861
+                ]
+            },
+            "properties": {
+                "id": 79,
+                "lat": 59.868861,
+                "lon": 30.164824,
+                "name": "Апарт Жемчужина Акватории ",
+                "stars": 5,
+                "address": "улица Маршала Казакова 78 корпус 1",
+                "website": "https://aquatory-apartments-spb.ru/#/search",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.096004,
+                    59.729769
+                ]
+            },
+            "properties": {
+                "id": 80,
+                "lat": 59.729769,
+                "lon": 30.096004,
+                "name": "Гостиница Уют",
+                "stars": 5,
+                "address": "улица Первого Мая 17",
+                "website": "https://ujuthotel-krselo.ru/reservation?date=2026-05-04&nights=1&adults=2&children-age=",
+                "district_id": "Красносельский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.797061,
+                    59.985248
+                ]
+            },
+            "properties": {
+                "id": 81,
+                "lat": 59.985248,
+                "lon": 29.797061,
+                "name": "Уютная квартира в Кронштадте",
+                "stars": 1,
+                "address": "аллея Тулонская 10",
+                "website": "https://travel.yandex.ru/hotels/kronstadt/studiia-briz-na-pristani-s-lodzhiei-i-vidom-na-zaliv/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=6982da6a1f285f978990904d110acda2-3-newsearch&seed=portal-hotels-search",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.724714,
+                    60.009175
+                ]
+            },
+            "properties": {
+                "id": 82,
+                "lat": 60.009175,
+                "lon": 29.724714,
+                "name": "Апартаменты Двухкомнатные",
+                "stars": 1,
+                "address": "улица Станюковича 1/9",
+                "website": "https://travel.yandex.ru/hotels/kronstadt/apartamenty-dvukhkomnatnye-ulitsa-staniukovicha/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=2918dde02a84d8d44d4ba0cc5bdd2bf1-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.720025,
+                    60.011509
+                ]
+            },
+            "properties": {
+                "id": 83,
+                "lat": 60.011509,
+                "lon": 29.720025,
+                "name": "Апартаменты Суточный рай",
+                "stars": 2,
+                "address": "улица Гидростроителей 6",
+                "website": "https://homereserve.ru/NYKHHKm3AI?apartments=255755,256534,178928,255412,160710,72974,138539,337477,344351,303395,228170,224178,143861&tag=Мой%20сайт",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.775607,
+                    59.988569
+                ]
+            },
+            "properties": {
+                "id": 84,
+                "lat": 59.988569,
+                "lon": 29.775607,
+                "name": "Отель Кронштад ру",
+                "stars": 2,
+                "address": "улица Красная 8 корпус 3",
+                "website": "https://otel-kronshtadt.ru/zabronirovat-nomer/",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.78462,
+                    59.986481
+                ]
+            },
+            "properties": {
+                "id": 85,
+                "lat": 59.986481,
+                "lon": 29.78462,
+                "name": "Апарт-отель 33 апартамента",
+                "stars": 3,
+                "address": "улица Петровская 5",
+                "website": "https://booking-33h.agast.ru/booking/rooms",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.763413,
+                    60.00083
+                ]
+            },
+            "properties": {
+                "id": 86,
+                "lat": 60.00083,
+                "lon": 29.763413,
+                "name": "Апартаменты Дизайнерская квартира с видом на закат",
+                "stars": 3,
+                "address": "улица Зосимова 4",
+                "website": "https://travel.yandex.ru/hotels/kronstadt/apartamenty-dizainerskaia-kvartira-s-vidom-na-zakat/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=8d00406d6913de0e1966ce43a1ff785b-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.764928,
+                    59.994684
+                ]
+            },
+            "properties": {
+                "id": 87,
+                "lat": 59.994684,
+                "lon": 29.764928,
+                "name": "Гостиница KronHotel 101",
+                "stars": 4,
+                "address": "проспект Ленина 18",
+                "website": "https://book-hostel101.otelms.com/",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.798367,
+                    59.98521
+                ]
+            },
+            "properties": {
+                "id": 88,
+                "lat": 59.98521,
+                "lon": 29.798367,
+                "name": "Апартаменты Прудиус Апарт",
+                "stars": 4,
+                "address": "аллея Тулонская 12",
+                "website": "https://prudiusapart.ru/#/",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.707121,
+                    59.994314
+                ]
+            },
+            "properties": {
+                "id": 89,
+                "lat": 59.994314,
+                "lon": 29.707121,
+                "name": "Гостиница Форт Константин",
+                "stars": 5,
+                "address": "территория Форт Константин литА",
+                "website": "https://kronfort.com/hotel/",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.789206,
+                    59.989753
+                ]
+            },
+            "properties": {
+                "id": 90,
+                "lat": 59.989753,
+                "lon": 29.789206,
+                "name": "Усадьба адмирала Лазарева",
+                "stars": 5,
+                "address": "улица Пролетарская 30",
+                "website": "https://usadba-admirala-lazareva.ru/ru-ru/booking/?date=2026-05-03&nights=1&adults=2&children=&children-age=&access-code=",
+                "district_id": "Кронштадтский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.506959,
+                    60.186712
+                ]
+            },
+            "properties": {
+                "id": 91,
+                "lat": 60.186712,
+                "lon": 29.506959,
+                "name": "Хостел Березка",
+                "stars": 1,
+                "address": "шоссе Приморское 673",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/khostel-berezka/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=ad59ac2e2c75bea898c5c00e115a25f8-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.728724,
+                    60.217446
+                ]
+            },
+            "properties": {
+                "id": 92,
+                "lat": 60.217446,
+                "lon": 29.728724,
+                "name": "Хостел Хвойный",
+                "stars": 1,
+                "address": "дорога Пухтоловская 3 строение 2",
+                "website": "https://hvoiniy.ru/",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.95356,
+                    60.091011
+                ]
+            },
+            "properties": {
+                "id": 93,
+                "lat": 60.091011,
+                "lon": 29.95356,
+                "name": "Гостевой дом Дюна",
+                "stars": 2,
+                "address": "улица Токарева 24",
+                "website": "https://travel.yandex.ru/hotels/sestroretsk/gostevoi-dom-tsds-diuna/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=a4481481318d4acfa87c38f63310e77e-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.885408,
+                    60.157828
+                ]
+            },
+            "properties": {
+                "id": 94,
+                "lat": 60.157828,
+                "lon": 29.885408,
+                "name": "Пансионат Репино",
+                "stars": 2,
+                "address": "шоссе Приморское 394",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/pansionat-repino/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=8e5cca8eea1928973bc2244f6b0b9b6-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.661198,
+                    60.194711
+                ]
+            },
+            "properties": {
+                "id": 95,
+                "lat": 60.194711,
+                "lon": 29.661198,
+                "name": "Спа-отель Аквамарин",
+                "stars": 3,
+                "address": "шоссе Приморское 593Н",
+                "website": "https://hotel-aquamarin.ru/rooms",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.8254,
+                    60.168297
+                ]
+            },
+            "properties": {
+                "id": 96,
+                "lat": 60.168297,
+                "lon": 29.8254,
+                "name": "Гостиница Casablanka",
+                "stars": 3,
+                "address": "шоссе Приморское 471",
+                "website": "https://ru.poisk-oteli.ru/directory/10654/",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.929206,
+                    60.150464
+                ]
+            },
+            "properties": {
+                "id": 97,
+                "lat": 60.150464,
+                "lon": 29.929206,
+                "name": "Гостиница Бор 812",
+                "stars": 4,
+                "address": "шоссе Приморское 385 строение 1",
+                "website": "https://borclub.ru/hotel?utm_medium=geo&utm_source=yandex&yclid=1171809032774352895#rec256350786",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.949026,
+                    60.103259
+                ]
+            },
+            "properties": {
+                "id": 98,
+                "lat": 60.103259,
+                "lon": 29.949026,
+                "name": "Загородный клуб и СПА Скандинавия",
+                "stars": 4,
+                "address": "улица Парковая 16",
+                "website": "https://skandinavia.ru/rooms/?tab=shelepin",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.974038,
+                    60.058937
+                ]
+            },
+            "properties": {
+                "id": 99,
+                "lat": 60.058937,
+                "lon": 29.974038,
+                "name": "Аква-клуб Voda",
+                "stars": 5,
+                "address": "шоссе Приморское 256А",
+                "website": "https://clubvoda.ru/booking/",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.871207,
+                    60.169124
+                ]
+            },
+            "properties": {
+                "id": 100,
+                "lat": 60.169124,
+                "lon": 29.871207,
+                "name": "Отель и СПА Azimut",
+                "stars": 5,
+                "address": "улица Луговая, 10",
+                "website": "https://azimuthotels.com/ru/saint-petersburg/azimut-hotel-repino?utm_content=main&utm_medium=link&utm_source=yasprav&yclid=4484820154628702207",
+                "district_id": "Курортный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.352814,
+                    59.838698
+                ]
+            },
+            "properties": {
+                "id": 101,
+                "lat": 59.838698,
+                "lon": 30.352814,
+                "name": "Алекс Отель на Звездной",
+                "stars": 1,
+                "address": "улица Пулковская 8 корпус 3",
+                "website": "https://motelspb.com/hotels/zvezdnoj/?utm_campaign=btn_website&utm_content=pulkovskaya_8k3&utm_medium=geo&utm_source=yandex_maps",
+                "district_id": "Московский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.325679,
+                    59.872825
+                ]
+            },
+            "properties": {
+                "id": 102,
+                "lat": 59.872825,
+                "lon": 30.325679,
+                "name": "Хостел All Seasons",
+                "stars": 1,
+                "address": "переулок Яковлевский 11 4 этаж",
+                "website": "https://www.all-seasons.ru/?ysclid=mn9vph39m4343068581",
+                "district_id": "Московский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.328583,
+                    59.877281
+                ]
+            },
+            "properties": {
+                "id": 103,
+                "lat": 59.877281,
+                "lon": 30.328583,
+                "name": "Отель Турист",
+                "stars": 2,
+                "address": "улица Севастьянова дом 3",
+                "website": "https://spbtourist.ru/",
+                "district_id": "Московский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.33488,
+                    59.874316
+                ]
+            },
+            "properties": {
+                "id": 104,
+                "lat": 59.874316,
+                "lon": 30.33488,
+                "name": "Арт-отель ZONTIK",
+                "stars": 2,
+                "address": "проспект Юрия Гагарина 5",
+                "website": "https://www.hotelzontik.ru/?ysclid=mn9cu5nn9v702672",
+                "district_id": "Московский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.340473,
+                    59.844569
+                ]
+            },
+            "properties": {
+                "id": 105,
+                "lat": 59.844569,
+                "lon": 30.340473,
+                "name": "Апарт-отель АпартПейдж на Московской",
+                "stars": 3,
+                "address": "улица Орджоникидзе 44А",
+                "website": "https://apartpage.ru/booking?uid=9ee055d9-84ea-4203-862d-cf578a821099",
+                "district_id": "Московский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.319835,
+                    59.855325
+                ]
+            },
+            "properties": {
+                "id": 106,
+                "lat": 59.855325,
+                "lon": 30.319835,
+                "name": "Отель Какаду",
+                "stars": 3,
+                "address": "проспект Московский 183-185",
+                "website": "https://kakadu.spb.ru/",
+                "district_id": "Московский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.316725,
+                    59.855955
+                ]
+            },
+            "properties": {
+                "id": 107,
+                "lat": 59.855955,
+                "lon": 30.316725,
+                "name": "Отель Скайпарк",
+                "stars": 4,
+                "address": "проспект Московский 183-185 литера А корпус 3Б",
+                "website": "https://hotel-skyparkspb.tilda.ws/?yclid=6213925555897892863&utm_content=17669115187&utm_source=geoadv_maps#rec2016363561",
+                "district_id": "Московский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.470383,
+                    59.909477
+                ]
+            },
+            "properties": {
+                "id": 111,
+                "lat": 59.909477,
+                "lon": 30.470383,
+                "name": "Алекс Отель на Дыбенко",
+                "stars": 1,
+                "address": "улица Антонова-Овсеенко 18",
+                "website": "https://motelspb.com/hotels/dybenko/?utm_campaign=btn_website&utm_content=antonova_ovseenko_18&utm_medium=geo&utm_source=yandex_maps&yclid=16475710231841865727",
+                "district_id": "Невский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.439651,
+                    59.893371
+                ]
+            },
+            "properties": {
+                "id": 112,
+                "lat": 59.893371,
+                "lon": 30.439651,
+                "name": "Гостевой Дом",
+                "stars": 1,
+                "address": "проспект Обуховской Обороны 88 литера А",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/gostevoi-dom-prospekt-obukhovskoi-oborony/",
+                "district_id": "Невский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.428609,
+                    59.867181
+                ]
+            },
+            "properties": {
+                "id": 115,
+                "lat": 59.867181,
+                "lon": 30.428609,
+                "name": "Отель Белый сад",
+                "stars": 3,
+                "address": "улица Сортировочная-Московская 15",
+                "website": "https://beliysadspb.ru/",
+                "district_id": "Невский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.414035,
+                    59.897638
+                ]
+            },
+            "properties": {
+                "id": 116,
+                "lat": 59.897638,
+                "lon": 30.414035,
+                "name": "Отель Jenavi Club Hotel",
+                "stars": 3,
+                "address": "проспект Большой Смоленский 12",
+                "website": "https://hotel.jenavi.club/",
+                "district_id": "Невский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.327681,
+                    59.957385
+                ]
+            },
+            "properties": {
+                "id": 121,
+                "lat": 59.957385,
+                "lon": 30.327681,
+                "name": "Хостел LikeHome",
+                "stars": 1,
+                "address": "улица Малая Посадская 15",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/likehome/?adults=2&checkinDate=2026-03-27&checkoutDate=2026-03-28&childrenAges=&roomCount=1&searchPagePollingId=8409725c1d9d7a979cba0f83c69c7169-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Петроградский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.313437,
+                    59.957457
+                ]
+            },
+            "properties": {
+                "id": 122,
+                "lat": 59.957457,
+                "lon": 30.313437,
+                "name": "Гостевые Комнаты «Современник»",
+                "stars": 1,
+                "address": "улица Кронверкская 1",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/sovremennik/",
+                "district_id": "Петроградский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.302496,
+                    59.952572
+                ]
+            },
+            "properties": {
+                "id": 123,
+                "lat": 59.952572,
+                "lon": 30.302496,
+                "name": "Гостиница У семи мостов",
+                "stars": 2,
+                "address": "улица Зверинская 38",
+                "website": "http://sevenbridgeshotel.ru/",
+                "district_id": "Петроградский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.314836,
+                    59.967097
+                ]
+            },
+            "properties": {
+                "id": 124,
+                "lat": 59.967097,
+                "lon": 30.314836,
+                "name": "Гостевые комнаты Календарь",
+                "stars": 2,
+                "address": "улица Петропавловская дом 8 лестница 7",
+                "website": "https://gh-calendar.ru/",
+                "district_id": "Петроградский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.287149,
+                    59.963611
+                ]
+            },
+            "properties": {
+                "id": 125,
+                "lat": 59.963611,
+                "lon": 30.287149,
+                "name": "Отель Грани",
+                "stars": 3,
+                "address": "улица Большая Зеленина 24",
+                "website": "https://granihotel.ru/?ysclid=mnhzpp9b5826763186",
+                "district_id": "Петроградский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.314031,
+                    59.962577
+                ]
+            },
+            "properties": {
+                "id": 126,
+                "lat": 59.962577,
+                "lon": 30.314031,
+                "name": "Отель Демократ",
+                "stars": 3,
+                "address": "проспект Каменноостровский 26-28",
+                "website": "https://hotel.democrat/hotels/otel-demokrat-na-kamennoostrovskom-26-28",
+                "district_id": "Петроградский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.297198,
+                    59.986313
+                ]
+            },
+            "properties": {
+                "id": 131,
+                "lat": 59.986313,
+                "lon": 30.297198,
+                "name": "Гостиница Ку ку",
+                "stars": 1,
+                "address": "улица Савушкина 7 ТЦ Чёрная речка",
+                "website": "https://jeff1.ru/?ysclid=mn9degcgr9379595291",
+                "district_id": "Приморский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.219202,
+                    60.006401
+                ]
+            },
+            "properties": {
+                "id": 132,
+                "lat": 60.006401,
+                "lon": 30.219202,
+                "name": "Алекс Отель на Богатырском",
+                "stars": 1,
+                "address": "проспект Богатырский 51 корпус 1",
+                "website": "https://motelspb.com/hotels/bogatyrskom/?utm_campaign=btn_website&utm_content=bogatyrskiy_51&utm_medium=geo&utm_source=yandex_maps&yclid=8892353903533490175",
+                "district_id": "Приморский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.255623,
+                    60.012475
+                ]
+            },
+            "properties": {
+                "id": 133,
+                "lat": 60.012475,
+                "lon": 30.255623,
+                "name": "Мини-отель Антверпен",
+                "stars": 2,
+                "address": "проспект Комендантский 17 корпус 1",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/antverpen/",
+                "district_id": "Приморский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.292394,
+                    59.990198
+                ]
+            },
+            "properties": {
+                "id": 135,
+                "lat": 59.990198,
+                "lon": 30.292394,
+                "name": "Апарт-отель АпартПейдж Черная речка",
+                "stars": 3,
+                "address": "улица Матроса Железняка 2 строение 1",
+                "website": "https://apartpage.ru/booking?uid=e180a652-284a-4563-96b6-555efe5421b2",
+                "district_id": "Приморский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.298325,
+                    59.997083
+                ]
+            },
+            "properties": {
+                "id": 136,
+                "lat": 59.997083,
+                "lon": 30.298325,
+                "name": "Мини-отель Норд Хаус",
+                "stars": 3,
+                "address": "Коломяжский проспект 18",
+                "website": "https://nhhotel.ru/",
+                "district_id": "Приморский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.352047,
+                    59.91451
+                ]
+            },
+            "properties": {
+                "id": 143,
+                "lat": 59.91451,
+                "lon": 30.352047,
+                "name": "Гостиница Эспланада",
+                "stars": 2,
+                "address": "набережная Обводного канала 50",
+                "website": "https://esplanada-spb.ru/nomera-ceny/",
+                "district_id": "Фрунзенский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.340491,
+                    59.909398
+                ]
+            },
+            "properties": {
+                "id": 144,
+                "lat": 59.909398,
+                "lon": 30.340491,
+                "name": "Отель 365",
+                "stars": 2,
+                "address": "улица Боровая 104А 3 этаж",
+                "website": "https://hotel365spb.ru/",
+                "district_id": "Фрунзенский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.345073,
+                    59.912253
+                ]
+            },
+            "properties": {
+                "id": 145,
+                "lat": 59.912253,
+                "lon": 30.345073,
+                "name": "Гостиница АлександерПлатц",
+                "stars": 3,
+                "address": "улица Воронежская 53к1",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/aleksanderplatts/?adults=2&checkinDate=2026-04-07&checkoutDate=2026-04-08&childrenAges=&roomCount=1&searchPagePollingId=f71cdee95b1de580cffb72c338c84e5b-0-newsearch&seed=portal-hotels-search",
+                "district_id": "Фрунзенский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.363713,
+                    59.910152
+                ]
+            },
+            "properties": {
+                "id": 146,
+                "lat": 59.910152,
+                "lon": 30.363713,
+                "name": "Отель Олимпия",
+                "stars": 3,
+                "address": "Нефтяная дорога, 1, корп. 5",
+                "website": "https://olympart-spb.ru/",
+                "district_id": "Фрунзенский"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.362039,
+                    59.924029
+                ]
+            },
+            "properties": {
+                "id": 151,
+                "lat": 59.924029,
+                "lon": 30.362039,
+                "name": "Комплекс апартаментов У Московского вокзала",
+                "stars": 1,
+                "address": "проспект Лиговский 50 корпус 9 литера А",
+                "website": "https://apartamenty-u-moskovskogo.clients.site/",
+                "district_id": "Центральный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.347513,
+                    59.93835
+                ]
+            },
+            "properties": {
+                "id": 152,
+                "lat": 59.93835,
+                "lon": 30.347513,
+                "name": "Хостел Belinsky",
+                "stars": 1,
+                "address": "улица Белинского 8",
+                "website": "https://belinskyrooms.ru/?ysclid=mn9vro652178927396",
+                "district_id": "Центральный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.368164,
+                    59.932143
+                ]
+            },
+            "properties": {
+                "id": 153,
+                "lat": 59.932143,
+                "lon": 30.368164,
+                "name": "Капсульный отель 4U Capsule Hotel",
+                "stars": 2,
+                "address": "проспект Суворовский 1/8",
+                "website": "https://4u-hotel.com/?ysclid=mn9cb2wk4x668182637",
+                "district_id": "Центральный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.37274,
+                    59.93057
+                ]
+            },
+            "properties": {
+                "id": 155,
+                "lat": 59.93057,
+                "lon": 30.37274,
+                "name": "Отель The Red",
+                "stars": 3,
+                "address": "улица 2-я Советская 18",
+                "website": "http://hotelthered.com/?ysclid=mn932rgqm1781708686",
+                "district_id": "Центральный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.355543,
+                    59.933971
+                ]
+            },
+            "properties": {
+                "id": 156,
+                "lat": 59.933971,
+                "lon": 30.355543,
+                "name": "Апарт-отель АпартПейдж Маяковского",
+                "stars": 3,
+                "address": "улица Маяковского 3",
+                "website": "https://apartpage.ru/booking?uid=1ddb8ca4-11f8-46aa-bb22-2fa7b43658c9",
+                "district_id": "Центральный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.369593,
+                    59.928072
+                ]
+            },
+            "properties": {
+                "id": 157,
+                "lat": 59.928072,
+                "lon": 30.369593,
+                "name": "Отель Реноме",
+                "stars": 4,
+                "address": "улица Гончарная 26",
+                "website": "https://renomehotel.ru/?ysclid=mnnnaarl1b507545547",
+                "district_id": "Центральный"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.363298,
+                    59.930523
+                ]
+            },
+            "properties": {
+                "id": 158,
+                "lat": 59.930523,
+                "lon": 30.363298,
+                "name": "Хостел Капсульный отель BARCH",
+                "stars": 2,
+                "address": "проспект Невский 87/2 этаж 3",
+                "website": "https://barchhotel.com/capsulehotelbarch",
+                "district_id": "Центральный "
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.366016,
+                    59.932773
+                ]
+            },
+            "properties": {
+                "id": 159,
+                "lat": 59.932773,
+                "lon": 30.366016,
+                "name": "Апарт-отель Artstudio Nevsky",
+                "stars": 4,
+                "address": "улица 2-я Советская 4Б строение 1",
+                "website": "https://artstudiohotels.ru/?etext=2202.IR1Dw2zZIQzDGFxLqkTUV63DtDmHY0s5ADHgJoqHLT4TJ19oid1Ymuq8KdwI6Pkh9ZncF7G7zwyrDgsh77Eb0Xw0oF419akabLHYTAP7zrn95xJzcm1v0b34xONKUV7VjPVhxrPzeS8ufbYFstAJfHFid3p6bW51cWxjenB6bm0.0e33ecfdaa9c27f09537d2959901d055f4b078ed&yclid=3076707084573605887&ybaip=1",
+                "district_id": "Центральный "
+            }
+        }
+    ]
+}
