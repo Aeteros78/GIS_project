@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>ГИС-приложение по подбору гостиниц в Санкт-Петербурге</title>
-
     <!-- Подключаем стили интерфейса -->
     <link rel="stylesheet" href="styles/style.css">
-
     <!-- Подключаем JS API Яндекс.Карт. apikey – ключ доступа к API, lang=ru_RU – русский язык. -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=a87475d1-680e-4e12-aaae-07b3e54001ae&lang=ru_RU" type="text/javascript"></script>
-
     <!-- Скрипт с логикой карты (инициализация, загрузка данных, отображение объектов) -->
     <script src="scripts/map.js" defer></script>
-
     <!-- Скрипт с логикой фильтров (обработка формы, кнопок "Применить" и "Сбросить") -->
     <script src="scripts/filters.js" defer></script>
 </head>
@@ -21,26 +17,18 @@
         <h1>ГИС-приложение по подбору гостиниц в Санкт-Петербурге</h1>
     </header>
 
-    <!-- Основная область: слева карта, справа панель с фильтрами -->
+    <!-- Основная область: слева панель с фильтрами, справа карта -->
     <main class="app-main">
-        <!-- Карта (контейнер для Яндекс.Карт) -->
-        <section class="map-section">
-            <!-- В этот div с id="map" Яндекс.Карты отрисуют карту через API -->
-            <div id="map"></div>
-        </section>
-
-        <!-- Боковая панель с фильтрами -->
+        <!-- Боковая панель с фильтрами (слева) -->
         <aside class="sidebar">
             <section class="filters">
                 <h2>Поиск и фильтрация</h2>
-
-                <!-- Форма фильтров.Отправка перехватывается в filters.js (submit без перезагрузки страницы). -->
+                <!-- Форма фильтров. Отправка перехватывается в filters.js (submit без перезагрузки страницы). -->
                 <form id="filters-form">
                     <!-- Фильтр по району города -->
                     <div class="form-group">
                         <label for="district">Район:</label>
-                        <!-- Список районов заполняется динамически в map.js
-                        из файла districts_spb.geojson -->
+                        <!-- Список районов заполняется динамически в map.js из файла districts_spb.geojson -->
                         <select id="district" name="district">
                             <!-- Значение value="" означает "Все районы" -->
                             <option value="">Все районы</option>
@@ -50,8 +38,7 @@
                     <!-- Фильтр по станции метро -->
                     <div class="form-group">
                         <label for="subwayStation">Станция метро:</label>
-                        <!-- Список станций заполняется динамически в map.js
-                        из файла subway_spb.geojson -->
+                        <!-- Список станций заполняется динамически в map.js из файла subway_spb.geojson -->
                         <select id="subwayStation" name="metro">
                             <!-- value="" – выбор "Все станции" -->
                             <option value="">Все станции</option>
@@ -76,13 +63,18 @@
                     <div class="form-actions">
                         <!-- Кнопка "Применить фильтры": запускает обработчик формы в filters.js -->
                         <button type="submit">Применить фильтры</button>
-
                         <!-- Кнопка "Сбросить" (type="button", чтобы не отправляла форму): логика сброса реализована в filters.js -->
                         <button type="button" id="reset-filters">Сбросить</button>
                     </div>
                 </form>
             </section>
         </aside>
+
+        <!-- Карта (контейнер для Яндекс.Карт) справа, занимает всё оставшееся место -->
+        <section class="map-section">
+            <!-- В этот div с id="map" Яндекс.Карты отрисуют карту через API -->
+            <div id="map"></div>
+        </section>
     </main>
 </body>
 </html>
