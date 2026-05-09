@@ -1,11 +1,9 @@
-// scripts/filters.js
-
 // Ждём полной загрузки DOM, чтобы элементы формы уже существовали
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('filters-form');
     const districtSelect = document.getElementById('district');
     const subwaySelect = document.getElementById('subwayStation');
-    const starsSelect = document.getElementById('stars');
+    const starsCheckboxes = document.querySelectorAll('input[name="stars"]');
     const resetButton = document.getElementById('reset-filters');
 
     if (!form) {
@@ -13,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // При выборе района/станции метро/звёздности мы только логируем изменение.
+    // При выборе района/станции метро/чекбоксов мы только логируем изменение.
     // Никаких изменений на карте сразу не делаем — всё по кнопке "Применить".
     if (districtSelect) {
         districtSelect.addEventListener('change', (e) => {
@@ -27,9 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (starsSelect) {
-        starsSelect.addEventListener('change', (e) => {
-            console.log('Селект stars changed, value =', e.target.value);
+    if (starsCheckboxes && starsCheckboxes.length) {
+        starsCheckboxes.forEach(cb => {
+            cb.addEventListener('change', () => {
+                const selected = Array.from(starsCheckboxes)
+                    .filter(c => c.checked)
+                    .map(c => c.value);
+                console.log('Чекбоксы звёзд изменены, выбрано:', selected);
+            });
         });
     }
 
@@ -40,11 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const districtName = districtSelect ? districtSelect.value : '';
         const stationId = subwaySelect ? subwaySelect.value : '';
-        const starsValue = starsSelect ? starsSelect.value : '';
+
+        // Собираем выбранные звёзды в массив чисел: [5,4,...]
+        const selectedStars = starsCheckboxes && starsCheckboxes.length
+            ? Array.from(starsCheckboxes)
+                .filter(cb => cb.checked)
+                .map(cb => Number(cb.value))
+            : [];
 
         console.log('Применяем фильтры: district =', districtName,
                     ', stationId =', stationId,
-                    ', stars =', starsValue);
+                    ', stars =', selectedStars);
 
         // Перед любыми действиями с метро очищаем метки метро
         if (typeof clearSubwayPlacemarks === 'function') {
@@ -54,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * Вспомогательная функция:
          * показать отели по району dName (или все, если dName=null),
-         * затем дополнительно отфильтровать по звёздам (если выбраны).
+         * затем дополнительно отфильтровать по звёздам (если чекбоксы выбраны).
          */
         function showHotelsWithStarsFilter(dName) {
             if (typeof showHotelsForDistrict !== 'function') {
@@ -65,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Базовый фильтр по району (или все)
             showHotelsForDistrict(dName);
 
-            // Если звёздность не выбрана (пункт "Любая"), дополнительных фильтров нет
-            if (!starsValue) return;
+            // Если ни одна звёздность не выбрана — дополнительных фильтров нет
+            if (!selectedStars.length) return;
 
             // Проверяем, что глобальный массив hotels доступен
             if (!window.hotels || !Array.isArray(window.hotels)) return;
@@ -76,14 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearHotelPlacemarks();
             }
 
-            const targetStars = Number(starsValue);
-
             // Сужаем список отелей: сначала по району, потом по звёздам
             const filteredByDistrict = !dName
                 ? window.hotels
                 : window.hotels.filter(h => String(h.districtName) === String(dName));
 
-            const finalHotels = filteredByDistrict.filter(h => Number(h.stars) === targetStars);
+            const finalHotels = filteredByDistrict.filter(h =>
+                selectedStars.includes(Number(h.stars))
+            );
 
             // Рисуем на карте отфильтрованные отели
             finalHotels.forEach(hotel => {
@@ -192,8 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // 4) НИЧЕГО не выбрано (нет района, станции и/или звёздности)
-        console.log('Фильтр: ничего не выбрано — показываем все отели (с учётом звёзд, если заданы)');
+        // 4) НИЧЕГО не выбрано (нет района и станции)
+        console.log('Фильтр: нет района и станции — показываем все отели (с учётом звёзд, если выбраны)');
 
         // Показать все отели (или по звёздам, если выбраны)
         showHotelsWithStarsFilter(null);
@@ -210,10 +219,14 @@ document.addEventListener('DOMContentLoaded', () => {
         resetButton.addEventListener('click', () => {
             console.log('Нажата кнопка "Сбросить"');
 
-            // Сбрасываем значения всех селектов в исходное состояние
+            // Сбрасываем значения селектов в исходное состояние
             if (districtSelect) districtSelect.value = '';
             if (subwaySelect) subwaySelect.value = '';
-            if (starsSelect) starsSelect.value = '';
+
+            // Снимаем все чекбоксы звёздности
+            if (starsCheckboxes && starsCheckboxes.length) {
+                starsCheckboxes.forEach(cb => { cb.checked = false; });
+            }
 
             // Убираем метки метро
             if (typeof clearSubwayPlacemarks === 'function') {

@@ -25,7 +25,6 @@ html, body {
 .app-main {
     display: flex;
     height: calc(100vh - 48px); /* 48px – примерная высота шапки; подстрой при необходимости */
-    /* если шапка выше, можно сделать, например: height: calc(100vh - 60px); */
 }
 
 /* Боковая панель с фильтрами (слева) */
@@ -72,6 +71,26 @@ html, body {
     width: 100%;
     padding: 4px;
     font-size: 14px;
+}
+
+/* Чекбоксы звёздности */
+.stars-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.stars-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+}
+
+.stars-checkboxes label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 4px;
 }
 
 /* Кнопки управления фильтрами */

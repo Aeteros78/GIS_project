@@ -45,18 +45,31 @@
                         </select>
                     </div>
 
-                    <!-- Фильтр по звёздности гостиниц -->
+                    <!-- Фильтр по звёздности гостиниц (чекбоксы) -->
                     <div class="form-group">
-                        <label for="stars">Звёздность:</label>
-                        <!-- Фильтр по количеству звёзд; используется в filters.js -->
-                        <select id="stars" name="stars">
-                            <option value="">Любая</option>
-                            <option value="5">5★</option>
-                            <option value="4">4★</option>
-                            <option value="3">3★</option>
-                            <option value="2">2★</option>
-                            <option value="1">1★</option>
-                        </select>
+                        <span class="stars-label">Звёздность:</span>
+                        <div class="stars-checkboxes">
+                            <label>
+                                <input type="checkbox" name="stars" value="5">
+                                5★
+                            </label>
+                            <label>
+                                <input type="checkbox" name="stars" value="4">
+                                4★
+                            </label>
+                            <label>
+                                <input type="checkbox" name="stars" value="3">
+                                3★
+                            </label>
+                            <label>
+                                <input type="checkbox" name="stars" value="2">
+                                2★
+                            </label>
+                            <label>
+                                <input type="checkbox" name="stars" value="1">
+                                1★
+                            </label>
+                        </div>
                     </div>
 
                     <!-- Кнопки управления фильтрами -->
