@@ -12,13 +12,17 @@
             },
             "properties": {
                 "id": 1,
-                "lat": 59.909979,
-                "lon": 30.273732,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел Арк ",
                 "stars": 1,
                 "address": "набережная Обводного канала 223к1В",
+                "parking": "Нет парковки",
                 "website": "https://ark-hostel.ru/",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Адмиралтейский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -32,13 +36,17 @@
             },
             "properties": {
                 "id": 2,
-                "lat": 59.923164,
-                "lon": 30.327907,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел Большой Казачий",
                 "stars": 1,
                 "address": "переулок Большой Казачий 6",
+                "parking": "Нет парковки",
                 "website": "https://bolshoj-kazachij.clients.site/",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Адмиралтейский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -52,13 +60,17 @@
             },
             "properties": {
                 "id": 3,
-                "lat": 59.928038,
-                "lon": 30.308463,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Мини-отель Simple Республика",
                 "stars": 2,
                 "address": "улица Казанская 52",
+                "parking": "Нет парковки",
                 "website": "https://accent-hotel.ru/hotelrespublica",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -72,13 +84,17 @@
             },
             "properties": {
                 "id": 4,
-                "lat": 59.931114,
-                "lon": 30.314033,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Арт Авеню",
                 "stars": 2,
                 "address": "переулок Гривцова 6 корпус 2",
+                "parking": "Нет парковки",
                 "website": "https://artavenuehotel.ru/",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -92,13 +108,17 @@
             },
             "properties": {
                 "id": 5,
-                "lat": 59.911872,
-                "lon": 30.289242,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель АпартПейдж на Курляндской",
                 "stars": 3,
                 "address": "улица Курляндская 6-8",
+                "parking": "Нет парковки",
                 "website": "https://apartpage.ru/booking?uid=824aaa28-b917-424e-923c-2ba48b1cf08e",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -112,13 +132,17 @@
             },
             "properties": {
                 "id": 6,
-                "lat": 59.929028,
-                "lon": 30.321639,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Капитал отель",
                 "stars": 3,
                 "address": "улица Гороховая 34",
+                "parking": "Бесплатная парковка",
                 "website": "https://capitalhotel.ru/booking/",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -132,13 +156,17 @@
             },
             "properties": {
                 "id": 7,
-                "lat": 59.931238,
-                "lon": 30.28694,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Бутик-отель Academia",
                 "stars": 4,
                 "address": "улица Галерная 61",
+                "parking": "Бесплатная парковка",
                 "website": "https://academia.spb.ru/?ysclid=mnnmkuzv16849037630",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -152,13 +180,17 @@
             },
             "properties": {
                 "id": 8,
-                "lat": 59.928902,
-                "lon": 30.308069,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница 1913 Год",
                 "stars": 4,
                 "address": "проспект Вознесенский 13 парадная 7",
+                "parking": "Платная парковка",
                 "website": "http://hotel-1913.ru/booking",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -172,13 +204,17 @@
             },
             "properties": {
                 "id": 9,
-                "lat": 59.931386,
-                "lon": 30.310344,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Отель Лотте",
                 "stars": 5,
                 "address": "переулок Антоненко 2",
+                "parking": "Платная парковка",
                 "website": "https://lottehotelstpetersburg.ru/booking/?room-type=175313",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -192,13 +228,17 @@
             },
             "properties": {
                 "id": 10,
-                "lat": 59.93301,
-                "lon": 30.308647,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Отель Астория",
                 "stars": 5,
                 "address": "улица Большая Морская 39",
+                "parking": "Платная парковка",
                 "website": "https://www.roccofortehotels.ru/booking/?date=2026-04-28&nights=1&adults=2&children-age=",
-                "district_id": "Адмиралтейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Адмиралтейский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -212,13 +252,17 @@
             },
             "properties": {
                 "id": 11,
-                "lat": 59.945097,
-                "lon": 30.280125,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "MAYAK студенческий",
                 "stars": 1,
                 "address": "4-я линия Васильевского острова 35-37 этаж 2",
+                "parking": "Нет парковки",
                 "website": "https://mayak-4-line.clients.site/",
-                "district_id": "Василеостровский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Василеостровский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -232,13 +276,17 @@
             },
             "properties": {
                 "id": 12,
-                "lat": 59.957515,
-                "lon": 30.242517,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель SV Loft Apartments",
                 "stars": 1,
                 "address": "набережная Макарова 60",
+                "parking": "Нет парковки",
                 "website": "https://sv-loft.ru/",
-                "district_id": "Василеостровский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Василеостровский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -252,13 +300,17 @@
             },
             "properties": {
                 "id": 13,
-                "lat": 59.944581,
-                "lon": 30.286774,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апартаменты Антресоль",
                 "stars": 2,
                 "address": "1-я линия Васильевского острова 40",
+                "parking": "Нет парковки",
                 "website": "https://antresol-apartments.ru/booking_com_hotel_ru_apartments-antresol_ru_html",
-                "district_id": "Василеостровский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Василеостровский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -272,13 +324,17 @@
             },
             "properties": {
                 "id": 14,
-                "lat": 59.931566,
-                "lon": 30.245019,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Мини-отель Шевченко",
                 "stars": 2,
                 "address": "улица Шевченко 16",
+                "parking": "Нет парковки",
                 "website": "https://miniotelspb.com/?ysclid=mn9dts3sj8418301819",
-                "district_id": "Василеостровский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Василеостровский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -292,13 +348,17 @@
             },
             "properties": {
                 "id": 15,
-                "lat": 59.947853,
-                "lon": 30.279549,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель АпартПейдж 3 Линия ВО",
                 "stars": 3,
                 "address": "3-я линия Васильевского острова 58",
+                "parking": "Бесплатная парковка",
                 "website": "https://apartpage.ru/booking?uid=2c5c046d-a129-45ae-be82-08a4dd357ae4",
-                "district_id": "Василеостровский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Василеостровский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -312,13 +372,17 @@
             },
             "properties": {
                 "id": 16,
-                "lat": 59.938943,
-                "lon": 30.267491,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель АпартПейдж 16 Линия ВО",
                 "stars": 3,
                 "address": "16-я линия Васильевского острова 35",
+                "parking": "Нет парковки",
                 "website": "https://apartpage.ru/booking?uid=b9f833f5-30f4-4bd1-8544-041de913b327",
-                "district_id": "Василеостровский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Василеостровский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -332,13 +396,17 @@
             },
             "properties": {
                 "id": 17,
-                "lat": 59.943328,
-                "lon": 30.284851,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Отель Шелфод",
                 "stars": 4,
                 "address": "3-я линия Васильевского острова 24 этаж 1 и 2",
+                "parking": "Бесплатная парковка",
                 "website": "https://shelfort.ru/",
-                "district_id": "Василеостровский"
+                "breakfast": "Шведский стол",
+                "district_id": "Василеостровский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -352,13 +420,17 @@
             },
             "properties": {
                 "id": 18,
-                "lat": 59.939595,
-                "lon": 30.264602,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Oversize Piter",
                 "stars": 4,
                 "address": "Средний проспект Васильевского острова 69Б",
+                "parking": "Платная парковка",
                 "website": "https://www.oversizepiter.ru/booking",
-                "district_id": "Василеостровский"
+                "breakfast": "Шведский стол",
+                "district_id": "Василеостровский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -372,13 +444,17 @@
             },
             "properties": {
                 "id": 19,
-                "lat": 59.944603,
-                "lon": 30.293545,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Отель Palace Bridge",
                 "stars": 5,
                 "address": "переулок Биржевой 4",
+                "parking": "Платная парковка",
                 "website": "https://palacebridge.ru/?tl-booking-open=true",
-                "district_id": "Василеостровский"
+                "breakfast": "Шведский стол",
+                "district_id": "Василеостровский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -392,13 +468,17 @@
             },
             "properties": {
                 "id": 20,
-                "lat": 59.93744,
-                "lon": 30.282131,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Отель Васильевский",
                 "stars": 5,
                 "address": "8-я линия Васильевского острова 11-13",
+                "parking": "Бесплатная парковка",
                 "website": "https://vasilievsky.ru/?tl-booking-open=true",
-                "district_id": "Василеостровский"
+                "breakfast": "Шведский стол",
+                "district_id": "Василеостровский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -412,13 +492,17 @@
             },
             "properties": {
                 "id": 21,
-                "lat": 60.058745,
-                "lon": 30.310558,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Просвещения",
                 "stars": 1,
                 "address": "проспект Просвещения 14 корпус 1",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/prosveshcheniya/?utm_campaign=btn_website&utm_content=prosveshcheniya_14k1&utm_medium=geo&utm_source=yandex_maps&yclid=14908537790612897791",
-                "district_id": "Выборгский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Выборгский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -432,13 +516,17 @@
             },
             "properties": {
                 "id": 22,
-                "lat": 59.967399,
-                "lon": 30.338252,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Кино Хостел на Выборгской",
                 "stars": 1,
                 "address": "набережная Выборгская 27",
+                "parking": "Нет парковки",
                 "website": "https://kinohostel.ru/vyborgskaya",
-                "district_id": "Выборгский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Выборгский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -452,13 +540,17 @@
             },
             "properties": {
                 "id": 23,
-                "lat": 59.993311,
-                "lon": 30.356795,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Тропики",
                 "stars": 2,
                 "address": "улица Хошимина 16А",
+                "parking": "Нет парковки",
                 "website": "https://kvartira24spb.ru/",
-                "district_id": "Выборгский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Выборгский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -472,13 +564,17 @@
             },
             "properties": {
                 "id": 24,
-                "lat": 60.036931,
-                "lon": 30.357647,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Лель",
                 "stars": 2,
                 "address": "проспект Луначарского 41",
+                "parking": "Нет парковки",
                 "website": "https://www.hotel-lel.ru/rooms/",
-                "district_id": "Выборгский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Выборгский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -492,13 +588,17 @@
             },
             "properties": {
                 "id": 25,
-                "lat": 60.020399,
-                "lon": 30.275467,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Валерия",
                 "stars": 3,
                 "address": "улица 2-я Никитинская 63",
+                "parking": "Бесплатная парковка",
                 "website": "https://k-vizit.com/oteli/mini-otel-valeriya",
-                "district_id": "Выборгский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Выборгский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -512,13 +612,17 @@
             },
             "properties": {
                 "id": 26,
-                "lat": 60.005363,
-                "lon": 30.354671,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Спутник",
                 "stars": 3,
                 "address": "проспект Тореза 36",
+                "parking": "Нет парковки",
                 "website": "https://sputnik-hotel.ru/",
-                "district_id": "Выборгский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Выборгский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -532,13 +636,17 @@
             },
             "properties": {
                 "id": 27,
-                "lat": 59.956705,
-                "lon": 30.34161,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Отель Санкт Петербург",
                 "stars": 4,
                 "address": "набережная Пироговская 5/2",
+                "parking": "Платная парковка",
                 "website": "https://hotel-spb.ru/?yclid=4367354984798093311&utm_content=17657963697&utm_source=geoadv_maps",
-                "district_id": "Выборгский"
+                "breakfast": "Шведский стол",
+                "district_id": "Выборгский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -552,13 +660,17 @@
             },
             "properties": {
                 "id": 28,
-                "lat": 59.961878,
-                "lon": 30.305992,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Апартаменты Solo",
                 "stars": 4,
                 "address": "проспект Большой Петроградской стороны 51/9 этаж 2",
+                "parking": "Бесплатная парковка",
                 "website": "https://solo-central.ru/solo-na-bolshom-prospekte?utm_medium=maps&utm_source=ya.business",
-                "district_id": "Выборгский"
+                "breakfast": "Шведский стол",
+                "district_id": "Выборгский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -572,13 +684,17 @@
             },
             "properties": {
                 "id": 29,
-                "lat": 59.993131,
-                "lon": 30.356261,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Апарт-отель СалютАпарт 6",
                 "stars": 5,
                 "address": "улица Политехническая 6",
+                "parking": "Бесплатная парковка",
                 "website": "https://hsalutapart.ru/",
-                "district_id": "Выборгский"
+                "breakfast": "Шведский стол",
+                "district_id": "Выборгский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -592,13 +708,17 @@
             },
             "properties": {
                 "id": 30,
-                "lat": 59.957643,
-                "lon": 30.343811,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Апартаменты Sutki Rent у Невы",
                 "stars": 5,
                 "address": "проспект Большой Сампсониевский 4-6",
+                "parking": "Платная парковка",
                 "website": "https://sutki.rent/",
-                "district_id": "Выборгский"
+                "breakfast": "Шведский стол",
+                "district_id": "Выборгский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -612,13 +732,17 @@
             },
             "properties": {
                 "id": 31,
-                "lat": 59.997836,
-                "lon": 30.374041,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Мужества",
                 "stars": 1,
                 "address": "проспект Непокорённых 8",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/muzhestva/?utm_campaign=btn_website&utm_content=nepokorennykh_8&utm_medium=geo&utm_source=yandex_maps&yclid=6507605508716494847",
-                "district_id": "Калининский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Калининский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -632,13 +756,17 @@
             },
             "properties": {
                 "id": 32,
-                "lat": 60.025322,
-                "lon": 30.4274,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Лимон",
                 "stars": 1,
                 "address": "улица Лужская 10 корпус 1В",
+                "parking": "Нет парковки",
                 "website": "https://lemonhotel.ru/",
-                "district_id": "Калининский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Калининский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -652,13 +780,17 @@
             },
             "properties": {
                 "id": 33,
-                "lat": 59.981708,
-                "lon": 30.366201,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт I Rent",
                 "stars": 2,
                 "address": "проспект Полюстровский 75",
+                "parking": "Нет парковки",
                 "website": "https://irentapart.ru/polyustrovsky75#/",
-                "district_id": "Калининский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Калининский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -672,13 +804,17 @@
             },
             "properties": {
                 "id": 34,
-                "lat": 59.972592,
-                "lon": 30.397948,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Ирис",
                 "stars": 2,
                 "address": "улица Замшина 20",
+                "parking": "Нет парковки",
                 "website": "https://www.irismotel.ru/",
-                "district_id": "Калининский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Калининский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -692,13 +828,17 @@
             },
             "properties": {
                 "id": 35,
-                "lat": 60.035069,
-                "lon": 30.381212,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Белое Дерево",
                 "stars": 3,
                 "address": "улица Демьяна Бедного 3",
+                "parking": "Бесплатная парковка",
                 "website": "https://beloe-derevo.com/",
-                "district_id": "Калининский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Калининский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -712,13 +852,17 @@
             },
             "properties": {
                 "id": 36,
-                "lat": 59.970178,
-                "lon": 30.338997,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Балтия",
                 "stars": 3,
                 "address": "улица Смолячкова 5к1",
+                "parking": "Нет парковки",
                 "website": "https://baltiahotel.ru/?etext&yclid=18431906128912449535",
-                "district_id": "Калининский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Калининский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -732,13 +876,17 @@
             },
             "properties": {
                 "id": 37,
-                "lat": 60.015867,
-                "lon": 30.380404,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Академия",
                 "stars": 4,
                 "address": "просп. Науки, 15, корп. 1",
+                "parking": "Платная парковка",
                 "website": "https://academia-hotel.ru/booking.html?date=2026-04-28&nights=1&adults=1&children-age=",
-                "district_id": "Калининский"
+                "breakfast": "Шведский стол",
+                "district_id": "Калининский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -752,13 +900,17 @@
             },
             "properties": {
                 "id": 38,
-                "lat": 59.961492,
-                "lon": 30.354798,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Империя парк",
                 "stars": 4,
                 "address": "улица Академика Лебедева 10Г",
+                "parking": "Бесплатная парковка",
                 "website": "https://empirepark.ru/ru-ru/booking/?date=2026-04-28&nights=1&adults=2&children=&children-age=&access-code=",
-                "district_id": "Калининский"
+                "breakfast": "Шведский стол",
+                "district_id": "Калининский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -772,13 +924,17 @@
             },
             "properties": {
                 "id": 39,
-                "lat": 59.993569,
-                "lon": 30.357328,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Апарт-отель Лайк Апарт",
                 "stars": 5,
                 "address": "улица Политехническая 6",
+                "parking": "Платная парковка",
                 "website": "https://like-apart.ru/booking",
-                "district_id": "Калининский"
+                "breakfast": "Шведский стол",
+                "district_id": "Калининский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -792,13 +948,17 @@
             },
             "properties": {
                 "id": 40,
-                "lat": 60.032763,
-                "lon": 30.412303,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Гостиница Вернисаж",
                 "stars": 5,
                 "address": "улица Ушинского 15 корпус 3этаж 1",
+                "parking": "Бесплатная парковка",
                 "website": "http://vernisage-hotel.ru/",
-                "district_id": "Калининский"
+                "breakfast": "Шведский стол",
+                "district_id": "Калининский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -812,13 +972,17 @@
             },
             "properties": {
                 "id": 41,
-                "lat": 59.895103,
-                "lon": 30.280126,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Швецова",
                 "stars": 1,
                 "address": "улица Швецова 11",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/narvskoj/?utm_campaign=btn_website&utm_content=shvetsova_11&utm_medium=geo&utm_source=yandex_maps&yclid=5608826569414410239",
-                "district_id": "Кировский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кировский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -832,13 +996,17 @@
             },
             "properties": {
                 "id": 42,
-                "lat": 59.843788,
-                "lon": 30.211724,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Жукова",
                 "stars": 1,
                 "address": "проспект Маршала Жукова 48 корпус 1",
+                "parking": "Нет парковки",
                 "website": "https://bron.motelspb.com/?hotelid=14",
-                "district_id": "Кировский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кировский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -852,13 +1020,17 @@
             },
             "properties": {
                 "id": 43,
-                "lat": 59.90132,
-                "lon": 30.280655,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Екатерингоф",
                 "stars": 2,
                 "address": "улица Ивана Черных 10",
+                "parking": "Нет парковки",
                 "website": "http://ekaterinhof.ru/",
-                "district_id": "Кировский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кировский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -872,13 +1044,17 @@
             },
             "properties": {
                 "id": 44,
-                "lat": 59.854159,
-                "lon": 30.20482,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Энергетик",
                 "stars": 2,
                 "address": "проспект Ленинский 89",
+                "parking": "Нет парковки",
                 "website": "https://otelenergetik.ru/",
-                "district_id": "Кировский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кировский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -892,13 +1068,17 @@
             },
             "properties": {
                 "id": 45,
-                "lat": 59.844,
-                "lon": 30.143606,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Комсомольская",
                 "stars": 3,
                 "address": "улица 2-я Комсомольская  3",
+                "parking": "Бесплатная парковка",
                 "website": "https://живи-здесь.рф/",
-                "district_id": "Кировский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Кировский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -912,13 +1092,17 @@
             },
             "properties": {
                 "id": 46,
-                "lat": 59.911046,
-                "lon": 30.259408,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Балтийская",
                 "stars": 3,
                 "address": "улица Гапсальская 12",
+                "parking": "Нет парковки",
                 "website": "https://baltichotelspb.ru/?ysclid=mnnn4f4918622148347",
-                "district_id": "Кировский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Кировский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -932,13 +1116,17 @@
             },
             "properties": {
                 "id": 47,
-                "lat": 59.887869,
-                "lon": 30.270348,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Апарт-отель Веда",
                 "stars": 4,
                 "address": "проспект Стачек 38",
+                "parking": "Бесплатная парковка",
                 "website": "https://veda-aparts.ru/",
-                "district_id": "Кировский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кировский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -952,13 +1140,17 @@
             },
             "properties": {
                 "id": 48,
-                "lat": 59.851238,
-                "lon": 30.24946,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Инпредсервис",
                 "stars": 4,
                 "address": "проспект Ленинский 115Б",
+                "parking": "Платная парковка",
                 "website": "https://direct-hotels.ru/",
-                "district_id": "Кировский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кировский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -972,13 +1164,17 @@
             },
             "properties": {
                 "id": 49,
-                "lat": 59.870065,
-                "lon": 30.253923,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Гостиница Салют Апарт 5",
                 "stars": 5,
                 "address": "дорога на Турухтанные Острова 5 корпус 1",
+                "parking": "Платная парковка",
                 "website": "https://hsalutapart.ru/salut5-avtovo",
-                "district_id": "Кировский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кировский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -992,13 +1188,17 @@
             },
             "properties": {
                 "id": 50,
-                "lat": 59.85515,
-                "lon": 30.258466,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Апартаменты Rental SPb",
                 "stars": 5,
                 "address": "улица Зины Портновой дом 12",
+                "parking": "Бесплатная парковка",
                 "website": "https://101hotels.com/main/cities/sankt-peterburg/apartamenti_rentalspb_3kkv_na_zini_portnovoy_12.html",
-                "district_id": "Кировский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кировский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1012,13 +1212,17 @@
             },
             "properties": {
                 "id": 51,
-                "lat": 59.814882,
-                "lon": 30.513671,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел Сова",
                 "stars": 1,
                 "address": "дорога на Петро-Славянку 2И",
+                "parking": "Нет парковки",
                 "website": "https://sova-hostels.ru/p/price/",
-                "district_id": "Колпинский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Колпинский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1032,13 +1236,17 @@
             },
             "properties": {
                 "id": 52,
-                "lat": 59.79159,
-                "lon": 30.444704,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Альфа Хостел",
                 "stars": 1,
                 "address": "шоссе Московское 117 строение 1",
+                "parking": "Нет парковки",
                 "website": "https://alfahostel.su/",
-                "district_id": "Колпинский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Колпинский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1052,13 +1260,17 @@
             },
             "properties": {
                 "id": 53,
-                "lat": 59.742743,
-                "lon": 30.617387,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Пирамида",
                 "stars": 2,
                 "address": "улица Октябрьская 4А",
+                "parking": "Нет парковки",
                 "website": "https://reservationsteps.ru/rooms/index/920ad02e-2bc4-426b-b8e0-960d0c2a56c7?lang=ru&scroll_to_rooms=1&is_auto_search=1&colorSchemePreview=0&onlyrooms=&name=&surname=&email=&phone=&orderid=&servicemode=0&firstroom=0&vkapp=&insidePopup=0&exval=dev5765_A%7Cdev4129_A%7Cdev2954_A%7Cdev10318_A%7Cdev9904_B%7Cproject12_B%7Cdev768_B%7Cdev13185_B&dfrom=03-05-2026&dto=04-05-2026&adults=1",
-                "district_id": "Колпинский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Колпинский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1072,13 +1284,17 @@
             },
             "properties": {
                 "id": 54,
-                "lat": 59.752022,
-                "lon": 30.593974,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Русь",
                 "stars": 2,
                 "address": "улица Финляндская 3",
+                "parking": "Нет парковки",
                 "website": "https://russ-hotel.com/rooms/",
-                "district_id": "Колпинский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Колпинский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1092,13 +1308,17 @@
             },
             "properties": {
                 "id": 55,
-                "lat": 59.752741,
-                "lon": 30.57512,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель День и Ночь",
                 "stars": 3,
                 "address": "улица Финляндская 16к1",
+                "parking": "Бесплатная парковка",
                 "website": "https://www.hotelkolpino.ru/",
-                "district_id": "Колпинский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Колпинский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1112,13 +1332,17 @@
             },
             "properties": {
                 "id": 56,
-                "lat": 59.748458,
-                "lon": 30.611996,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Уютная",
                 "stars": 3,
                 "address": "улица Труда 17А",
+                "parking": "Нет парковки",
                 "website": "https://uyutnaya.com/",
-                "district_id": "Колпинский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Колпинский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1132,13 +1356,17 @@
             },
             "properties": {
                 "id": 57,
-                "lat": 59.748763,
-                "lon": 30.569058,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Апарт-отель Sweet Home Studio",
                 "stars": 4,
                 "address": "проспект Ленина 60",
+                "parking": "Платная парковка",
                 "website": "https://shome.spb.ru/",
-                "district_id": "Колпинский"
+                "breakfast": "Шведский стол",
+                "district_id": "Колпинский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1152,13 +1380,17 @@
             },
             "properties": {
                 "id": 58,
-                "lat": 59.742912,
-                "lon": 30.59021,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Ингрия",
                 "stars": 4,
                 "address": "улица Вавилова 20",
+                "parking": "Бесплатная парковка",
                 "website": "https://ingriahotel.ru/booking.html?date=2026-05-03&nights=1&adults=2&children=&children-age=",
-                "district_id": "Колпинский"
+                "breakfast": "Шведский стол",
+                "district_id": "Колпинский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1172,13 +1404,17 @@
             },
             "properties": {
                 "id": 59,
-                "lat": 59.732076,
-                "lon": 30.618129,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Отель Онегин",
                 "stars": 5,
                 "address": "улица Онежская 1",
+                "parking": "Платная парковка",
                 "website": "https://onegin.org/booking-online/",
-                "district_id": "Колпинский"
+                "breakfast": "Шведский стол",
+                "district_id": "Колпинский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1192,13 +1428,17 @@
             },
             "properties": {
                 "id": 60,
-                "lat": 59.744714,
-                "lon": 30.56153,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Апарт-отель Май рум",
                 "stars": 5,
                 "address": "улица Танкистов 28А",
+                "parking": "Бесплатная парковка",
                 "website": "https://sutki-kolpino.ru/services/index.html",
-                "district_id": "Колпинский"
+                "breakfast": "Шведский стол",
+                "district_id": "Колпинский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1212,13 +1452,17 @@
             },
             "properties": {
                 "id": 61,
-                "lat": 59.84405,
-                "lon": 30.389623,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Каштановой",
                 "stars": 1,
                 "address": "аллея Малая Каштановая 4",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/budapeshtskoj/?utm_campaign=btn_website&utm_content=malaya_kashtanovaya_4&utm_medium=geo&utm_source=yandex_maps&yclid=15574112894759731199",
-                "district_id": "Красногвардейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красногвардейский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1232,13 +1476,17 @@
             },
             "properties": {
                 "id": 62,
-                "lat": 59.957138,
-                "lon": 30.412815,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостевой дом PRIORITY",
                 "stars": 1,
                 "address": "улица Синявинская 3 корпус 2",
+                "parking": "Нет парковки",
                 "website": "https://myhostels.ru/",
-                "district_id": "Красногвардейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красногвардейский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1252,13 +1500,17 @@
             },
             "properties": {
                 "id": 63,
-                "lat": 59.963256,
-                "lon": 30.486957,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Солнечная Долина",
                 "stars": 2,
                 "address": "улица Коммуны 64",
+                "parking": "Нет парковки",
                 "website": "https://www.dolina-hotel.ru/",
-                "district_id": "Красногвардейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красногвардейский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1272,13 +1524,17 @@
             },
             "properties": {
                 "id": 64,
-                "lat": 59.955526,
-                "lon": 30.41336,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хотсел Пятый угол",
                 "stars": 2,
                 "address": "улица Краснодонская 7",
+                "parking": "Нет парковки",
                 "website": "https://pjatyj-ugol-krasnodonskaja-ulitsa.clients.site/",
-                "district_id": "Красногвардейский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красногвардейский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1292,13 +1548,17 @@
             },
             "properties": {
                 "id": 65,
-                "lat": 59.939041,
-                "lon": 30.433853,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель АпартПейдж на Ладожской",
                 "stars": 3,
                 "address": "проспект Энергетиков 8к2",
+                "parking": "Бесплатная парковка",
                 "website": "https://apartpage.ru/booking?uid=d24abbb8-ef6e-4493-868b-4e52b277603f",
-                "district_id": "Красногвардейский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Красногвардейский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1312,13 +1572,17 @@
             },
             "properties": {
                 "id": 66,
-                "lat": 59.928824,
-                "lon": 30.420042,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Ладога",
                 "stars": 3,
                 "address": "проспект Шаумяна 26 1 5 этаж",
+                "parking": "Нет парковки",
                 "website": "https://www.ladogahotel.ru/?utm_campaign=geo&utm_medium=cpc&utm_source=pinbox#отель_центр",
-                "district_id": "Красногвардейский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Красногвардейский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1332,13 +1596,17 @@
             },
             "properties": {
                 "id": 67,
-                "lat": 59.957935,
-                "lon": 30.41198,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Лайт",
                 "stars": 4,
                 "address": "проспект Большеохтинский 39",
+                "parking": "Бесплатная парковка",
                 "website": "https://lite-hotel.ru/#hotelsList",
-                "district_id": "Красногвардейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красногвардейский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1352,13 +1620,17 @@
             },
             "properties": {
                 "id": 68,
-                "lat": 59.955265,
-                "lon": 30.415726,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Мой Питер Среднеохтинская ",
                 "stars": 4,
                 "address": "проспект Среднеохтинский 33/15",
+                "parking": "Платная парковка",
                 "website": "https://reservationsteps.ru/rooms/index/f508b02c-89dc-41e7-9539-27366c9f3a50?lang=ru&scroll_to_rooms=1&is_auto_search=1&colorSchemePreview=0&onlyrooms=&name=&surname=&email=&phone=&orderid=&servicemode=0&firstroom=0&vkapp=&insidePopup=0&exval=dev5765_B%7Cdev4129_A%7Cdev10318_A%7Cdev1185_B%7Cproject12_A%7Cdev9904_B%7Cdev13185_B%7Cdev13555_A%7Cdev768_B&dfrom=04-05-2026&dto=05-05-2026&adults=1&promoCode=",
-                "district_id": "Красногвардейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красногвардейский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1372,13 +1644,17 @@
             },
             "properties": {
                 "id": 69,
-                "lat": 59.961729,
-                "lon": 30.456194,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Отель Менк кингс",
                 "stars": 5,
                 "address": "шоссе Революции 86 корпус 2",
+                "parking": "Платная парковка",
                 "website": "https://menkgroup.ru/booking/?date=2026-05-03&nights=1&adults=2&children-age=",
-                "district_id": "Красногвардейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красногвардейский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1392,13 +1668,17 @@
             },
             "properties": {
                 "id": 70,
-                "lat": 59.948905,
-                "lon": 30.408473,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Гостиница «Охтинская»",
                 "stars": 5,
                 "address": "проспект Большеохтинский 4",
+                "parking": "Бесплатная парковка",
                 "website": "https://okhtinskaya.ru/rooms/",
-                "district_id": "Красногвардейский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красногвардейский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1412,13 +1692,17 @@
             },
             "properties": {
                 "id": 71,
-                "lat": 59.826855,
-                "lon": 30.178236,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел Дача",
                 "stars": 1,
                 "address": "улица Партизана Германа 30 корпус 2",
+                "parking": "Нет парковки",
                 "website": "https://хостел-дача.рф/",
-                "district_id": "Красносельский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красносельский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1432,13 +1716,17 @@
             },
             "properties": {
                 "id": 72,
-                "lat": 59.877962,
-                "lon": 30.242889,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хотсел Нива СВ",
                 "stars": 1,
                 "address": "улица Корабельная 6 корпус 4",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/niva/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=a8e7be4a2e58d6545bd5818b763e12f-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Красносельский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красносельский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1452,13 +1740,17 @@
             },
             "properties": {
                 "id": 73,
-                "lat": 59.724905,
-                "lon": 30.087322,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хотсел Стафф",
                 "stars": 2,
                 "address": "улица Восстановления 15 корпус 3",
+                "parking": "Нет парковки",
                 "website": "https://staffhostel.online/",
-                "district_id": "Красносельский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красносельский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1472,13 +1764,17 @@
             },
             "properties": {
                 "id": 74,
-                "lat": 59.843788,
-                "lon": 30.211724,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Алекс на Жукова",
                 "stars": 2,
                 "address": "проспект Маршала Жукова 48 корпус 1",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/zhukova/?utm_campaign=btn_website&utm_content=marshala_zhukova_48k1&utm_medium=geo&utm_source=yandex_maps&yclid=9343730887566032895",
-                "district_id": "Красносельский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Красносельский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1492,13 +1788,17 @@
             },
             "properties": {
                 "id": 75,
-                "lat": 59.834543,
-                "lon": 30.2616,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Ринго",
                 "stars": 3,
                 "address": "проспект Народного Ополчения 137к1",
+                "parking": "Бесплатная парковка",
                 "website": "https://www.motelspb.ru/",
-                "district_id": "Красносельский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Красносельский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1512,13 +1812,17 @@
             },
             "properties": {
                 "id": 76,
-                "lat": 59.850028,
-                "lon": 30.187201,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Юго-западная",
                 "stars": 3,
                 "address": "улица Рихарда Зорге 11",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/iugo-zapadnaia/?adults=2&checkinDate=2026-04-28&checkoutDate=2026-04-29&childrenAges=&roomCount=1&seed=portal-hotels-search",
-                "district_id": "Красносельский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Красносельский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1532,13 +1836,17 @@
             },
             "properties": {
                 "id": 77,
-                "lat": 59.832428,
-                "lon": 30.139079,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Сосновая поляна",
                 "stars": 4,
                 "address": "улица Лётчика Пилютова 31",
+                "parking": "Бесплатная парковка",
                 "website": "http://mtcgostinica.com/index.php?id=2",
-                "district_id": "Красносельский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красносельский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1552,13 +1860,17 @@
             },
             "properties": {
                 "id": 78,
-                "lat": 59.844,
-                "lon": 30.143606,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Комсомольская ",
                 "stars": 4,
                 "address": "улица 2-я Комсомольская 3",
+                "parking": "Платная парковка",
                 "website": "https://живи-здесь.рф/",
-                "district_id": "Красносельский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красносельский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1572,13 +1884,17 @@
             },
             "properties": {
                 "id": 79,
-                "lat": 59.868861,
-                "lon": 30.164824,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Апарт Жемчужина Акватории ",
                 "stars": 5,
                 "address": "улица Маршала Казакова 78 корпус 1",
+                "parking": "Платная парковка",
                 "website": "https://aquatory-apartments-spb.ru/#/search",
-                "district_id": "Красносельский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красносельский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1592,13 +1908,17 @@
             },
             "properties": {
                 "id": 80,
-                "lat": 59.729769,
-                "lon": 30.096004,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Гостиница Уют",
                 "stars": 5,
                 "address": "улица Первого Мая 17",
+                "parking": "Бесплатная парковка",
                 "website": "https://ujuthotel-krselo.ru/reservation?date=2026-05-04&nights=1&adults=2&children-age=",
-                "district_id": "Красносельский"
+                "breakfast": "Шведский стол",
+                "district_id": "Красносельский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1612,13 +1932,17 @@
             },
             "properties": {
                 "id": 81,
-                "lat": 59.985248,
-                "lon": 29.797061,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Уютная квартира в Кронштадте",
                 "stars": 1,
                 "address": "аллея Тулонская 10",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/kronstadt/studiia-briz-na-pristani-s-lodzhiei-i-vidom-na-zaliv/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=6982da6a1f285f978990904d110acda2-3-newsearch&seed=portal-hotels-search",
-                "district_id": "Кронштадтский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кронштадтский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1632,13 +1956,17 @@
             },
             "properties": {
                 "id": 82,
-                "lat": 60.009175,
-                "lon": 29.724714,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апартаменты Двухкомнатные",
                 "stars": 1,
                 "address": "улица Станюковича 1/9",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/kronstadt/apartamenty-dvukhkomnatnye-ulitsa-staniukovicha/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=2918dde02a84d8d44d4ba0cc5bdd2bf1-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Кронштадтский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кронштадтский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1652,13 +1980,17 @@
             },
             "properties": {
                 "id": 83,
-                "lat": 60.011509,
-                "lon": 29.720025,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апартаменты Суточный рай",
                 "stars": 2,
                 "address": "улица Гидростроителей 6",
+                "parking": "Нет парковки",
                 "website": "https://homereserve.ru/NYKHHKm3AI?apartments=255755,256534,178928,255412,160710,72974,138539,337477,344351,303395,228170,224178,143861&tag=Мой%20сайт",
-                "district_id": "Кронштадтский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кронштадтский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1672,13 +2004,17 @@
             },
             "properties": {
                 "id": 84,
-                "lat": 59.988569,
-                "lon": 29.775607,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Кронштад ру",
                 "stars": 2,
                 "address": "улица Красная 8 корпус 3",
+                "parking": "Нет парковки",
                 "website": "https://otel-kronshtadt.ru/zabronirovat-nomer/",
-                "district_id": "Кронштадтский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Кронштадтский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1692,13 +2028,17 @@
             },
             "properties": {
                 "id": 85,
-                "lat": 59.986481,
-                "lon": 29.78462,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель 33 апартамента",
                 "stars": 3,
                 "address": "улица Петровская 5",
+                "parking": "Бесплатная парковка",
                 "website": "https://booking-33h.agast.ru/booking/rooms",
-                "district_id": "Кронштадтский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Кронштадтский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1712,13 +2052,17 @@
             },
             "properties": {
                 "id": 86,
-                "lat": 60.00083,
-                "lon": 29.763413,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апартаменты Дизайнерская квартира с видом на закат",
                 "stars": 3,
                 "address": "улица Зосимова 4",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/kronstadt/apartamenty-dizainerskaia-kvartira-s-vidom-na-zakat/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=8d00406d6913de0e1966ce43a1ff785b-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Кронштадтский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Кронштадтский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1732,13 +2076,17 @@
             },
             "properties": {
                 "id": 87,
-                "lat": 59.994684,
-                "lon": 29.764928,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница KronHotel 101",
                 "stars": 4,
                 "address": "проспект Ленина 18",
+                "parking": "Платная парковка",
                 "website": "https://book-hostel101.otelms.com/",
-                "district_id": "Кронштадтский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кронштадтский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1752,13 +2100,17 @@
             },
             "properties": {
                 "id": 88,
-                "lat": 59.98521,
-                "lon": 29.798367,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Апартаменты Прудиус Апарт",
                 "stars": 4,
                 "address": "аллея Тулонская 12",
+                "parking": "Бесплатная парковка",
                 "website": "https://prudiusapart.ru/#/",
-                "district_id": "Кронштадтский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кронштадтский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1772,13 +2124,17 @@
             },
             "properties": {
                 "id": 89,
-                "lat": 59.994314,
-                "lon": 29.707121,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Гостиница Форт Константин",
                 "stars": 5,
                 "address": "территория Форт Константин литА",
+                "parking": "Платная парковка",
                 "website": "https://kronfort.com/hotel/",
-                "district_id": "Кронштадтский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кронштадтский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1792,13 +2148,17 @@
             },
             "properties": {
                 "id": 90,
-                "lat": 59.989753,
-                "lon": 29.789206,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Усадьба адмирала Лазарева",
                 "stars": 5,
                 "address": "улица Пролетарская 30",
+                "parking": "Бесплатная парковка",
                 "website": "https://usadba-admirala-lazareva.ru/ru-ru/booking/?date=2026-05-03&nights=1&adults=2&children=&children-age=&access-code=",
-                "district_id": "Кронштадтский"
+                "breakfast": "Шведский стол",
+                "district_id": "Кронштадтский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1812,13 +2172,17 @@
             },
             "properties": {
                 "id": 91,
-                "lat": 60.186712,
-                "lon": 29.506959,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел Березка",
                 "stars": 1,
                 "address": "шоссе Приморское 673",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/khostel-berezka/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=ad59ac2e2c75bea898c5c00e115a25f8-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Курортный"
+                "breakfast": "Нет завтрака",
+                "district_id": "Курортный",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1832,13 +2196,17 @@
             },
             "properties": {
                 "id": 92,
-                "lat": 60.217446,
-                "lon": 29.728724,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел Хвойный",
                 "stars": 1,
                 "address": "дорога Пухтоловская 3 строение 2",
+                "parking": "Нет парковки",
                 "website": "https://hvoiniy.ru/",
-                "district_id": "Курортный"
+                "breakfast": "Нет завтрака",
+                "district_id": "Курортный",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1852,13 +2220,17 @@
             },
             "properties": {
                 "id": 93,
-                "lat": 60.091011,
-                "lon": 29.95356,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостевой дом Дюна",
                 "stars": 2,
                 "address": "улица Токарева 24",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/sestroretsk/gostevoi-dom-tsds-diuna/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=a4481481318d4acfa87c38f63310e77e-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Курортный"
+                "breakfast": "Нет завтрака",
+                "district_id": "Курортный",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1872,13 +2244,17 @@
             },
             "properties": {
                 "id": 94,
-                "lat": 60.157828,
-                "lon": 29.885408,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Пансионат Репино",
                 "stars": 2,
                 "address": "шоссе Приморское 394",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/pansionat-repino/?adults=2&checkinDate=2026-05-04&checkoutDate=2026-05-05&childrenAges=&roomCount=1&searchPagePollingId=8e5cca8eea1928973bc2244f6b0b9b6-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Курортный"
+                "breakfast": "Нет завтрака",
+                "district_id": "Курортный",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -1892,13 +2268,17 @@
             },
             "properties": {
                 "id": 95,
-                "lat": 60.194711,
-                "lon": 29.661198,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Спа-отель Аквамарин",
                 "stars": 3,
                 "address": "шоссе Приморское 593Н",
+                "parking": "Бесплатная парковка",
                 "website": "https://hotel-aquamarin.ru/rooms",
-                "district_id": "Курортный"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Курортный",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1912,13 +2292,17 @@
             },
             "properties": {
                 "id": 96,
-                "lat": 60.168297,
-                "lon": 29.8254,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Casablanka",
                 "stars": 3,
                 "address": "шоссе Приморское 471",
+                "parking": "Нет парковки",
                 "website": "https://ru.poisk-oteli.ru/directory/10654/",
-                "district_id": "Курортный"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Курортный",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1932,13 +2316,17 @@
             },
             "properties": {
                 "id": 97,
-                "lat": 60.150464,
-                "lon": 29.929206,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Гостиница Бор 812",
                 "stars": 4,
                 "address": "шоссе Приморское 385 строение 1",
+                "parking": "Бесплатная парковка",
                 "website": "https://borclub.ru/hotel?utm_medium=geo&utm_source=yandex&yclid=1171809032774352895#rec256350786",
-                "district_id": "Курортный"
+                "breakfast": "Шведский стол",
+                "district_id": "Курортный",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1952,13 +2340,17 @@
             },
             "properties": {
                 "id": 98,
-                "lat": 60.103259,
-                "lon": 29.949026,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Загородный клуб и СПА Скандинавия",
                 "stars": 4,
                 "address": "улица Парковая 16",
+                "parking": "Платная парковка",
                 "website": "https://skandinavia.ru/rooms/?tab=shelepin",
-                "district_id": "Курортный"
+                "breakfast": "Шведский стол",
+                "district_id": "Курортный",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1972,13 +2364,17 @@
             },
             "properties": {
                 "id": 99,
-                "lat": 60.058937,
-                "lon": 29.974038,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Аква-клуб Voda",
                 "stars": 5,
                 "address": "шоссе Приморское 256А",
+                "parking": "Платная парковка",
                 "website": "https://clubvoda.ru/booking/",
-                "district_id": "Курортный"
+                "breakfast": "Шведский стол",
+                "district_id": "Курортный",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -1992,13 +2388,17 @@
             },
             "properties": {
                 "id": 100,
-                "lat": 60.169124,
-                "lon": 29.871207,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Отель и СПА Azimut",
                 "stars": 5,
                 "address": "улица Луговая, 10",
+                "parking": "Бесплатная парковка",
                 "website": "https://azimuthotels.com/ru/saint-petersburg/azimut-hotel-repino?utm_content=main&utm_medium=link&utm_source=yasprav&yclid=4484820154628702207",
-                "district_id": "Курортный"
+                "breakfast": "Шведский стол",
+                "district_id": "Курортный",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2012,13 +2412,17 @@
             },
             "properties": {
                 "id": 101,
-                "lat": 59.838698,
-                "lon": 30.352814,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Звездной",
                 "stars": 1,
                 "address": "улица Пулковская 8 корпус 3",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/zvezdnoj/?utm_campaign=btn_website&utm_content=pulkovskaya_8k3&utm_medium=geo&utm_source=yandex_maps",
-                "district_id": "Московский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Московский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2032,13 +2436,17 @@
             },
             "properties": {
                 "id": 102,
-                "lat": 59.872825,
-                "lon": 30.325679,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел All Seasons",
                 "stars": 1,
                 "address": "переулок Яковлевский 11 4 этаж",
+                "parking": "Нет парковки",
                 "website": "https://www.all-seasons.ru/?ysclid=mn9vph39m4343068581",
-                "district_id": "Московский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Московский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2052,13 +2460,17 @@
             },
             "properties": {
                 "id": 103,
-                "lat": 59.877281,
-                "lon": 30.328583,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Турист",
                 "stars": 2,
                 "address": "улица Севастьянова дом 3",
+                "parking": "Нет парковки",
                 "website": "https://spbtourist.ru/",
-                "district_id": "Московский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Московский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2072,13 +2484,17 @@
             },
             "properties": {
                 "id": 104,
-                "lat": 59.874316,
-                "lon": 30.33488,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Арт-отель ZONTIK",
                 "stars": 2,
                 "address": "проспект Юрия Гагарина 5",
+                "parking": "Нет парковки",
                 "website": "https://www.hotelzontik.ru/?ysclid=mn9cu5nn9v702672",
-                "district_id": "Московский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Московский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2092,13 +2508,17 @@
             },
             "properties": {
                 "id": 105,
-                "lat": 59.844569,
-                "lon": 30.340473,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель АпартПейдж на Московской",
                 "stars": 3,
                 "address": "улица Орджоникидзе 44А",
+                "parking": "Бесплатная парковка",
                 "website": "https://apartpage.ru/booking?uid=9ee055d9-84ea-4203-862d-cf578a821099",
-                "district_id": "Московский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Московский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2112,13 +2532,17 @@
             },
             "properties": {
                 "id": 106,
-                "lat": 59.855325,
-                "lon": 30.319835,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Какаду",
                 "stars": 3,
                 "address": "проспект Московский 183-185",
+                "parking": "Нет парковки",
                 "website": "https://kakadu.spb.ru/",
-                "district_id": "Московский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Московский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2132,13 +2556,89 @@
             },
             "properties": {
                 "id": 107,
-                "lat": 59.855955,
-                "lon": 30.316725,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Отель Скайпарк",
                 "stars": 4,
                 "address": "проспект Московский 183-185 литера А корпус 3Б",
+                "parking": "Бесплатная парковка",
                 "website": "https://hotel-skyparkspb.tilda.ws/?yclid=6213925555897892863&utm_content=17669115187&utm_source=geoadv_maps#rec2016363561",
-                "district_id": "Московский"
+                "breakfast": "Шведский стол",
+                "district_id": "Московский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.314742,
+                    59.83346
+                ]
+            },
+            "properties": {
+                "id": 108,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Гостиница Фантазия",
+                "stars": 4,
+                "address": "проезд 5-й Предпортовый 12 корпус 2",
+                "parking": "Платная парковка",
+                "website": "https://fantasyhotel.ru/order/",
+                "breakfast": "Шведский стол",
+                "district_id": "Московский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.340232,
+                    59.844537
+                ]
+            },
+            "properties": {
+                "id": 109,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Гостиница Vertical We&i Московская",
+                "stars": 5,
+                "address": "улица Орджоникидзе 44А",
+                "parking": "Платная парковка",
+                "website": "https://vertical-hotel.ru/hotels/we-i-ramada/?utm_campaign=o44&utm_medium=map&utm_source=yandex&yclid=11773683430958563327",
+                "breakfast": "Шведский стол",
+                "district_id": "Московский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.275555,
+                    59.799897
+                ]
+            },
+            "properties": {
+                "id": 110,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Отель Пулково Космос",
+                "stars": 5,
+                "address": "шоссе Пулковское 41 литера ЗД",
+                "parking": "Бесплатная парковка",
+                "website": "https://pulkovo.cosmosgroup.ru/?utm_campaign=pulkovo&utm_content=contact&utm_medium=geo&utm_source=yandex.geo&yclid=11261308206125678591",
+                "breakfast": "Шведский стол",
+                "district_id": "Московский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2152,13 +2652,17 @@
             },
             "properties": {
                 "id": 111,
-                "lat": 59.909477,
-                "lon": 30.470383,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Дыбенко",
                 "stars": 1,
                 "address": "улица Антонова-Овсеенко 18",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/dybenko/?utm_campaign=btn_website&utm_content=antonova_ovseenko_18&utm_medium=geo&utm_source=yandex_maps&yclid=16475710231841865727",
-                "district_id": "Невский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Невский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2166,19 +2670,71 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    30.439651,
-                    59.893371
+                    30.440424,
+                    59.886881
                 ]
             },
             "properties": {
                 "id": 112,
-                "lat": 59.893371,
-                "lon": 30.439651,
-                "name": "Гостевой Дом",
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Хостел Staff",
                 "stars": 1,
-                "address": "проспект Обуховской Обороны 88 литера А",
-                "website": "https://travel.yandex.ru/hotels/saint-petersburg/gostevoi-dom-prospekt-obukhovskoi-oborony/",
-                "district_id": "Невский"
+                "address": "проспект Обуховской Обороны 127А",
+                "parking": "Нет парковки",
+                "website": "https://staffhostel.online/catalog",
+                "breakfast": "Нет завтрака",
+                "district_id": "Невский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.475565,
+                    59.856915
+                ]
+            },
+            "properties": {
+                "id": 113,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостевой дом на Рабфаковской",
+                "stars": 2,
+                "address": "улица Рабфаковская 3 корпус 3",
+                "parking": "Нет парковки",
+                "website": "https://forshome.ru/zayavka-na-bronirovanie/",
+                "breakfast": "Нет завтрака",
+                "district_id": "Невский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.401979,
+                    59.914522
+                ]
+            },
+            "properties": {
+                "id": 114,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостевой Дом на Слободской",
+                "stars": 2,
+                "address": "улица Слободская 3",
+                "parking": "Нет парковки",
+                "website": "http://www.gostevoydom.spb.ru/",
+                "breakfast": "Нет завтрака",
+                "district_id": "Невский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2192,13 +2748,17 @@
             },
             "properties": {
                 "id": 115,
-                "lat": 59.867181,
-                "lon": 30.428609,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Белый сад",
                 "stars": 3,
                 "address": "улица Сортировочная-Московская 15",
+                "parking": "Бесплатная парковка",
                 "website": "https://beliysadspb.ru/",
-                "district_id": "Невский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Невский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2212,13 +2772,113 @@
             },
             "properties": {
                 "id": 116,
-                "lat": 59.897638,
-                "lon": 30.414035,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Jenavi Club Hotel",
                 "stars": 3,
                 "address": "проспект Большой Смоленский 12",
+                "parking": "Нет парковки",
                 "website": "https://hotel.jenavi.club/",
-                "district_id": "Невский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Невский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.427989,
+                    59.899016
+                ]
+            },
+            "properties": {
+                "id": 117,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Мини-отель Елизар",
+                "stars": 4,
+                "address": "проспект Обуховской Обороны 89",
+                "parking": "Бесплатная парковка",
+                "website": "https://www.elizar-hotel.ru/booking?date=2026-05-06&nights=1&adults=1&children=&children-age=",
+                "breakfast": "Шведский стол",
+                "district_id": "Невский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.406078,
+                    59.911551
+                ]
+            },
+            "properties": {
+                "id": 118,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Гостиница Друзья Обухов",
+                "stars": 4,
+                "address": "улица Смоляная 1",
+                "parking": "Платная парковка",
+                "website": "https://friendshotels.ru/",
+                "breakfast": "Шведский стол",
+                "district_id": "Невский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.42958,
+                    59.883895
+                ]
+            },
+            "properties": {
+                "id": 119,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Отель Новая Эра",
+                "stars": 5,
+                "address": "улица Цимбалина 32",
+                "parking": "Платная парковка",
+                "website": "https://new-hotel-era.ru/zabronirovat",
+                "breakfast": "Шведский стол",
+                "district_id": "Невский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.437362,
+                    59.867542
+                ]
+            },
+            "properties": {
+                "id": 120,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Отель Рокит ",
+                "stars": 5,
+                "address": "улица Кибальчича 4 корпус 3",
+                "parking": "Бесплатная парковка",
+                "website": "https://rockithotel.ru/",
+                "breakfast": "Шведский стол",
+                "district_id": "Невский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2232,13 +2892,17 @@
             },
             "properties": {
                 "id": 121,
-                "lat": 59.957385,
-                "lon": 30.327681,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел LikeHome",
                 "stars": 1,
                 "address": "улица Малая Посадская 15",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/likehome/?adults=2&checkinDate=2026-03-27&checkoutDate=2026-03-28&childrenAges=&roomCount=1&searchPagePollingId=8409725c1d9d7a979cba0f83c69c7169-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Петроградский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Петроградский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2252,13 +2916,17 @@
             },
             "properties": {
                 "id": 122,
-                "lat": 59.957457,
-                "lon": 30.313437,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостевые Комнаты «Современник»",
                 "stars": 1,
                 "address": "улица Кронверкская 1",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/sovremennik/",
-                "district_id": "Петроградский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Петроградский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2272,13 +2940,17 @@
             },
             "properties": {
                 "id": 123,
-                "lat": 59.952572,
-                "lon": 30.302496,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница У семи мостов",
                 "stars": 2,
                 "address": "улица Зверинская 38",
+                "parking": "Нет парковки",
                 "website": "http://sevenbridgeshotel.ru/",
-                "district_id": "Петроградский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Петроградский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2292,13 +2964,17 @@
             },
             "properties": {
                 "id": 124,
-                "lat": 59.967097,
-                "lon": 30.314836,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостевые комнаты Календарь",
                 "stars": 2,
                 "address": "улица Петропавловская дом 8 лестница 7",
+                "parking": "Нет парковки",
                 "website": "https://gh-calendar.ru/",
-                "district_id": "Петроградский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Петроградский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2312,13 +2988,17 @@
             },
             "properties": {
                 "id": 125,
-                "lat": 59.963611,
-                "lon": 30.287149,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Грани",
                 "stars": 3,
                 "address": "улица Большая Зеленина 24",
+                "parking": "Бесплатная парковка",
                 "website": "https://granihotel.ru/?ysclid=mnhzpp9b5826763186",
-                "district_id": "Петроградский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Петроградский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2332,13 +3012,353 @@
             },
             "properties": {
                 "id": 126,
-                "lat": 59.962577,
-                "lon": 30.314031,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Демократ",
                 "stars": 3,
                 "address": "проспект Каменноостровский 26-28",
+                "parking": "Нет парковки",
                 "website": "https://hotel.democrat/hotels/otel-demokrat-na-kamennoostrovskom-26-28",
-                "district_id": "Петроградский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Петроградский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.301761,
+                    59.961245
+                ]
+            },
+            "properties": {
+                "id": 127,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Отель Евразия",
+                "stars": 4,
+                "address": "улица Гатчинская 5",
+                "parking": "Бесплатная парковка",
+                "website": "https://veronahotel-spb.ru/booking?date=2026-05-06&nights=1&adults=2&children-age=&hotel_id=178",
+                "breakfast": "Шведский стол",
+                "district_id": "Петроградский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.290739,
+                    59.96609
+                ]
+            },
+            "properties": {
+                "id": 128,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Гостиница Алфавит",
+                "stars": 4,
+                "address": "проспект Левашовский 14",
+                "parking": "Платная парковка",
+                "website": "https://familinn.ru/reservation/?date=2026-05-06&nights=1&adults=2&children-age=&hotel_id=1726&access-code=",
+                "breakfast": "Шведский стол",
+                "district_id": "Петроградский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.309282,
+                    59.957903
+                ]
+            },
+            "properties": {
+                "id": 129,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Гостиница Mark",
+                "stars": 5,
+                "address": "улица Сытнинская 14Б",
+                "parking": "Платная парковка",
+                "website": "https://www.maryhotelgroup.com/booking/?date=2026-05-06&nights=1&adults=2&children=&children-age=&access-code=",
+                "breakfast": "Шведский стол",
+                "district_id": "Петроградский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.304476,
+                    59.966038
+                ]
+            },
+            "properties": {
+                "id": 130,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Гостиница Molo",
+                "stars": 5,
+                "address": "улица Всеволода Вишневского 2/12К",
+                "parking": "Бесплатная парковка",
+                "website": "https://molohotel.ru/?yclid=12368456726210674687&utm_content=17602460020&utm_source=geoadv_maps",
+                "breakfast": "Шведский стол",
+                "district_id": "Петроградский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.861619,
+                    59.876927
+                ]
+            },
+            "properties": {
+                "id": 131,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Хостел в Петергофе",
+                "stars": 1,
+                "address": "улица Веденеева 18",
+                "parking": "Нет парковки",
+                "website": "https://travel.yandex.ru/hotels/peterhof/khostel/?adults=2&checkinDate=2026-05-08&checkoutDate=2026-05-09&childrenAges=&roomCount=1&searchPagePollingId=b6988d32d498a0e82843e759c1836605-0-newsearch&seed=portal-hotels-search",
+                "breakfast": "Нет завтрака",
+                "district_id": "Петродворцовый",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.849294,
+                    59.879294
+                ]
+            },
+            "properties": {
+                "id": 132,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостевой дом Университетская дача",
+                "stars": 1,
+                "address": "улица Первого Мая 36/1",
+                "parking": "Нет парковки",
+                "website": "https://travel.yandex.ru/hotels/peterhof/universitetskaia-dacha/?adults=2&checkinDate=2026-05-08&checkoutDate=2026-05-09&childrenAges=&roomCount=1&seed=portal-hotels-search",
+                "breakfast": "Нет завтрака",
+                "district_id": "Петродворцовый",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.801781,
+                    59.902548
+                ]
+            },
+            "properties": {
+                "id": 133,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостевой дом Счастья",
+                "stars": 2,
+                "address": "переулок Промышленный 11",
+                "parking": "Нет парковки",
+                "website": "https://travel.yandex.ru/hotels/lomonosov/dom-schastia-promyshlennyi-pereulok/?adults=2&checkinDate=2026-05-08&checkoutDate=2026-05-09&childrenAges=&roomCount=1&searchPagePollingId=2c3c9f72707f194e1407dfbe108f4b79-0-newsearch&seed=portal-hotels-search",
+                "breakfast": "Нет завтрака",
+                "district_id": "Петродворцовый",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.857098,
+                    59.884568
+                ]
+            },
+            "properties": {
+                "id": 134,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостиница у Тамары",
+                "stars": 2,
+                "address": "дорога Бобыльская 43",
+                "parking": "Нет парковки",
+                "website": "https://travel.yandex.ru/hotels/peterhof/?adults=2&bbox=29.84171488483761%2C59.84349687844607~29.962824595740106%2C59.89959993075756&checkinDate=2026-05-08&checkoutDate=2026-05-09&childrenAges=&flexibleDatesType&geoId=98546&navigationToken=0&oneNightChecked=false&roomCount=1&searchPagePollingId=f3f7b02a5c3e8248893fd81883e8232d-0-newsearch&selectedSortId=relevant-first&topHotelSlug=peterhof%2Fu-tamary-bobylskaia-doroga-43-75192926604",
+                "breakfast": "Нет завтрака",
+                "district_id": "Петродворцовый",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.852037,
+                    59.879013
+                ]
+            },
+            "properties": {
+                "id": 135,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостевой дом Алла",
+                "stars": 3,
+                "address": "улица Первого Мая 1А",
+                "parking": "Бесплатная парковка",
+                "website": "http://domalla.ru/booking",
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Петродворцовый",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.017209,
+                    59.855875
+                ]
+            },
+            "properties": {
+                "id": 136,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостевой дом Green house",
+                "stars": 3,
+                "address": "шоссе Санкт-Петербургское 97Б",
+                "parking": "Нет парковки",
+                "website": "https://travel.yandex.ru/hotels/saint-petersburg/green-house/?adults=2&checkinDate=2026-05-08&checkoutDate=2026-05-09&childrenAges=&roomCount=1&searchPagePollingId=2dd9838d4e7f1357c3fbd1941a1acab3-0-newsearch&seed=portal-hotels-search",
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Петродворцовый",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.94977,
+                    59.873638
+                ]
+            },
+            "properties": {
+                "id": 137,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Гостиница Александрия Петергоф",
+                "stars": 4,
+                "address": "шоссе Санкт-Петербургское 134Б",
+                "parking": "Бесплатная парковка",
+                "website": "https://aleksandria-petergof.ru/ru/rooms.html",
+                "breakfast": "Шведский стол",
+                "district_id": "Петродворцовый",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.908405,
+                    59.879841
+                ]
+            },
+            "properties": {
+                "id": 138,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Гостиница Самсон",
+                "stars": 4,
+                "address": "проспект Санкт-Петербургский 44А",
+                "parking": "Платная парковка",
+                "website": "https://samson-hotel.ru/booking/?date=2026-05-07&nights=1&adults=2&children=&children-age=",
+                "breakfast": "Шведский стол",
+                "district_id": "Петродворцовый",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.774767,
+                    59.919129
+                ]
+            },
+            "properties": {
+                "id": 139,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Гостиница Домик у причала",
+                "stars": 5,
+                "address": "набережная Сидоровского канала 3",
+                "parking": "Платная парковка",
+                "website": "https://pierhouse.ru/room/",
+                "breakfast": "Шведский стол",
+                "district_id": "Петродворцовый",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.99255,
+                    59.86016
+                ]
+            },
+            "properties": {
+                "id": 140,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Гостиница Гранд Петергоф",
+                "stars": 5,
+                "address": "улица Гофмейстерская 2",
+                "parking": "Бесплатная парковка",
+                "website": "https://www.grandpeterhof.ru/?yclid=15833796781250183167&utm_content=17092156780&utm_source=geoadv_maps",
+                "breakfast": "Шведский стол",
+                "district_id": "Петродворцовый",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2351,14 +3371,18 @@
                 ]
             },
             "properties": {
-                "id": 131,
-                "lat": 59.986313,
-                "lon": 30.297198,
+                "id": 141,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Ку ку",
                 "stars": 1,
                 "address": "улица Савушкина 7 ТЦ Чёрная речка",
+                "parking": "Нет парковки",
                 "website": "https://jeff1.ru/?ysclid=mn9degcgr9379595291",
-                "district_id": "Приморский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Приморский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2371,14 +3395,18 @@
                 ]
             },
             "properties": {
-                "id": 132,
-                "lat": 60.006401,
-                "lon": 30.219202,
+                "id": 142,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Алекс Отель на Богатырском",
                 "stars": 1,
                 "address": "проспект Богатырский 51 корпус 1",
+                "parking": "Нет парковки",
                 "website": "https://motelspb.com/hotels/bogatyrskom/?utm_campaign=btn_website&utm_content=bogatyrskiy_51&utm_medium=geo&utm_source=yandex_maps&yclid=8892353903533490175",
-                "district_id": "Приморский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Приморский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2391,14 +3419,42 @@
                 ]
             },
             "properties": {
-                "id": 133,
-                "lat": 60.012475,
-                "lon": 30.255623,
+                "id": 143,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Мини-отель Антверпен",
                 "stars": 2,
                 "address": "проспект Комендантский 17 корпус 1",
+                "parking": "Нет парковки",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/antverpen/",
-                "district_id": "Приморский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Приморский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.241218,
+                    60.002443
+                ]
+            },
+            "properties": {
+                "id": 144,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостиница Старая деревня",
+                "stars": 2,
+                "address": "проспект Богатырский 32 корпус 1",
+                "parking": "Нет парковки",
+                "website": "https://hotel-amata.ru/booking/",
+                "breakfast": "Нет завтрака",
+                "district_id": "Приморский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2411,14 +3467,18 @@
                 ]
             },
             "properties": {
-                "id": 135,
-                "lat": 59.990198,
-                "lon": 30.292394,
+                "id": 145,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель АпартПейдж Черная речка",
                 "stars": 3,
                 "address": "улица Матроса Железняка 2 строение 1",
+                "parking": "Бесплатная парковка",
                 "website": "https://apartpage.ru/booking?uid=e180a652-284a-4563-96b6-555efe5421b2",
-                "district_id": "Приморский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Приморский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2431,14 +3491,162 @@
                 ]
             },
             "properties": {
-                "id": 136,
-                "lat": 59.997083,
-                "lon": 30.298325,
+                "id": 146,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Мини-отель Норд Хаус",
                 "stars": 3,
-                "address": "Коломяжский проспект 18",
+                "address": "проспект Коломяжский 18",
+                "parking": "Нет парковки",
                 "website": "https://nhhotel.ru/",
-                "district_id": "Приморский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Приморский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.325314,
+                    59.981849
+                ]
+            },
+            "properties": {
+                "id": 147,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Смарт Отель Кантемировский",
+                "stars": 4,
+                "address": "переулок Красногвардейский 15Д",
+                "parking": "Бесплатная парковка",
+                "website": "https://hotel.smartspace.spb.ru/?yclid=971299721635954687&utm_content=17504906401&utm_source=geoadv_maps&booking-scenario=new",
+                "breakfast": "Шведский стол",
+                "district_id": "Приморский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.275467,
+                    60.020399
+                ]
+            },
+            "properties": {
+                "id": 148,
+                "gym": "Да",
+                "spa": "Нет",
+                "name": "Отель Валерия",
+                "stars": 4,
+                "address": "улица 2-я Никитинская 63",
+                "parking": "Платная парковка",
+                "website": "https://k-vizit.com/room_reservation?date=2026-05-07&nights=1&hotel_id=2951&access-code=&adults=2&children-age=",
+                "breakfast": "Шведский стол",
+                "district_id": "Приморский",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.208983,
+                    59.980984
+                ]
+            },
+            "properties": {
+                "id": 149,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Отель Питерлэнд",
+                "stars": 5,
+                "address": "проспект Приморский 72",
+                "parking": "Платная парковка",
+                "website": "https://www.pl-hotel.ru/booking.html?date=2026-05-07&nights=1&adults=2&children=&children-age=",
+                "breakfast": "Шведский стол",
+                "district_id": "Приморский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.190327,
+                    59.987786
+                ]
+            },
+            "properties": {
+                "id": 150,
+                "gym": "Да",
+                "spa": "Да",
+                "name": "Гостиница Лахта плаза",
+                "stars": 5,
+                "address": "проспект Приморский 78 корпус 1",
+                "parking": "Бесплатная парковка",
+                "website": "https://lahtaplaza.ru/rooms",
+                "breakfast": "Шведский стол",
+                "district_id": "Приморский",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.444704,
+                    59.79159
+                ]
+            },
+            "properties": {
+                "id": 151,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Хостел Альфа",
+                "stars": 1,
+                "address": "шоссе Московское 117 строение 1",
+                "parking": "Нет парковки",
+                "website": "https://alfahostel.su/",
+                "breakfast": "Нет завтрака",
+                "district_id": "Пушкинский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.406257,
+                    59.71701
+                ]
+            },
+            "properties": {
+                "id": 152,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Хостел Легион",
+                "stars": 1,
+                "address": "улица Малая 31",
+                "parking": "Нет парковки",
+                "website": "https://travel.yandex.ru/hotels/pushkin/legion/?adults=2&checkinDate=2026-05-08&checkoutDate=2026-05-09&childrenAges=&roomCount=1&seed=portal-hotels-search",
+                "breakfast": "Нет завтрака",
+                "district_id": "Пушкинский",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2451,14 +3659,18 @@
                 ]
             },
             "properties": {
-                "id": 143,
-                "lat": 59.91451,
-                "lon": 30.352047,
+                "id": 153,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Гостиница Эспланада",
                 "stars": 2,
                 "address": "набережная Обводного канала 50",
+                "parking": "Нет парковки",
                 "website": "https://esplanada-spb.ru/nomera-ceny/",
-                "district_id": "Фрунзенский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Фрунзенский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2471,14 +3683,18 @@
                 ]
             },
             "properties": {
-                "id": 144,
-                "lat": 59.909398,
-                "lon": 30.340491,
+                "id": 154,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель 365",
                 "stars": 2,
                 "address": "улица Боровая 104А 3 этаж",
+                "parking": "Нет парковки",
                 "website": "https://hotel365spb.ru/",
-                "district_id": "Фрунзенский"
+                "breakfast": "Нет завтрака",
+                "district_id": "Фрунзенский",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2491,14 +3707,18 @@
                 ]
             },
             "properties": {
-                "id": 145,
-                "lat": 59.912253,
-                "lon": 30.345073,
-                "name": "Гостиница АлександерПлатц",
+                "id": 155,
+                "gym": "Нет",
+                "spa": "Нет",
+                "name": "Гостиница Александер Платц",
                 "stars": 3,
                 "address": "улица Воронежская 53к1",
+                "parking": "Бесплатная парковка",
                 "website": "https://travel.yandex.ru/hotels/saint-petersburg/aleksanderplatts/?adults=2&checkinDate=2026-04-07&checkoutDate=2026-04-08&childrenAges=&roomCount=1&searchPagePollingId=f71cdee95b1de580cffb72c338c84e5b-0-newsearch&seed=portal-hotels-search",
-                "district_id": "Фрунзенский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Фрунзенский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2511,14 +3731,18 @@
                 ]
             },
             "properties": {
-                "id": 146,
-                "lat": 59.910152,
-                "lon": 30.363713,
+                "id": 156,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель Олимпия",
                 "stars": 3,
                 "address": "Нефтяная дорога, 1, корп. 5",
+                "parking": "Нет парковки",
                 "website": "https://olympart-spb.ru/",
-                "district_id": "Фрунзенский"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Фрунзенский",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2531,14 +3755,18 @@
                 ]
             },
             "properties": {
-                "id": 151,
-                "lat": 59.924029,
-                "lon": 30.362039,
+                "id": 157,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Комплекс апартаментов У Московского вокзала",
                 "stars": 1,
                 "address": "проспект Лиговский 50 корпус 9 литера А",
+                "parking": "Нет парковки",
                 "website": "https://apartamenty-u-moskovskogo.clients.site/",
-                "district_id": "Центральный"
+                "breakfast": "Нет завтрака",
+                "district_id": "Центральный",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2551,14 +3779,18 @@
                 ]
             },
             "properties": {
-                "id": 152,
-                "lat": 59.93835,
-                "lon": 30.347513,
+                "id": 158,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Хостел Belinsky",
                 "stars": 1,
                 "address": "улица Белинского 8",
+                "parking": "Нет парковки",
                 "website": "https://belinskyrooms.ru/?ysclid=mn9vro652178927396",
-                "district_id": "Центральный"
+                "breakfast": "Нет завтрака",
+                "district_id": "Центральный",
+                "price_range": "До 500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2571,14 +3803,18 @@
                 ]
             },
             "properties": {
-                "id": 153,
-                "lat": 59.932143,
-                "lon": 30.368164,
+                "id": 159,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Капсульный отель 4U Capsule Hotel",
                 "stars": 2,
                 "address": "проспект Суворовский 1/8",
+                "parking": "Нет парковки",
                 "website": "https://4u-hotel.com/?ysclid=mn9cb2wk4x668182637",
-                "district_id": "Центральный"
+                "breakfast": "Нет завтрака",
+                "district_id": "Центральный",
+                "price_range": "с 501-1500",
+                "pets_allowed": "Нет"
             }
         },
         {
@@ -2591,14 +3827,18 @@
                 ]
             },
             "properties": {
-                "id": 155,
-                "lat": 59.93057,
-                "lon": 30.37274,
+                "id": 160,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Отель The Red",
                 "stars": 3,
                 "address": "улица 2-я Советская 18",
+                "parking": "Бесплатная парковка",
                 "website": "http://hotelthered.com/?ysclid=mn932rgqm1781708686",
-                "district_id": "Центральный"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Центральный",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2611,14 +3851,18 @@
                 ]
             },
             "properties": {
-                "id": 156,
-                "lat": 59.933971,
-                "lon": 30.355543,
+                "id": 161,
+                "gym": "Нет",
+                "spa": "Нет",
                 "name": "Апарт-отель АпартПейдж Маяковского",
                 "stars": 3,
                 "address": "улица Маяковского 3",
+                "parking": "Нет парковки",
                 "website": "https://apartpage.ru/booking?uid=1ddb8ca4-11f8-46aa-bb22-2fa7b43658c9",
-                "district_id": "Центральный"
+                "breakfast": "Континентальный завтрак",
+                "district_id": "Центральный",
+                "price_range": "с 1501-2500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2631,14 +3875,18 @@
                 ]
             },
             "properties": {
-                "id": 157,
-                "lat": 59.928072,
-                "lon": 30.369593,
+                "id": 162,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Отель Реноме",
                 "stars": 4,
                 "address": "улица Гончарная 26",
+                "parking": "Платная парковка",
                 "website": "https://renomehotel.ru/?ysclid=mnnnaarl1b507545547",
-                "district_id": "Центральный"
+                "breakfast": "Шведский стол",
+                "district_id": "Центральный",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2651,14 +3899,18 @@
                 ]
             },
             "properties": {
-                "id": 158,
-                "lat": 59.930523,
-                "lon": 30.363298,
+                "id": 163,
+                "gym": "Да",
+                "spa": "Нет",
                 "name": "Хостел Капсульный отель BARCH",
-                "stars": 2,
+                "stars": 4,
                 "address": "проспект Невский 87/2 этаж 3",
+                "parking": "Бесплатная парковка",
                 "website": "https://barchhotel.com/capsulehotelbarch",
-                "district_id": "Центральный "
+                "breakfast": "Шведский стол",
+                "district_id": "Центральный ",
+                "price_range": "с 2501-4500",
+                "pets_allowed": "Да"
             }
         },
         {
@@ -2671,14 +3923,18 @@
                 ]
             },
             "properties": {
-                "id": 159,
-                "lat": 59.932773,
-                "lon": 30.366016,
+                "id": 164,
+                "gym": "Да",
+                "spa": "Да",
                 "name": "Апарт-отель Artstudio Nevsky",
-                "stars": 4,
+                "stars": 5,
                 "address": "улица 2-я Советская 4Б строение 1",
+                "parking": "Платная парковка",
                 "website": "https://artstudiohotels.ru/?etext=2202.IR1Dw2zZIQzDGFxLqkTUV63DtDmHY0s5ADHgJoqHLT4TJ19oid1Ymuq8KdwI6Pkh9ZncF7G7zwyrDgsh77Eb0Xw0oF419akabLHYTAP7zrn95xJzcm1v0b34xONKUV7VjPVhxrPzeS8ufbYFstAJfHFid3p6bW51cWxjenB6bm0.0e33ecfdaa9c27f09537d2959901d055f4b078ed&yclid=3076707084573605887&ybaip=1",
-                "district_id": "Центральный "
+                "breakfast": "Шведский стол",
+                "district_id": "Центральный ",
+                "price_range": "с 4500",
+                "pets_allowed": "Да"
             }
         }
     ]

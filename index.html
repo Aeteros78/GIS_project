@@ -13,81 +13,192 @@
     <script src="scripts/filters.js" defer></script>
 </head>
 <body>
-    <header class="app-header">
-        <h1>ГИС-приложение по подбору гостиниц в Санкт-Петербурге</h1>
-    </header>
+<header class="app-header">
+    <h1>ГИС-приложение по подбору гостиниц в Санкт-Петербурге</h1>
+</header>
 
-    <!-- Основная область: слева панель с фильтрами, справа карта -->
-    <main class="app-main">
-        <!-- Боковая панель с фильтрами (слева) -->
-        <aside class="sidebar">
-            <section class="filters">
-                <h2>Поиск и фильтрация</h2>
-                <!-- Форма фильтров. Отправка перехватывается в filters.js (submit без перезагрузки страницы). -->
-                <form id="filters-form">
-                    <!-- Фильтр по району города -->
-                    <div class="form-group">
-                        <label for="district">Район:</label>
-                        <!-- Список районов заполняется динамически в map.js из файла districts_spb.geojson -->
-                        <select id="district" name="district">
-                            <!-- Значение value="" означает "Все районы" -->
-                            <option value="">Все районы</option>
-                        </select>
+<main class="app-main">
+    <aside class="sidebar">
+        <section class="filters">
+            <h2>Поиск и фильтрация</h2>
+            <form id="filters-form">
+                <!-- Район -->
+                <div class="form-group">
+                    <label for="district">Район:</label>
+                    <select id="district" name="district">
+                        <option value="">Все районы</option>
+                    </select>
+                </div>
+
+                <!-- Станция метро -->
+                <div class="form-group">
+                    <label for="subwayStation">Станция метро:</label>
+                    <select id="subwayStation" name="metro">
+                        <option value="">Все станции</option>
+                    </select>
+                </div>
+
+                <!-- Звёздность (чекбоксы) -->
+                <div class="form-group">
+                    <span class="stars-label">Звёздность:</span>
+                    <div class="stars-checkboxes">
+                        <label>
+                            <input type="checkbox" name="stars" value="5">
+                            5★
+                        </label>
+                        <label>
+                            <input type="checkbox" name="stars" value="4">
+                            4★
+                        </label>
+                        <label>
+                            <input type="checkbox" name="stars" value="3">
+                            3★
+                        </label>
+                        <label>
+                            <input type="checkbox" name="stars" value="2">
+                            2★
+                        </label>
+                        <label>
+                            <input type="checkbox" name="stars" value="1">
+                            1★
+                        </label>
                     </div>
+                </div>
 
-                    <!-- Фильтр по станции метро -->
-                    <div class="form-group">
-                        <label for="subwayStation">Станция метро:</label>
-                        <!-- Список станций заполняется динамически в map.js из файла subway_spb.geojson -->
-                        <select id="subwayStation" name="metro">
-                            <!-- value="" – выбор "Все станции" -->
-                            <option value="">Все станции</option>
-                        </select>
+                <!-- Завтрак (чекбоксы, как звёзды) -->
+                <div class="form-group">
+                    <span class="stars-label">Завтрак:</span>
+                    <div class="stars-checkboxes">
+                        <label>
+                            <input type="checkbox" name="breakfast" value="Нет завтрака">
+                            Нет завтрака
+                        </label>
+                        <label>
+                            <input type="checkbox" name="breakfast" value="Континентальный завтрак">
+                            Континентальный завтрак
+                        </label>
+                        <label>
+                            <input type="checkbox" name="breakfast" value="Шведский стол">
+                            Шведский стол
+                        </label>
                     </div>
+                </div>
 
-                    <!-- Фильтр по звёздности гостиниц (чекбоксы) -->
-                    <div class="form-group">
-                        <span class="stars-label">Звёздность:</span>
-                        <div class="stars-checkboxes">
-                            <label>
-                                <input type="checkbox" name="stars" value="5">
-                                5★
-                            </label>
-                            <label>
-                                <input type="checkbox" name="stars" value="4">
-                                4★
-                            </label>
-                            <label>
-                                <input type="checkbox" name="stars" value="3">
-                                3★
-                            </label>
-                            <label>
-                                <input type="checkbox" name="stars" value="2">
-                                2★
-                            </label>
-                            <label>
-                                <input type="checkbox" name="stars" value="1">
-                                1★
-                            </label>
-                        </div>
+                <!-- Парковка (чекбоксы, как звёзды) -->
+                <div class="form-group">
+                    <span class="stars-label">Парковка:</span>
+                    <div class="stars-checkboxes">
+                        <label>
+                            <input type="checkbox" name="parking" value="Нет парковки">
+                            Нет парковки
+                        </label>
+                        <label>
+                            <input type="checkbox" name="parking" value="Бесплатная парковка">
+                            Бесплатная парковка
+                        </label>
+                        <label>
+                            <input type="checkbox" name="parking" value="Платная парковка">
+                            Платная парковка
+                        </label>
                     </div>
+                </div>
 
-                    <!-- Кнопки управления фильтрами -->
-                    <div class="form-actions">
-                        <!-- Кнопка "Применить фильтры": запускает обработчик формы в filters.js -->
-                        <button type="submit">Применить фильтры</button>
-                        <!-- Кнопка "Сбросить" (type="button", чтобы не отправляла форму): логика сброса реализована в filters.js -->
-                        <button type="button" id="reset-filters">Сбросить</button>
+                <!-- Цена (чекбоксы, как звёзды) -->
+                <div class="form-group">
+                    <span class="stars-label">Ценовой диапазон:</span>
+                    <div class="stars-checkboxes">
+                        <label>
+                            <input type="checkbox" name="price_range" value="До 500">
+                            До 500
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price_range" value="с 501-1500">
+                            с 501–1500
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price_range" value="с 1501-2500">
+                            с 1501–2500
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price_range" value="с 2501-4500">
+                            с 2501–4500
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price_range" value="с 4500">
+                            с 4500
+                        </label>
                     </div>
-                </form>
-            </section>
-        </aside>
+                </div>
 
-        <!-- Карта (контейнер для Яндекс.Карт) справа, занимает всё оставшееся место -->
-        <section class="map-section">
-            <!-- В этот div с id="map" Яндекс.Карты отрисуют карту через API -->
-            <div id="map"></div>
+                <!-- Проживание с животными (радио) -->
+                <div class="form-group">
+                    <span class="stars-label">Проживание с животными:</span>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="pets_allowed" value="" checked>
+                            Неважно
+                        </label>
+                        <label>
+                            <input type="radio" name="pets_allowed" value="да">
+                            Да
+                        </label>
+                        <label>
+                            <input type="radio" name="pets_allowed" value="нет">
+                            Нет
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Зал (радио) -->
+                <div class="form-group">
+                    <span class="stars-label">Тренажёрный зал:</span>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gym" value="" checked>
+                            Неважно
+                        </label>
+                        <label>
+                            <input type="radio" name="gym" value="да">
+                            Есть
+                        </label>
+                        <label>
+                            <input type="radio" name="gym" value="нет">
+                            Нет
+                        </label>
+                    </div>
+                </div>
+
+                <!-- SPA (радио) -->
+                <div class="form-group">
+                    <span class="stars-label">SPA:</span>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="spa" value="" checked>
+                            Неважно
+                        </label>
+                        <label>
+                            <input type="radio" name="spa" value="да">
+                            Есть
+                        </label>
+                        <label>
+                            <input type="radio" name="spa" value="нет">
+                            Нет
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Кнопки -->
+                <div class="form-actions">
+                    <button type="submit">Применить фильтры</button>
+                    <button type="button" id="reset-filters">Сбросить</button>
+                </div>
+            </form>
         </section>
-    </main>
+    </aside>
+
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+</main>
 </body>
 </html>

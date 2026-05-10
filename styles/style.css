@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-
 html, body {
     height: 100%;
 }
@@ -15,7 +14,6 @@ html, body {
     color: #fff;
     padding: 10px 16px;
 }
-
 .app-header h1 {
     font-size: 18px;
     margin: 0;
@@ -56,37 +54,47 @@ html, body {
     font-size: 16px;
     margin-bottom: 12px;
 }
-
 .form-group {
     margin-bottom: 12px;
 }
-
 .form-group label {
     display: block;
     font-size: 14px;
     margin-bottom: 4px;
 }
-
 .form-group select {
     width: 100%;
     padding: 4px;
     font-size: 14px;
 }
 
-/* Чекбоксы звёздности */
+/* Подписи к группам чекбоксов/радиокнопок */
 .stars-label {
     display: block;
     font-size: 14px;
     margin-bottom: 4px;
 }
 
+/* Группы чекбоксов (звезды, завтрак, парковка, цена) */
 .stars-checkboxes {
     display: flex;
     flex-wrap: wrap;
     gap: 6px 12px;
 }
-
 .stars-checkboxes label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 4px;
+}
+
+/* Радиогруппы (питомцы, зал, SPA) */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.radio-group label {
     display: inline-flex;
     align-items: center;
     font-size: 14px;
@@ -99,7 +107,6 @@ html, body {
     gap: 8px;
     margin-top: 8px;
 }
-
 .form-actions button {
     flex: 1;
     padding: 6px 8px;
@@ -113,14 +120,12 @@ html, body {
         flex-direction: column; /* на маленьких экранах фильтры будут сверху, карта снизу */
         height: calc(100vh - 48px);
     }
-
     .sidebar {
         width: 100%;
         max-width: none;
         border-right: none;
         border-bottom: 1px solid #ccc;
     }
-
     .map-section {
         flex: 1;
     }
