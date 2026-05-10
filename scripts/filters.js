@@ -1,3 +1,5 @@
+// scripts/filters.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('filters-form');
     const districtSelect = document.getElementById('district');
@@ -15,6 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    // Подсветка района при выборе в выпадающем списке (без "Применить")
+    if (districtSelect) {
+        districtSelect.addEventListener('change', () => {
+            const dName = districtSelect.value;
+            if (typeof highlightDistrict === 'function') {
+                highlightDistrict(dName || null);
+            }
+        });
+    }
+
     // Обработка "Применить фильтры"
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -28,15 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const selectedBreakfast = Array.from(breakfastCheckboxes)
             .filter(cb => cb.checked)
-            .map(cb => cb.value);  // "Нет завтрака", "Континентальный завтрак", "Шведский стол"
+            .map(cb => cb.value);
 
         const selectedParking = Array.from(parkingCheckboxes)
             .filter(cb => cb.checked)
-            .map(cb => cb.value);  // "Нет парковки", "Бесплатная парковка", "Платная парковка"
+            .map(cb => cb.value);
 
         const selectedPriceRange = Array.from(priceCheckboxes)
             .filter(cb => cb.checked)
-            .map(cb => cb.value);  // "До 500", "с 501-1500", ...
+            .map(cb => cb.value);
 
         const getRadioValue = (name) => {
             const checked = document.querySelector(`input[name="${name}"]:checked`);
@@ -78,6 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Нажата кнопка "Сбросить"');
             form.reset();
 
+            // Сброс подсветки района
+            if (typeof resetDistrictHighlight === 'function') {
+                resetDistrictHighlight();
+            }
+
             if (typeof clearSubwayPlacemarks === 'function') {
                 clearSubwayPlacemarks();
             }
@@ -91,6 +108,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     checkZoomRange: true,
                     zoomMargin: 40
                 });
+            }
+
+            if (typeof clearRoute === 'function') {
+                clearRoute();
             }
         });
     }

@@ -1,3 +1,5 @@
+// scripts/map.js
+
 // Ждём, пока загрузится и инициализируется API Яндекс.Карт.
 ymaps.ready(init);
 
@@ -6,6 +8,9 @@ let map;
 
 // Список полигонов районов: ключ = имя района, значение = Polygon
 const districtPolygons = {};
+
+// Выделенный район (для подсветки)
+let highlightedDistrict = null;
 
 // Общие границы всех районов, чтобы уметь "отзумить" карту на весь город
 let allDistrictsBounds = null;
@@ -22,6 +27,9 @@ const subwayIconOffset = [-12, -12];
 let hotels = [];
 let hotelPlacemarks = [];
 
+// Текущий маршрут от отеля до метро
+let currentRoute = null;
+
 // Экспорт в window для доступа из других файлов
 window.districtPolygons = districtPolygons;
 window.showSubwayStations = showSubwayStations;
@@ -32,6 +40,12 @@ window.findSubwayById = findSubwayById;
 window.clearHotelPlacemarks = clearHotelPlacemarks;
 window.hotels = hotels;
 window.hotelPlacemarks = hotelPlacemarks;
+
+window.highlightDistrict = highlightDistrict;
+window.resetDistrictHighlight = resetDistrictHighlight;
+window.findNearestSubway = findNearestSubway;
+window.clearRoute = clearRoute;
+window.showRouteFromHotelToSubway = showRouteFromHotelToSubway;
 
 // ---------------------------------------------------------------------------
 // ИНИЦИАЛИЗАЦИЯ КАРТЫ
@@ -44,7 +58,6 @@ function init() {
         zoom: 10,
         controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
     });
-
     window.map = map;
 
     // Загружаем районы, затем гостиницы и метро
@@ -66,7 +79,8 @@ function init() {
             result = result.filter(
                 h => String(h.districtName) === String(filters.district)
             );
-            focusOnDistrict(filters.district);
+            // Раньше здесь был зум на район (focusOnDistrict), теперь не зумим
+            // только подсветка делается через filters.js -> highlightDistrict
         }
 
         // ----- Фильтр по станции метро (если выбран metro) -----
@@ -78,7 +92,7 @@ function init() {
                     result = result.filter(
                         h => String(h.districtName) === String(station.districtName)
                     );
-                    focusOnDistrict(station.districtName);
+                    // Зум по району станции можно не делать
                 }
                 // Зум на станцию и показ её значка
                 if (station.coords && map) {
@@ -97,19 +111,16 @@ function init() {
         }
 
         // ----- Завтрак -----
-        // "Нет завтрака", "Континентальный завтрак", "Шведский стол"
         if (filters.breakfast && filters.breakfast.length) {
             result = result.filter(h => filters.breakfast.includes(String(h.breakfast)));
         }
 
         // ----- Парковка -----
-        // "Нет парковки", "Бесплатная парковка", "Платная парковка"
         if (filters.parking && filters.parking.length) {
             result = result.filter(h => filters.parking.includes(String(h.parking)));
         }
 
         // ----- Ценовой диапазон -----
-        // "До 500", "с 501-1500", "с 1501-2500", "с 2501-4500", "с 4500"
         if (filters.price_range && filters.price_range.length) {
             result = result.filter(h => filters.price_range.includes(String(h.price_range)));
         }
@@ -181,6 +192,29 @@ function convertCoords(geometryType, coords) {
 }
 
 // ---------------------------------------------------------------------------
+// ПОДСВЕТКА РАЙОНА
+// ---------------------------------------------------------------------------
+function resetDistrictHighlight() {
+    Object.values(districtPolygons).forEach(poly => {
+        poly.options.set('fillOpacity', 0);
+    });
+    highlightedDistrict = null;
+}
+
+function highlightDistrict(districtName) {
+    if (!districtName) {
+        resetDistrictHighlight();
+        return;
+    }
+    const poly = districtPolygons[districtName];
+    if (!poly) return;
+
+    resetDistrictHighlight();
+    poly.options.set('fillOpacity', 0.5); // 50% заливки
+    highlightedDistrict = poly;
+}
+
+// ---------------------------------------------------------------------------
 // РАЙОНЫ
 // ---------------------------------------------------------------------------
 function loadDistrictsLayer() {
@@ -212,11 +246,14 @@ function loadDistrictsLayer() {
                     coords,
                     { id, name },
                     {
+                        // Полностью убираем границы (контур) района
                         strokeColor: '#000000',
                         strokeOpacity: 0,
                         strokeWidth: 0,
-                        fillColor: '#000000',
-                        fillOpacity: 0
+                
+                        // Цвет заливки используем только для подсветки выбранного района
+                        fillColor: '#0000FF',
+                        fillOpacity: 0      // изначально не залит
                     }
                 );
 
@@ -371,11 +408,9 @@ function findSubwayById(stationId) {
     const idNum = Number(stationId);
     const f = subwayFeatures.find(f => Number(f.properties.id) === idNum);
     if (!f) return null;
-
     const props = f.properties || {};
     const geom = f.geometry || {};
     if (geom.type !== 'Point' || !Array.isArray(geom.coordinates)) return null;
-
     const lon = geom.coordinates[0];
     const lat = geom.coordinates[1];
     return {
@@ -385,6 +420,87 @@ function findSubwayById(stationId) {
         districtName: props.district || null,
         coords: [lat, lon]
     };
+}
+
+// Поиск ближайшей станции метро к заданным координатам [lat, lon]
+function findNearestSubway(coords) {
+    if (!Array.isArray(subwayFeatures) || !subwayFeatures.length) return null;
+    if (!Array.isArray(coords) || coords.length !== 2) return null;
+
+    const [lat, lon] = coords;
+    let nearest = null;
+    let minDist = Infinity;
+
+    subwayFeatures.forEach(f => {
+        const geom = f.geometry || {};
+        if (geom.type !== 'Point' || !Array.isArray(geom.coordinates)) return;
+        const slon = geom.coordinates[0];
+        const slat = geom.coordinates[1];
+
+        const dLat = lat - slat;
+        const dLon = lon - slon;
+        const dist = dLat * dLat + dLon * dLon;
+
+        if (dist < minDist) {
+            minDist = dist;
+            nearest = {
+                feature: f,
+                coords: [slat, slon]
+            };
+        }
+    });
+
+    return nearest;
+}
+
+// Очистка текущего маршрута
+function clearRoute() {
+    if (currentRoute && map) {
+        map.geoObjects.remove(currentRoute);
+        currentRoute = null;
+    }
+}
+
+// Построение маршрута от отеля до ближайшей станции метро
+function showRouteFromHotelToSubway(hotelCoords) {
+    if (!map || !Array.isArray(hotelCoords)) return;
+    if (!subwayFeatures || !subwayFeatures.length) {
+        console.warn('Нет данных метро для построения маршрута');
+        return;
+    }
+
+    const nearest = findNearestSubway(hotelCoords);
+    if (!nearest) {
+        console.warn('Ближайшая станция метро не найдена');
+        return;
+    }
+
+    const subwayCoords = nearest.coords;
+
+    clearRoute();
+
+    const multiRoute = new ymaps.multiRouter.MultiRoute(
+        {
+            referencePoints: [
+                hotelCoords,
+                subwayCoords
+            ],
+            params: {
+                routingMode: 'pedestrian'
+            }
+        },
+        {}
+    );
+
+    map.geoObjects.add(multiRoute);
+    currentRoute = multiRoute;
+
+    multiRoute.model.events.add('requestsuccess', () => {
+        const bounds = multiRoute.getBounds();
+        if (bounds) {
+            map.setBounds(bounds, { checkZoomRange: true, zoomMargin: 40 });
+        }
+    });
 }
 
 // ---------------------------------------------------------------------------
@@ -414,18 +530,16 @@ function loadHotels() {
                     districtName: props.district_id,
                     website: props.website,
                     coords: coords,
-                    breakfast: props.breakfast,       // "Нет завтрака", ...
-                    parking: props.parking,           // "Нет парковки", ...
-                    price_range: props.price_range,   // "До 500", ...
-                    pets_allowed: props.pets_allowed, // "да"/"нет"
-                    gym: props.gym,                   // "да"/"нет"
-                    spa: props.spa                    // "да"/"нет"
+                    breakfast: props.breakfast,
+                    parking: props.parking,
+                    price_range: props.price_range,
+                    pets_allowed: props.pets_allowed,
+                    gym: props.gym,
+                    spa: props.spa
                 };
             }).filter(h => h.coords !== null);
-
             console.log('Загружено гостиниц:', hotels.length);
             window.hotels = hotels;
-
             showHotelsForDistrict(null);
         })
         .catch(err => {
@@ -445,7 +559,6 @@ function showHotelsForDistrict(districtName) {
         console.log('Нет карты или списка гостиниц', map, hotels);
         return;
     }
-
     let filtered;
     if (!districtName) {
         filtered = hotels;
@@ -454,7 +567,6 @@ function showHotelsForDistrict(districtName) {
             h => String(h.districtName) === String(districtName)
         );
     }
-
     redrawHotels(filtered);
 }
 
@@ -463,7 +575,6 @@ function redrawHotels(hotelsArray) {
 
     hotelsArray.forEach(hotel => {
         if (!hotel.coords) return;
-
         const balloonHtml = `
             <div>
                 <div>${hotel.address || ''}</div>
@@ -489,6 +600,15 @@ function redrawHotels(hotelsArray) {
                 preset: 'islands#blueDotIcon'
             }
         );
+
+        // При клике по гостинице — зум на неё и маршрут до ближайшего метро
+        placemark.events.add('click', () => {
+            if (map && hotel.coords) {
+                map.setCenter(hotel.coords, 15, { checkZoomRange: true });
+            }
+            showRouteFromHotelToSubway(hotel.coords);
+        });
+
         map.geoObjects.add(placemark);
         hotelPlacemarks.push(placemark);
     });
