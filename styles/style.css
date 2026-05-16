@@ -318,7 +318,7 @@ img[src^="data:image/svg+xml;base64"]:hover {
 }
 
 /* Адаптация под мобильные устройства */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .sidebar {
         position: fixed;
         left: 0;
