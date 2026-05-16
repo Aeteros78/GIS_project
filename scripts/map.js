@@ -14,21 +14,19 @@ let highlightedDistrict = null;
 let allDistrictsBounds = null;
 
 // Данные метро
-let subwayFeatures = [];       // массив станций метро из subway_spb.geojson
-let subwayPlacemarks = [];     // массив созданных меток метро на карте
+let subwayFeatures = [];
+let subwayPlacemarks = [];
 const subwayIconSize = [24, 24];
 const subwayIconOffset = [-12, -12];
 
 // Данные гостиниц
-// { id, name, address, stars, districtName, website, coords,
-//   breakfast, parking, price_range, pets_allowed, gym, spa, tel }
 let hotels = [];
 let hotelPlacemarks = [];
 
 // Текущий маршрут от отеля до метро
 let currentRoute = null;
 
-// Экспорт в window для доступа из других файлов
+// Экспорт в window
 window.districtPolygons = districtPolygons;
 window.showSubwayStations = showSubwayStations;
 window.focusOnDistrict = focusOnDistrict;
@@ -57,31 +55,26 @@ function init() {
     });
     window.map = map;
 
-    // Загружаем районы, затем отели и метро
     loadDistrictsLayer().then(() => {
         loadHotels();
         loadSubwayLayer();
     });
 
-    // Функция комплексной фильтрации — её вызывает filters.js
     window.showHotelsWithComplexFilters = function (filters) {
         if (!map || !Array.isArray(hotels)) return;
         clearHotelPlacemarks();
 
         let result = hotels.slice();
 
-        // ----- Фильтр по району -----
         if (filters.district) {
             result = result.filter(
                 h => String(h.districtName) === String(filters.district)
             );
         }
 
-        // ----- Фильтр по станции метро -----
         if (filters.metro) {
             const station = findSubwayById(filters.metro);
             if (station) {
-                // если район не выбран, а у станции есть район — ограничим по нему
                 if (!filters.district && station.districtName) {
                     result = result.filter(
                         h => String(h.districtName) === String(station.districtName)
@@ -96,27 +89,19 @@ function init() {
             clearSubwayPlacemarks();
         }
 
-        // ----- Звёзды -----
         if (filters.stars && filters.stars.length) {
             result = result.filter(h => filters.stars.includes(Number(h.stars)));
         }
-
-        // ----- Завтрак -----
         if (filters.breakfast && filters.breakfast.length) {
             result = result.filter(h => filters.breakfast.includes(String(h.breakfast)));
         }
-
-        // ----- Парковка -----
         if (filters.parking && filters.parking.length) {
             result = result.filter(h => filters.parking.includes(String(h.parking)));
         }
-
-        // ----- Ценовой диапазон -----
         if (filters.price_range && filters.price_range.length) {
             result = result.filter(h => filters.price_range.includes(String(h.price_range)));
         }
 
-        // ----- Проживание с животными / зал / SPA (да/нет) -----
         const petsFilter = (filters.pets_allowed || '').trim().toLowerCase();
         const gymFilter  = (filters.gym || '').trim().toLowerCase();
         const spaFilter  = (filters.spa || '').trim().toLowerCase();
@@ -151,7 +136,6 @@ function init() {
             );
         }
 
-        // Если не выбраны ни район, ни метро — отзумить на весь город
         if (!filters.district && !filters.metro && allDistrictsBounds && map) {
             map.setBounds(allDistrictsBounds, { checkZoomRange: true, zoomMargin: 40 });
         }
@@ -159,15 +143,30 @@ function init() {
         redrawHotels(result);
         console.log('Показано гостиниц после всех фильтров:', result.length);
     };
+
+    // Закрытие модального окна по крестику и фону
+    const modal = document.getElementById('booking-modal');
+    const closeBtn = document.getElementById('booking-modal-close');
+    if (modal && closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+        const backdrop = modal.querySelector('.modal__backdrop');
+        if (backdrop) {
+            backdrop.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+        }
+    }
 }
 
 // ------------------------------------------------------
-// ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ ДЛЯ ПОЛИГОНОВ (GeoJSON -> Яндекс.Карты)
+// ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ ДЛЯ ПОЛИГОНОВ
 // ------------------------------------------------------
 function convertCoords(geometryType, coords) {
     if (geometryType === 'Polygon') {
         return coords.map(ring =>
-            ring.map(point => [point[1], point[0]]) // [lon,lat] -> [lat,lon]
+            ring.map(point => [point[1], point[0]])
         );
     } else if (geometryType === 'MultiPolygon') {
         const mainPolygon = coords[1] && coords[1][0] ? coords[1][0] : coords[0][0];
@@ -187,7 +186,6 @@ function resetDistrictHighlight() {
     });
     highlightedDistrict = null;
 }
-
 function highlightDistrict(districtName) {
     if (!districtName) {
         resetDistrictHighlight();
@@ -196,7 +194,7 @@ function highlightDistrict(districtName) {
     const poly = districtPolygons[districtName];
     if (!poly) return;
     resetDistrictHighlight();
-    poly.options.set('fillOpacity', 0.5); // 50% заливки
+    poly.options.set('fillOpacity', 0.5);
     highlightedDistrict = poly;
 }
 
@@ -469,7 +467,7 @@ function showRouteFromHotelToSubway(hotelCoords) {
 }
 
 // ------------------------------------------------------
-// ГОСТИНИЦЫ
+// ГОСТИНИЦЫ (звёзды, баллон, попап)
 // ------------------------------------------------------
 
 // SVG-иконка: жёлтая звезда с цифрой (1–5)
@@ -528,14 +526,12 @@ function getHotelIconOptions(stars) {
 }
 
 function loadHotels() {
-    // hotels.geojson — настоящий GeoJSON FeatureCollection
     fetch('data/hotels.geojson')
         .then(r => {
             if (!r.ok) throw new Error('HTTP ' + r.status);
             return r.json();
         })
         .then(geojson => {
-            // Ожидаем объект вида { type: 'FeatureCollection', features: [...] }
             if (!geojson || !Array.isArray(geojson.features)) {
                 console.error('Ожидался FeatureCollection с features[], а пришло:', geojson);
                 hotels = [];
@@ -613,6 +609,7 @@ function redrawHotels(hotelsArray) {
     hotelsArray.forEach(hotel => {
         if (!hotel.coords) return;
 
+        // В баллоне без сайта, только основные характеристики + кнопка
         const balloonHtml = `
             <div class="hotel-balloon">
                 <div><strong>Адрес:</strong> ${hotel.address || ''}</div>
@@ -623,7 +620,6 @@ function redrawHotels(hotelsArray) {
                 <div><strong>Питомцы:</strong> ${hotel.pets_allowed || '—'}</div>
                 <div><strong>Зал:</strong> ${hotel.gym || '—'}</div>
                 <div><strong>SPA:</strong> ${hotel.spa || '—'}</div>
-                ${hotel.website ? `<div><a href="${hotel.website}" target="_blank">Сайт</a></div>` : ''}
                 <button 
                     type="button" 
                     class="hotel-book-btn"
@@ -646,7 +642,6 @@ function redrawHotels(hotelsArray) {
             iconOptions
         );
 
-        // При клике по метке — зум и маршрут до метро
         placemark.events.add('click', () => {
             if (map && hotel.coords) {
                 map.setCenter(hotel.coords, 15, { checkZoomRange: true });
@@ -654,7 +649,6 @@ function redrawHotels(hotelsArray) {
             showRouteFromHotelToSubway(hotel.coords);
         });
 
-        // Обработчик на кнопку "Забронировать" внутри баллона
         placemark.events.add('balloonopen', () => {
             const btns = document.querySelectorAll(
                 `.hotel-book-btn[data-hotel-id="${hotel.id}"]`
@@ -674,15 +668,44 @@ function redrawHotels(hotelsArray) {
     console.log('Показано гостиниц:', hotelsArray.length);
 }
 
-// Простое "модальное" окно через alert
+// Модальное окно бронирования: ставим название, телефон и сайт
 function openBookingModal(hotel) {
-    const lines = [];
-    lines.push(`Гостиница: ${hotel.name || ''}`);
-    if (hotel.tel) {
-        lines.push(`Телефон: ${hotel.tel}`);
+    const modal = document.getElementById('booking-modal');
+    if (!modal) {
+        // fallback на alert
+        const lines = [];
+        lines.push(`Гостиница: ${hotel.name || ''}`);
+        if (hotel.tel) {
+            lines.push(`Телефон: ${hotel.tel}`);
+        }
+        if (hotel.website) {
+            lines.push(`Сайт: ${hotel.website}`);
+        }
+        alert(lines.join('\n'));
+        return;
     }
-    if (hotel.website) {
-        lines.push(`Сайт: ${hotel.website}`);
+
+    const nameEl = document.getElementById('booking-hotel-name');
+    const phoneEl = document.getElementById('booking-hotel-phone');
+    const siteEl = document.getElementById('booking-hotel-website');
+
+    if (nameEl) {
+        nameEl.textContent = hotel.name || '';
     }
-    alert(lines.join('\n'));
+
+    if (phoneEl) {
+        const phone = (hotel.tel || '').toString().trim();
+        phoneEl.textContent = phone || 'не указан';
+        phoneEl.href = phone ? `tel:${phone}` : '#';
+        phoneEl.target = phone ? '_self' : '_self';
+    }
+
+    if (siteEl) {
+        const site = (hotel.website || '').toString().trim();
+        siteEl.textContent = site ? 'Перейти на сайт' : 'не указан';
+        siteEl.href = site ? site : '#';
+        siteEl.target = site ? '_blank' : '_self';
+    }
+
+    modal.classList.remove('hidden');
 }

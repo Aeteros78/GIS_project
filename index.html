@@ -183,8 +183,8 @@
 
                 <!-- Кнопки -->
                 <div class="form-actions">
-                    <button type="submit">Применить фильтры</button>
-                    <button type="button" id="reset-filters">Сбросить</button>
+                    <button type="submit">Применить</button>
+                    <button type="button" id="reset-filters" class="secondary">Сбросить</button>
                 </div>
             </form>
         </section>
@@ -205,6 +205,29 @@
             <button id="cookie-accept">Понятно</button>
         </div>
     </div>
+
+    <!-- Модальное окно бронирования -->
+    <div id="booking-modal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <button class="modal__close" type="button" id="booking-modal-close">×</button>
+            <div class="modal__body">
+                <img src="images/hotel.png" alt="Гостиница" class="modal__image">
+                <h2 class="modal__title" id="booking-hotel-name">Название гостиницы</h2>
+                <div class="modal__info">
+                    <div>
+                        <span class="modal__label">Телефон:</span>
+                        <a href="#" target="_blank" id="booking-hotel-phone">+7...</a>
+                    </div>
+                    <div>
+                        <span class="modal__label">Сайт:</span>
+                        <a href="#" target="_blank" id="booking-hotel-website">Перейти на сайт</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>
