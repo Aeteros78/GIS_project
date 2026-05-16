@@ -71,14 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log('Применяем фильтры:', filters);
 
-        if (typeof clearSubwayPlacemarks === 'function') {
-            // можно не чистить сразу, showHotelsWithComplexFilters сам разрулит
-        }
-
         if (typeof showHotelsWithComplexFilters === 'function') {
             showHotelsWithComplexFilters(filters);
         } else {
             console.warn('showHotelsWithComplexFilters не определена в map.js');
+        }
+
+        // На мобильных после применения закрываем панель фильтров
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar && window.innerWidth <= 768) {
+            sidebar.classList.remove('sidebar--open');
         }
     });
 
@@ -108,6 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (typeof clearRadiusCircle === 'function') {
                 clearRadiusCircle();
+            }
+
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar && window.innerWidth <= 768) {
+                sidebar.classList.remove('sidebar--open');
             }
         });
     }

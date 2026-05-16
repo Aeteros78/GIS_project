@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="app-root">
-    <!-- Боковая панель с фильтрами (всегда слева) -->
+    <!-- Боковая панель с фильтрами (на десктопе слева, на мобиле — модалка) -->
     <aside class="sidebar" id="sidebar">
         <section class="filters">
             <h2>Поиск и фильтрация</h2>
@@ -190,8 +190,13 @@
         </section>
     </aside>
 
-    <!-- Карта занимает оставшееся место справа -->
+    <!-- Карта занимает оставшееся место -->
     <div id="map" class="map-with-sidebar"></div>
+
+    <!-- Плавающая кнопка "Фильтры" на мобильных -->
+    <button id="mobile-filters-toggle" class="mobile-filters-toggle">
+        Фильтры
+    </button>
 
     <!-- Баннер cookies -->
     <div id="cookie-banner" class="cookie-banner" style="display:none;">

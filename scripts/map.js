@@ -1,6 +1,5 @@
 // scripts/map.js
 
-// Ждём, пока загрузится и инициализируется API Яндекс.Карт.
 ymaps.ready(init);
 
 // Глобальные переменные:
@@ -157,6 +156,15 @@ function init() {
                 modal.classList.add('hidden');
             });
         }
+    }
+
+    // Переключение фильтров на мобильных
+    const sidebar = document.getElementById('sidebar');
+    const mobileFiltersBtn = document.getElementById('mobile-filters-toggle');
+    if (sidebar && mobileFiltersBtn) {
+        mobileFiltersBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar--open');
+        });
     }
 }
 
@@ -470,7 +478,7 @@ function showRouteFromHotelToSubway(hotelCoords) {
 // ГОСТИНИЦЫ (звёзды, баллон, попап)
 // ------------------------------------------------------
 
-// SVG-иконка: жёлтая звезда с цифрой (1–5)
+// SVG-иконка: жёлтая звезда с цифрой (1–5) + внутренняя пульсация
 function makeStarSvg(stars) {
     const n = Math.max(1, Math.min(5, Number(stars) || 0));
     return `
@@ -478,6 +486,7 @@ function makeStarSvg(stars) {
   <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
     <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.4"/>
   </filter>
+
   <polygon
     filter="url(#shadow)"
     fill="#FFD700"
@@ -495,7 +504,17 @@ function makeStarSvg(stars) {
       -15.2,-4.7
       -4.7,-5.1
     "
-  />
+  >
+    <animateTransform
+      attributeName="transform"
+      type="scale"
+      values="1;1.06;1"
+      dur="1.8s"
+      repeatCount="indefinite"
+      additive="sum"
+    />
+  </polygon>
+
   <text
     x="0"
     y="4"
@@ -520,8 +539,8 @@ function getHotelIconOptions(stars) {
     return {
         iconLayout: 'default#image',
         iconImageHref: href,
-        iconImageSize: [32, 32],
-        iconImageOffset: [-16, -16]
+        iconImageSize: [64, 64],
+        iconImageOffset: [-32, -32]
     };
 }
 
@@ -609,7 +628,6 @@ function redrawHotels(hotelsArray) {
     hotelsArray.forEach(hotel => {
         if (!hotel.coords) return;
 
-        // В баллоне без сайта, только основные характеристики + кнопка
         const balloonHtml = `
             <div class="hotel-balloon">
                 <div><strong>Адрес:</strong> ${hotel.address || ''}</div>
@@ -672,7 +690,6 @@ function redrawHotels(hotelsArray) {
 function openBookingModal(hotel) {
     const modal = document.getElementById('booking-modal');
     if (!modal) {
-        // fallback на alert
         const lines = [];
         lines.push(`Гостиница: ${hotel.name || ''}`);
         if (hotel.tel) {
@@ -694,17 +711,31 @@ function openBookingModal(hotel) {
     }
 
     if (phoneEl) {
-        const phone = (hotel.tel || '').toString().trim();
-        phoneEl.textContent = phone || 'не указан';
-        phoneEl.href = phone ? `tel:${phone}` : '#';
-        phoneEl.target = phone ? '_self' : '_self';
+        const rawPhone = (hotel.tel || '').toString().trim();
+        const displayPhone = rawPhone || 'не указан';
+
+        phoneEl.textContent = displayPhone;
+        if (rawPhone) {
+            const telHref = 'tel:' + rawPhone.replace(/[^\d+]/g, '');
+            phoneEl.href = telHref;
+            phoneEl.target = '_self';
+        } else {
+            phoneEl.href = '#';
+            phoneEl.target = '_self';
+        }
     }
 
     if (siteEl) {
         const site = (hotel.website || '').toString().trim();
-        siteEl.textContent = site ? 'Перейти на сайт' : 'не указан';
-        siteEl.href = site ? site : '#';
-        siteEl.target = site ? '_blank' : '_self';
+        if (site) {
+            siteEl.textContent = 'Перейти на сайт';
+            siteEl.href = site;
+            siteEl.target = '_blank';
+        } else {
+            siteEl.textContent = 'не указан';
+            siteEl.href = '#';
+            siteEl.target = '_self';
+        }
     }
 
     modal.classList.remove('hidden');
