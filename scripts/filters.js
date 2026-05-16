@@ -4,12 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('filters-form');
     const districtSelect = document.getElementById('district');
     const subwaySelect = document.getElementById('subwayStation');
-
     const starsCheckboxes = document.querySelectorAll('input[name="stars"]');
     const breakfastCheckboxes = document.querySelectorAll('input[name="breakfast"]');
     const parkingCheckboxes = document.querySelectorAll('input[name="parking"]');
     const priceCheckboxes = document.querySelectorAll('input[name="price_range"]');
-
     const resetButton = document.getElementById('reset-filters');
 
     if (!form) {
@@ -17,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Подсветка района при выборе в выпадающем списке (без "Применить")
+    // Подсветка района при выборе в списке (без "Применить")
     if (districtSelect) {
         districtSelect.addEventListener('change', () => {
             const dName = districtSelect.value;
@@ -55,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return checked ? checked.value : '';
         };
 
-        const petsValue = getRadioValue('pets_allowed'); // "", "да", "нет"
-        const gymValue  = getRadioValue('gym');          // "", "да", "нет"
-        const spaValue  = getRadioValue('spa');          // "", "да", "нет"
+        const petsValue = getRadioValue('pets_allowed');
+        const gymValue  = getRadioValue('gym');
+        const spaValue  = getRadioValue('spa');
 
         const filters = {
             district: districtName || '',
@@ -74,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Применяем фильтры:', filters);
 
         if (typeof clearSubwayPlacemarks === 'function') {
-            clearSubwayPlacemarks();
+            // можно не чистить сразу, showHotelsWithComplexFilters сам разрулит
         }
 
         if (typeof showHotelsWithComplexFilters === 'function') {
@@ -90,28 +88,26 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Нажата кнопка "Сбросить"');
             form.reset();
 
-            // Сброс подсветки района
             if (typeof resetDistrictHighlight === 'function') {
                 resetDistrictHighlight();
             }
-
             if (typeof clearSubwayPlacemarks === 'function') {
                 clearSubwayPlacemarks();
             }
-
             if (typeof showHotelsForDistrict === 'function') {
                 showHotelsForDistrict(null);
             }
-
             if (window.allDistrictsBounds && window.map) {
                 window.map.setBounds(window.allDistrictsBounds, {
                     checkZoomRange: true,
                     zoomMargin: 40
                 });
             }
-
             if (typeof clearRoute === 'function') {
                 clearRoute();
+            }
+            if (typeof clearRadiusCircle === 'function') {
+                clearRadiusCircle();
             }
         });
     }

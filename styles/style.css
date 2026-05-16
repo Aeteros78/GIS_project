@@ -8,44 +8,39 @@ html, body {
     height: 100%;
 }
 
-/* Шапка приложения */
-.app-header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 10px 16px;
-}
-.app-header h1 {
-    font-size: 18px;
-    margin: 0;
+/* Корневой контейнер приложения */
+#app-root {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Основная область: flex-контейнер на всю оставшуюся высоту окна */
-.app-main {
-    display: flex;
-    height: calc(100vh - 48px); /* 48px – примерная высота шапки; подстрой при необходимости */
-}
-
-/* Боковая панель с фильтрами (слева) */
+/* Боковая панель с фильтрами слева */
 .sidebar {
-    width: 320px;              /* ширина столбика с фильтрами */
-    min-width: 260px;
-    max-width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    max-width: 80%;
+    height: 100%;
+    background-color: #f7f7f7;
     border-right: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
-    overflow-y: auto;          /* если фильтров станет много, появится скролл */
-    background-color: #f7f7f7;
+    overflow-y: auto;
+    z-index: 1050;
 }
 
-/* Секция карты (справа) */
-.map-section {
-    flex: 1;                   /* занимает всё оставшееся место по ширине */
-    position: relative;
-}
-
-/* Контейнер карты Яндекс.Карт растягиваем на всю высоту секции .map-section */
-#map {
-    width: 100%;
+/* Карта занимает всё пространство справа от сайдбара */
+#map,
+.map-with-sidebar {
+    position: absolute;
+    top: 0;
+    left: 320px;      /* отступ на ширину сайдбара */
+    right: 0;
+    bottom: 0;
+    width: auto;
     height: 100%;
 }
 
@@ -114,19 +109,65 @@ html, body {
     cursor: pointer;
 }
 
-/* Небольшая адаптация под узкие экраны (например, мобильные) */
-@media (max-width: 768px) {
-    .app-main {
-        flex-direction: column; /* на маленьких экранах фильтры будут сверху, карта снизу */
-        height: calc(100vh - 48px);
-    }
+/* Баллон гостиницы */
+.hotel-balloon {
+    font-size: 13px;
+}
+.hotel-balloon div {
+    margin-bottom: 2px;
+}
+.hotel-balloon a {
+    color: #0077cc;
+    text-decoration: underline;
+}
+.hotel-book-btn {
+    margin-top: 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Баннер cookies */
+.cookie-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.95);
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 13px;
+    z-index: 1200;
+}
+.cookie-banner__content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.cookie-banner button {
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background: #3498db;
+    color: #fff;
+}
+
+/* Адаптация под узкие экраны */
+@media (max-width: 600px) {
     .sidebar {
-        width: 100%;
-        max-width: none;
-        border-right: none;
-        border-bottom: 1px solid #ccc;
+        width: 260px;
     }
-    .map-section {
-        flex: 1;
+    #map,
+    .map-with-sidebar {
+        left: 260px;
+    }
+    .cookie-banner__content {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

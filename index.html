@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>ГИС-приложение по подбору гостиниц в Санкт-Петербурге</title>
-    <!-- Подключаем стили интерфейса -->
     <link rel="stylesheet" href="styles/style.css">
-    <!-- Подключаем JS API Яндекс.Карт. apikey – ключ доступа к API, lang=ru_RU – русский язык. -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=a87475d1-680e-4e12-aaae-07b3e54001ae&lang=ru_RU" type="text/javascript"></script>
-    <!-- Скрипт с логикой карты (инициализация, загрузка данных, отображение объектов) -->
     <script src="scripts/map.js" defer></script>
-    <!-- Скрипт с логикой фильтров (обработка формы, кнопок "Применить" и "Сбросить") -->
     <script src="scripts/filters.js" defer></script>
+    <script src="scripts/cookies.js" defer></script>
 </head>
 <body>
-<header class="app-header">
-    <h1>ГИС-приложение по подбору гостиниц в Санкт-Петербурге</h1>
-</header>
-
-<main class="app-main">
-    <aside class="sidebar">
+<div id="app-root">
+    <!-- Боковая панель с фильтрами (всегда слева) -->
+    <aside class="sidebar" id="sidebar">
         <section class="filters">
             <h2>Поиск и фильтрация</h2>
             <form id="filters-form">
@@ -65,7 +59,7 @@
                     </div>
                 </div>
 
-                <!-- Завтрак (чекбоксы, как звёзды) -->
+                <!-- Завтрак -->
                 <div class="form-group">
                     <span class="stars-label">Завтрак:</span>
                     <div class="stars-checkboxes">
@@ -84,7 +78,7 @@
                     </div>
                 </div>
 
-                <!-- Парковка (чекбоксы, как звёзды) -->
+                <!-- Парковка -->
                 <div class="form-group">
                     <span class="stars-label">Парковка:</span>
                     <div class="stars-checkboxes">
@@ -103,7 +97,7 @@
                     </div>
                 </div>
 
-                <!-- Цена (чекбоксы, как звёзды) -->
+                <!-- Цена -->
                 <div class="form-group">
                     <span class="stars-label">Ценовой диапазон:</span>
                     <div class="stars-checkboxes">
@@ -130,7 +124,7 @@
                     </div>
                 </div>
 
-                <!-- Проживание с животными (радио) -->
+                <!-- Проживание с животными -->
                 <div class="form-group">
                     <span class="stars-label">Проживание с животными:</span>
                     <div class="radio-group">
@@ -149,7 +143,7 @@
                     </div>
                 </div>
 
-                <!-- Зал (радио) -->
+                <!-- Зал -->
                 <div class="form-group">
                     <span class="stars-label">Тренажёрный зал:</span>
                     <div class="radio-group">
@@ -168,7 +162,7 @@
                     </div>
                 </div>
 
-                <!-- SPA (радио) -->
+                <!-- SPA -->
                 <div class="form-group">
                     <span class="stars-label">SPA:</span>
                     <div class="radio-group">
@@ -196,9 +190,21 @@
         </section>
     </aside>
 
-    <section class="map-section">
-        <div id="map"></div>
-    </section>
-</main>
+    <!-- Карта занимает оставшееся место справа -->
+    <div id="map" class="map-with-sidebar"></div>
+
+    <!-- Баннер cookies -->
+    <div id="cookie-banner" class="cookie-banner" style="display:none;">
+        <div class="cookie-banner__content">
+            <p>
+                На этом сайте могут использоваться cookie и сервисы третьих лиц
+                для корректной работы карты. Продолжая пользоваться сайтом, вы
+                соглашаетесь с обработкой данных в соответствии с учебной
+                политикой конфиденциальности.
+            </p>
+            <button id="cookie-accept">Понятно</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
